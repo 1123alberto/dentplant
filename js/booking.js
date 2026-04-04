@@ -39,7 +39,8 @@ function renderCalendar() {
     grid.innerHTML = '';
 
     // Day Headers
-    ['Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ', 'Κυρ'].forEach(d => {
+    const days = (window.i18n ? window.i18n.t('js.days') : ['Δευ','Τρι','Τετ','Πεμ','Παρ','Σαβ','Κυρ']);
+    days.forEach(d => {
         const div = document.createElement('div');
         div.className = 'day-header font-bold text-[#1a365d] text-xs mb-1';
         div.textContent = d;
@@ -56,7 +57,8 @@ function renderCalendar() {
         date.setDate(date.getDate() + i);
 
         if (i === 0 || i === 7) {
-            const m = date.toLocaleString('el-GR', { month: 'long', year: 'numeric' });
+            const locale = window.i18n ? window.i18n.t('js.locale') : 'el-GR';
+            const m = date.toLocaleString(locale, { month: 'long', year: 'numeric' });
             if (!monthName.includes(m)) monthName += (monthName ? " - " : "") + m;
         }
 
@@ -91,7 +93,8 @@ function formatDateAPI(date) {
 }
 
 function formatDateDisplay(date) {
-    return date.toLocaleDateString('el-GR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    const locale = window.i18n ? window.i18n.t('js.locale') : 'el-GR';
+    return date.toLocaleDateString(locale, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 }
 
 async function fetchAndShowSlots(date) {
@@ -104,7 +107,8 @@ async function fetchAndShowSlots(date) {
     // Phone only on Saturdays
     if (date.getDay() === 6) {
         document.getElementById('calendar-loader').style.display = 'none';
-        slotsGrid.innerHTML = `<div style="grid-column: 1/-1;" class="text-center my-6"><p class="text-[#475569] text-sm md:text-[15px] leading-relaxed">Για ραντεβού το Σάββατο, παρακαλώ επικοινωνήστε μαζί μας τηλεφωνικά στο <a href="tel:2109312651" class="font-bold text-[#0284c7] hover:underline whitespace-nowrap">210 931 2651</a>.</p></div>`;
+        const satMsg = window.i18n ? window.i18n.t('js.saturday') : 'Για ραντεβού το Σάββατο, παρακαλώ επικοινωνήστε μαζί μας τηλεφωνικά στο <a href="tel:2109312651" class="font-bold text-[#0284c7] hover:underline whitespace-nowrap">210 931 2651</a>.';
+        slotsGrid.innerHTML = `<div style="grid-column: 1/-1;" class="text-center my-6"><p class="text-[#475569] text-sm md:text-[15px] leading-relaxed">${satMsg}</p></div>`;
         goToStep(2);
         return;
     }
@@ -134,7 +138,8 @@ async function fetchAndShowSlots(date) {
         }
 
         if (availableSlots.length === 0) {
-            slotsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center;" class="text-red-500 font-medium my-4 text-sm">Δεν υπάρχουν διαθέσιμες ώρες για αυτή την ημερομηνία.</p>`;
+            const noSlotsMsg = window.i18n ? window.i18n.t('js.noslots') : 'Δεν υπάρχουν διαθέσιμες ώρες για αυτή την ημερομηνία.';
+            slotsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center;" class="text-red-500 font-medium my-4 text-sm">${noSlotsMsg}</p>`;
         } else {
             availableSlots.forEach(time => {
                 const btn = document.createElement('button');
@@ -199,10 +204,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Collect checked services
         const selectedServices = Array.from(document.querySelectorAll('input[name="services"]:checked')).map(cb => {
             if (cb.value === "other") {
-                return document.getElementById('other-service-input').value || "Άλλο";
+                return document.getElementById('other-service-input').value || (window.i18n ? window.i18n.t('js.other') : 'Άλλο');
             }
             return cb.value;
-        }).join(', ') || 'Καμία υπηρεσία επιλεγμένη';
+        }).join(', ') || (window.i18n ? window.i18n.t('js.noservice') : 'Καμία υπηρεσία επιλεγμένη');
 
         const payload = {
             action: 'book',
@@ -227,10 +232,13 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             goToStep(4);
         } catch (error) {
-            alert("Σφάλμα συστήματος. Παρακαλώ δοκιμάστε ξανά.");
+            alert(window.i18n ? window.i18n.t('js.error') : 'Σφάλμα συστήματος. Παρακαλώ δοκιμάστε ξανά.');
         } finally {
             btn.disabled = false;
             loader.style.display = 'none';
         }
     });
+
+    /* Re-render calendar day-headers when language switches */
+    document.addEventListener('languageChanged', () => renderCalendar());
 });

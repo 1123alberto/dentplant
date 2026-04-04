@@ -9,6 +9,14 @@
 }
 
 @layer base {
+  html {
+    scrollbar-width: none;           /* Firefox */
+    -ms-overflow-style: none;        /* IE / Edge */
+  }
+  html::-webkit-scrollbar {
+    display: none;                   /* Chrome, Safari, Opera */
+  }
+
   body {
     @apply font-open text-gray-800 tracking-wide;
   }
@@ -44,5 +52,23 @@
   .modal.modal-open {
     opacity: 1;
     visibility: visible;
+  }
+
+  /* Language toggle button in navbar */
+  .lang-toggle {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .lang-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }

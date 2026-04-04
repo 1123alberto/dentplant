@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Υπηρεσιες - Dr. Angelo Moshopoulos Dental Implant Clinic</title>
-  <link rel="stylesheet" href="css/output.css?v=4">
+  <link rel="stylesheet" href="css/output.css?v=10">
   <link rel="icon" href="images/dental-implant-circle-256-torqued.png" type="image/png">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Julius+Sans+One%7CNoto+Sans:400,b%7COpen+Sans:400,600,600i,b,i">
@@ -19,22 +19,25 @@
       <img alt="implant logo" class="w-full h-full object-contain" src="images/dental-implant-circle-256-torqued.png"
         loading="lazy">
     </a>
-    <div
-      class="flex items-center space-x-4 md:space-x-8 text-white text-[11px] leading-tight md:text-xs md:leading-normal font-medium uppercase font-noto">
-      <a class="hover:text-gray-200 transition-colors" href="index.html">Αρχικη</a>
-      <a class="hover:text-gray-200 transition-colors" href="about.html">Ο Ιατρος</a>
-      <a class="text-yellow-300 transition-colors" href="services.html">Υπηρεσιες</a>
-      <a class="hover:text-gray-200 transition-colors" href="contact.html">Επικοινωνια</a>
+    <div class="flex items-center gap-4">
+      <div
+        class="flex items-center space-x-4 md:space-x-8 text-white text-[11px] leading-tight md:text-xs md:leading-normal font-medium uppercase font-noto">
+        <a class="hover:text-gray-200 transition-colors" href="index.html" data-i18n="nav.home">Αρχικη</a>
+        <a class="hover:text-gray-200 transition-colors" href="about.html" data-i18n="nav.doctor">Ο Ιατρος</a>
+        <a class="text-yellow-300 transition-colors" href="services.html" data-i18n="nav.services">Υπηρεσιες</a>
+        <a class="hover:text-gray-200 transition-colors" href="contact.html" data-i18n="nav.contact">Επικοινωνια</a>
+      </div>
+      <button onclick="i18n.toggleLanguage()"
+        class="lang-toggle text-white border border-white/50 rounded px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase hover:bg-white/20 transition-all duration-300 flex-shrink-0">EN</button>
     </div>
   </nav>
 
   <main class="flex-grow container mx-auto px-6 py-12 max-w-6xl">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mt-8">
       <div class="text-gray-700 font-open text-lg leading-relaxed space-y-6">
-        <p>Στο επίκεντρο της φιλοσοφίας μας βρίσκεται η ευημερία και το χαμόγελο κάθε ασθενούς. Πιστεύουμε ακράδαντα πως
+        <p data-i18n="services.p1">Στο επίκεντρο της φιλοσοφίας μας βρίσκεται η ευημερία και το χαμόγελο κάθε ασθενούς. Πιστεύουμε ακράδαντα πως
           ο προσεκτικός σχεδιασμός της θεραπείας, η συστηματική εκπαίδευση στη σωστή στοματική υγιεινή και η προληπτική
           φροντίδα αποτελούν τα ισχυρότερα θεμέλια για υγιείς και ανθεκτικές αποκαταστάσεις που αντέχουν στον χρόνο.</p>
-
 
         <div class="w-full rounded-2xl overflow-hidden shadow-2xl my-8 md:hidden relative group">
           <img alt="office image"
@@ -43,12 +46,12 @@
           <div class="absolute inset-0 bg-brand-blue opacity-10 group-hover:opacity-0 transition-opacity duration-500">
           </div>
         </div>
-        <p>Το ταξίδι προς ένα τέλειο χαμόγελο ξεκινά πάντα από ένα υγιές θεμέλιο. Μέσα από σχολαστικό καθαρισμό, άμεση
+        <p data-i18n="services.p2">Το ταξίδι προς ένα τέλειο χαμόγελο ξεκινά πάντα από ένα υγιές θεμέλιο. Μέσα από σχολαστικό καθαρισμό, άμεση
           αντιμετώπιση της τερηδόνας και στοχευμένες θεραπείες, διασφαλίζουμε την ιδανική κατάσταση της στοματικής
           κοιλότητας. Μόνο τότε προχωράμε με σιγουριά και ασφάλεια στο επόμενο στάδιο της αποκατάστασης των δοντιών μέσω
           της σύγχρονης εμφυτευματολογίας.</p>
 
-        <p>Γνωρίζοντας πως η επίσκεψη στον οδοντίατρο μπορεί να προκαλεί άγχος, έχουμε διαμορφώσει έναν χώρο ζεστό,
+        <p data-i18n="services.p3">Γνωρίζοντας πως η επίσκεψη στον οδοντίατρο μπορεί να προκαλεί άγχος, έχουμε διαμορφώσει έναν χώρο ζεστό,
           φιλόξενο και απόλυτα άνετο. Με εύκολη πρόσβαση, μεγάλη ευελιξία στα ραντεβού —ακόμα και τα Σάββατα— και
           πρωταρχικό μας μέλημα τον απόλυτο σεβασμό στην ευαισθησία και τις ανάγκες σας, φροντίζουμε η εμπειρία σας μαζί
           μας να είναι πάντα ήρεμη, ανώδυνη και θετική.</p>
@@ -67,10 +70,11 @@
   <section class="py-12 bg-white">
     <hr class="w-4/5 mx-auto border-gray-200">
     <div
-      class="w-11/12 md:w-3/4 mx-auto bg-brand-light text-brand-blue text-center rounded-lg p-8 italic tracking-wide text-lg font-open my-12 fade-in shadow-inner">
-      " Προσφέρουμε ένα ευρύ φάσμα σύγχρονων οδοντιατρικών θεραπειών, απόλυτα προσαρμοσμένων στις δικές σας μοναδικές
+      class="w-11/12 md:w-3/4 mx-auto bg-brand-light text-brand-blue text-center rounded-lg p-8 italic tracking-wide text-lg font-open my-12 fade-in shadow-inner"
+      data-i18n-html="quote.services">
+      &quot; Προσφέρουμε ένα ευρύ φάσμα σύγχρονων οδοντιατρικών θεραπειών, απόλυτα προσαρμοσμένων στις δικές σας μοναδικές
       απαιτήσεις. <br>Με την υποστήριξη τεχνολογίας αιχμής και εξειδικευμένης γνώσης, διασφαλίζουμε ανώδυνα και άριστα
-      αποτελέσματα. Κάθε θεραπεία σχεδιάζεται με γνώμονα τη βέλτιστη στοματική σας υγεία. "
+      αποτελέσματα. Κάθε θεραπεία σχεδιάζεται με γνώμονα τη βέλτιστη στοματική σας υγεία. &quot;
     </div>
     <hr class="w-4/5 mx-auto border-gray-200">
   </section>
@@ -85,14 +89,15 @@
   </div>
 
   <footer class="py-12 bg-gray-50 border-t border-gray-200">
-    <p class="text-gray-800 text-center font-bold tracking-wide text-lg mb-4 font-noto">
-      Πλατεία Ντάβαρη 2, Παλαιό Φάληρο<br>τηλ. 210 931 2651<br>κιν. 697 438 5178
+    <p class="text-gray-800 text-center font-bold tracking-wide text-lg mb-4 font-noto" data-i18n-html="footer.address">
+      Πλατεία Ντάβαρη 2, Παλαιό Φάληρο<br>τηλ. 210 931 2651
     </p>
-    <p class="text-gray-500 text-center font-noto text-sm">
+    <p class="text-gray-500 text-center font-noto text-sm" data-i18n-html="footer.copyright">
       Copyright 2026. A. Moshopoulos Dental Implant Clinic. <br>All Rights Reserved.
     </p>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/outofview.js"></script>
   <script src="js/main.js"></script>
 </body>
