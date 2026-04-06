@@ -3,11 +3,13 @@
 Follow these steps to connect your website's booking system to your Google Calendar.
 
 ### Step 1: Prepare Your Google Apps Script
-1.  Go to [script.google.com](https://script.google.com) and create a new project.
-2.  Name the project (e.g., `Dentplant Booking API`).
-3.  Copy the code from the **Google Apps Script Backend** section in your `calendar_export_plan.md` file and paste it into the script editor.
-4.  **Important**: In the `CLINIC_HOURS` section, make sure the hours match your clinic's actual availability.
-5.  If you have a specific calendar name (other than your default one), enter it in `CALENDAR_NAME`.
+1.  Log into the account where you want to manage the calendar (`1123alberto@gmail.com`). 
+2.  Go to [script.google.com](https://script.google.com) and create a new project.
+3.  Name the project (e.g., `Dentplant Booking API`).
+4.  Copy the code from the **Google Apps Script Backend** section in your `calendar_export_plan.md` file and paste it into the script editor.
+5.  **Note on Alias**: In the configuration section (Line 337), make sure `SENDER_ALIAS` is set to `'info@dentplant.gr'`. You must have this email set up as a verified alias in your Gmail settings for it to work.
+6.  **Important**: In the `CLINIC_HOURS` section, make sure the hours match your clinic's actual availability.
+7.  If you have a specific calendar name, enter it in `CALENDAR_NAME`.
 
 ### Step 2: Deploy as a Web App
 1.  Click **Deploy** > **New deployment**.

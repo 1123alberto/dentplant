@@ -334,6 +334,7 @@ const CLINIC_HOURS = {
 };
 
 const BLOCKED_DATES = [];
+const SENDER_ALIAS = 'info@dentplant.gr'; 
 // ----------------------
 
 function getCalendar() {
@@ -467,7 +468,11 @@ This is a reminder for your appointment at our clinic today.
 Με εκτίμηση / Sincerely,
 H Ομάδα του Dentplant Clinic.`;
 
-  MailApp.sendEmail(email, subject, body);
+  if (SENDER_ALIAS !== '') {
+    GmailApp.sendEmail(email, subject, body, { from: SENDER_ALIAS });
+  } else {
+    MailApp.sendEmail(email, subject, body);
+  }
 }
 
 function sendInitialConfirmationEmail(email, name, dateObj) {
@@ -488,6 +493,10 @@ Thank you for your booking! Your appointment is confirmed for: ${dateStr}.
 Με εκτίμηση / Sincerely,
 H Ομάδα του Dentplant Clinic.`;
 
-  MailApp.sendEmail(email, subject, body);
+  if (SENDER_ALIAS !== '') {
+    GmailApp.sendEmail(email, subject, body, { from: SENDER_ALIAS });
+  } else {
+    MailApp.sendEmail(email, subject, body);
+  }
 }
 ```
