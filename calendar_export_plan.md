@@ -406,6 +406,11 @@ function doPost(e) {
       const description = `Νέο Ραντεβού από Website\n\nΌνομα: ${name}\nΤηλέφωνο: ${phone}\nEmail: ${email}\nΥπηρεσίες: ${services || 'Δεν επιλέχθηκε καμία'}`;
       
       getCalendar().createEvent(title, startTime, endTime, { description: description });
+      
+      // Send immediate confirmation
+      sendInitialConfirmationEmail(email, name, startTime);
+      
+      // Schedule reminder for 9:00 AM on the day of the appointment
       scheduleReminderEmail(email, name, startTime);
       
       return respondJSON({ success: true, message: "Appointment created." });
@@ -449,6 +454,40 @@ function processReminderEmail(e) {
 }
 
 function sendReminderEmail(email, name) {
-  MailApp.sendEmail(email, "Υπενθύμιση Ραντεβού (Κλινική)", `Γεια σας ${name},\n\nΣας υπενθυμίζουμε το σημερινό σας ραντεβού στο ιατρείο μας.\n\nΜε εκτίμηση,\nH Ομάδα μας.`);
+  const subject = "Υπενθύμιση Ραντεβού (Dentplant Clinic) / Appointment Reminder";
+  const body = `Γεια σας ${name},
+
+Σας υπενθυμίζουμε το σημερινό σας ραντεβού στο ιατρείο μας. 
+
+---
+Hello ${name},
+
+This is a reminder for your appointment at our clinic today.
+
+Με εκτίμηση / Sincerely,
+H Ομάδα του Dentplant Clinic.`;
+
+  MailApp.sendEmail(email, subject, body);
+}
+
+function sendInitialConfirmationEmail(email, name, dateObj) {
+  const subject = "Επιβεβαίωση Ραντεβού (Dentplant Clinic) / Appointment Confirmation";
+  const dateStr = Utilities.formatDate(dateObj, Session.getScriptTimeZone(), "dd/MM/yyyy HH:mm");
+  
+  const body = `Γεια σας ${name},
+
+Ευχαριστούμε για την κράτησή σας! Το ραντεβού σας επιβεβαιώθηκε για τις: ${dateStr}.
+
+---
+Hello ${name},
+
+Thank you for your booking! Your appointment is confirmed for: ${dateStr}.
+
+Σας περιμένουμε / We look forward to seeing you.
+
+Με εκτίμηση / Sincerely,
+H Ομάδα του Dentplant Clinic.`;
+
+  MailApp.sendEmail(email, subject, body);
 }
 ```

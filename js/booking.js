@@ -1,5 +1,15 @@
 const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
 
+/**
+ * Local Blocking Configuration
+ * dates: Array of YYYY-MM-DD strings to block entire days.
+ * slots: Object with YYYY-MM-DD keys and arrays of HH:MM strings to block specific slots.
+ */
+const BLOCKED_CONFIG = {
+    dates: [], // e.g. ['2026-04-20', '2026-05-01']
+    slots: {}  // e.g. { '2026-04-10': ['10:00', '13:00'] }
+};
+
 let selectedDate = null;
 let selectedTime = null;
 let currentWeekStart = new Date();
@@ -66,8 +76,9 @@ function renderCalendar() {
         btn.className = 'date-btn p-1 rounded-lg w-9 h-9 mx-auto flex items-center justify-center font-semibold text-sm transition-all text-[#1a365d] hover:bg-gray-100 hover:text-[#0284c7]';
         btn.textContent = date.getDate();
 
-        // Disable past dates, Sundays (0)
-        if (date < today || date.getDay() === 0) {
+        // Disable past dates, Sundays (0), and blocked dates
+        const dateStr = formatDateAPI(date);
+        if (date < today || date.getDay() === 0 || BLOCKED_CONFIG.dates.includes(dateStr)) {
             btn.className = 'date-btn disabled p-1 w-9 h-9 mx-auto flex items-center justify-center font-normal text-sm text-gray-300 cursor-not-allowed';
             btn.disabled = true;
         } else {
@@ -89,7 +100,10 @@ function selectDate(date) {
 }
 
 function formatDateAPI(date) {
-    return date.toISOString().split('T')[0];
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, '0');
+    const d = String(date.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
 }
 
 function formatDateDisplay(date) {
@@ -135,6 +149,12 @@ async function fetchAndShowSlots(date) {
             const response = await fetch(`${GOOGLE_SCRIPT_URL}?action=getSlots&date=${formatDateAPI(date)}`);
             const data = await response.json();
             availableSlots = data.slots;
+        }
+
+        // Filter against local blocked slots
+        const dateStr = formatDateAPI(date);
+        if (BLOCKED_CONFIG.slots[dateStr]) {
+            availableSlots = availableSlots.filter(s => !BLOCKED_CONFIG.slots[dateStr].includes(s));
         }
 
         if (availableSlots.length === 0) {
