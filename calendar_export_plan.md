@@ -320,7 +320,7 @@ Paste this into a new Google Apps Script deployed as a Web App to enable live AP
 ```javascript
 // --- CONFIGURATION ---
 const SERVICE_DURATION = 60; 
-const CALENDAR_NAME = ''; 
+const CALENDAR_NAMES = ['Dental Clinic', "M's calendar", 'Online appointment']; // The first one acts as primary
 
 // Military time: 10 = 10:00 AM, 20 = 8:00 PM
 const CLINIC_HOURS = {
@@ -334,13 +334,22 @@ const CLINIC_HOURS = {
 };
 
 const BLOCKED_DATES = [];
-const SENDER_ALIAS = 'info@dentplant.gr'; 
+const SENDER_ALIAS = '1123alberto@gmail.com'; 
 // ----------------------
 
-function getCalendar() {
-  if (CALENDAR_NAME === '') return CalendarApp.getDefaultCalendar();
-  const cals = CalendarApp.getCalendarsByName(CALENDAR_NAME);
-  return cals.length > 0 ? cals[0] : CalendarApp.getDefaultCalendar();
+function getCalendars() {
+  const cals = [];
+  CALENDAR_NAMES.forEach(name => {
+    const list = CalendarApp.getCalendarsByName(name);
+    if (list.length > 0) cals.push(list[0]);
+  });
+  if (cals.length === 0) cals.push(CalendarApp.getDefaultCalendar());
+  return cals;
+}
+
+function getPrimaryCalendar() {
+  const list = CalendarApp.getCalendarsByName(CALENDAR_NAMES[0]);
+  return list.length > 0 ? list[0] : CalendarApp.getDefaultCalendar();
 }
 
 function doGet(e) {
@@ -356,14 +365,21 @@ function doGet(e) {
     return respondJSON({ date: dateStr, slots: [] }); 
   }
 
-  const cal = getCalendar();
+  const allCals = getCalendars();
   const startOfDay = new Date(year, month - 1, day, 0, 0, 0);
   const endOfDay = new Date(year, month - 1, day, 23, 59, 59);
   
-  const busyPeriods = cal.getEvents(startOfDay, endOfDay).map(ev => ({
-    start: ev.getStartTime(),
-    end: ev.getEndTime()
-  })).sort((a, b) => a.start - b.start);
+  let busyPeriods = [];
+  allCals.forEach(cal => {
+    const events = cal.getEvents(startOfDay, endOfDay);
+    events.forEach(ev => {
+      busyPeriods.push({
+        start: ev.getStartTime(),
+        end: ev.getEndTime()
+      });
+    });
+  });
+  busyPeriods.sort((a, b) => a.start - b.start);
   
   let availableSlots = [];
   const now = new Date(); 
@@ -406,7 +422,7 @@ function doPost(e) {
       const title = `Ραντεβού - ${name}`;
       const description = `Νέο Ραντεβού από Website\n\nΌνομα: ${name}\nΤηλέφωνο: ${phone}\nEmail: ${email}\nΥπηρεσίες: ${services || 'Δεν επιλέχθηκε καμία'}`;
       
-      getCalendar().createEvent(title, startTime, endTime, { description: description });
+      getPrimaryCalendar().createEvent(title, startTime, endTime, { description: description });
       
       // Send immediate confirmation
       sendInitialConfirmationEmail(email, name, startTime);

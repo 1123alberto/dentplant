@@ -62,7 +62,7 @@
 
       /* ── contact.html — phone labels ─────────── */
       'contact.landline': 'τηλ. 210 931 2651',
-      'contact.email': 'info@dentplant.gr',
+      'contact.email': '1123alberto@gmail.com',
 
       /* ── Footer ───────────────────────────────── */
       'footer.address': 'Πλατεία Ντάβαρη 2, Παλαιό Φάληρο<br>τηλ. 210 931 2651',
@@ -163,7 +163,7 @@
 
       /* ── contact.html — phone labels ─────────── */
       'contact.landline': 'tel. 210 931 2651',
-      'contact.email': 'info@dentplant.gr',
+      'contact.email': '1123alberto@gmail.com',
 
       /* ── Footer ───────────────────────────────── */
       'footer.address': 'Plateia Ntavari 2, Paleo Faliro<br>tel. 210 931 2651',

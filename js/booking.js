@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx5VCzSHjTQwD-tHG-XQtaKjANYNbUaOrY_YWlBa0u1EHnAMXrQnyefygMqWcfeqmP8/exec';
 
 /**
  * Local Blocking Configuration
@@ -49,7 +49,7 @@ function renderCalendar() {
     grid.innerHTML = '';
 
     // Day Headers
-    const days = (window.i18n ? window.i18n.t('js.days') : ['Δευ','Τρι','Τετ','Πεμ','Παρ','Σαβ','Κυρ']);
+    const days = (window.i18n ? window.i18n.t('js.days') : ['Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ', 'Κυρ']);
     days.forEach(d => {
         const div = document.createElement('div');
         div.className = 'day-header font-bold text-[#1a365d] text-xs mb-1';
