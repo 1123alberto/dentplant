@@ -68,9 +68,11 @@
                     <div class="text-red-400 text-5xl mb-4 font-bold">!</div>
                     <h2 class="text-xl font-bold text-[#1a365d] mb-4 font-open" data-i18n="mg.notfound">Το ραντεβού δεν
                         βρέθηκε.</h2>
-                    <a href="index.html#booking"
-                        class="inline-block bg-brand-blue text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-blue-600 transition tracking-wide text-sm uppercase"
-                        data-i18n="bm.step4.new">Νεο Ραντεβου</a>
+                    <div class="mt-8 flex justify-center">
+                        <a href="index.html#booking"
+                            class="w-full sm:w-1/2 h-12 bg-brand-blue text-white font-bold rounded-full shadow-md hover:bg-blue-600 transition tracking-widest text-xs uppercase flex items-center justify-center"
+                            data-i18n="bm.step4.new">Νεο Ραντεβου</a>
+                    </div>
                 </div>
 
                 <div id="mg-details-state" class="hidden">
@@ -111,12 +113,12 @@
                     <p class="text-gray-600 mb-8 text-sm leading-relaxed font-open" data-i18n="mg.confirm_text">Είστε
                         σίγουροι ότι
                         θέλετε να ακυρώσετε το ραντεβού σας? Αυτή η ενέργεια δεν αναιρείται.</p>
-                    <div class="flex flex-col gap-3 mt-8 items-center">
+                    <div class="flex flex-col gap-4 mt-10 items-center">
                         <button id="final-cancel-btn"
-                            class="w-full sm:w-1/2 bg-red-600 text-red font-bold py-5 rounded-2xl shadow-xl hover:bg-red-700 transition-all tracking-wide text-sm uppercase"
+                            class="w-full sm:w-1/2 h-12 bg-red-600 text-white rounded-full shadow-md hover:bg-red-700 transition-all transform hover:-translate-y-0.5 tracking-widest text-xs font-bold uppercase flex items-center justify-center"
                             data-i18n="mg.confirm_yes">Ναι, Ακυρωση</button>
                         <button id="cancel-cancel-btn"
-                            class="w-full sm:w-1/2 bg-gray-100 text-gray-500 font-bold py-4 rounded-2xl hover:bg-gray-200 transition-all tracking-wide text-sm uppercase"
+                            class="w-full sm:w-1/2 h-12 bg-gray-100 text-gray-500 rounded-full hover:bg-gray-200 transition-all transform hover:-translate-y-0.5 text-xs font-bold uppercase tracking-widest flex items-center justify-center"
                             data-i18n="mg.confirm_no">Οχι, Πισω</button>
                     </div>
                 </div>
@@ -143,6 +145,15 @@
             </div>
         </main>
     </header>
+ 
+    <div class="text-center mt-8 mb-12 fade-in flex justify-center space-x-6">
+        <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
+                src="socialicons/webicon-facebook.png" alt="facebook"></a>
+        <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
+                src="socialicons/webicon-instagram.png" alt="Insta"></a>
+        <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
+                src="socialicons/webicon-linkedin.png" alt="linkedin"></a>
+    </div>
 
     <footer class="py-12 bg-brand-blue mt-auto">
         <p class="text-white text-center font-bold tracking-wide text-lg mb-4 font-noto"
