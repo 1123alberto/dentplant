@@ -1,9 +1,9 @@
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyFFb53qyNdBBPDifTrGT3nHhdeWjEXzrpkxXCcDhPL9hwLAtnwqnLOKsHKKLduwSQB/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyMjJ9NRRr1CvbhjIw851gnh8Bj_mFUVRczU9K0mJjybt1hP8NPl_2DnyLKbP1SWI5X/exec';
 
 document.addEventListener('DOMContentLoaded', async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const uid = urlParams.get('uid');
-    
+
     // 1. Language Handling
     const lang = urlParams.get('lang');
     if (lang && (lang === 'en' || lang === 'el')) {
@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 3. Event Listeners
     document.getElementById('confirm-cancel-trigger').onclick = () => showState('mg-cancel-confirm-state');
     document.getElementById('cancel-cancel-btn').onclick = () => showState('mg-details-state');
-    
+
     document.getElementById('final-cancel-btn').onclick = async () => {
         const btn = document.getElementById('final-cancel-btn');
         btn.disabled = true;
         btn.textContent = '...';
-        
+
         try {
             await fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ action: 'cancel', uid: uid })
             });
-            
+
             showState('mg-success-state');
             setTimeout(() => {
                 window.location.href = 'index.html';
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (emailMatch) params.set('email', emailMatch[1].trim());
         if (phoneMatch) params.set('phone', phoneMatch[1].trim());
         if (servicesMatch) params.set('services', servicesMatch[1].trim());
-        
+
         const currentLang = i18n.getCurrentLang();
         params.set('lang', currentLang);
 
@@ -101,20 +101,20 @@ function showState(stateId) {
 function populateDetails(event, uid) {
     window.currentEvent = event;
     document.getElementById('mg-event-title').textContent = event.title;
-    
+
     const date = new Date(event.start);
     const locale = i18n.getCurrentLang() === 'el' ? 'el-GR' : 'en-GB';
-    const displayTime = date.toLocaleDateString(locale, { 
-        weekday: 'long', 
-        year: 'numeric', 
-        month: 'long', 
+    const displayTime = date.toLocaleDateString(locale, {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
         day: 'numeric',
         hour: '2-digit',
         minute: '2-digit'
     });
-    
+
     document.getElementById('mg-display-time').textContent = displayTime;
-    
+
     // Clean up description for UI (remove tech details like UID)
     let cleanDesc = event.description || "";
     cleanDesc = cleanDesc.replace(/UID: .*/, '').trim();

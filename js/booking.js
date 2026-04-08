@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyFFb53qyNdBBPDifTrGT3nHhdeWjEXzrpkxXCcDhPL9hwLAtnwqnLOKsHKKLduwSQB/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyMjJ9NRRr1CvbhjIw851gnh8Bj_mFUVRczU9K0mJjybt1hP8NPl_2DnyLKbP1SWI5X/exec';
 
 /**
  * Local Blocking Configuration
@@ -237,7 +237,8 @@ document.addEventListener("DOMContentLoaded", () => {
             name: document.getElementById('b-name').value,
             email: document.getElementById('b-email').value,
             phone: document.getElementById('b-phone').value,
-            services: selectedServices
+            services: selectedServices,
+            rescheduleUid: window.rescheduleUid || null
         };
 
         try {
@@ -277,6 +278,9 @@ function prefillBookingForm() {
     }
 
     if (!urlParams.has('reschedule')) return;
+
+    // Capture old UID for the backend to handle rescheduling
+    window.rescheduleUid = urlParams.get('uid');
 
     // Pre-fill fields
     const fields = { 'name': 'b-name', 'email': 'b-email', 'phone': 'b-phone' };

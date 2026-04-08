@@ -475,7 +475,7 @@ function doPost(e) {
 
     // --- Book Action ---
     if (postData.action === 'book') {
-      const { date, time, name, email, phone, services } = postData;
+      const { date, time, name, email, phone, services, rescheduleUid } = postData;
       const uid = Math.random().toString(36).substring(2, 10).toUpperCase();
       
       const [year, month, day] = date.split('-').map(Number);
@@ -489,8 +489,29 @@ function doPost(e) {
       
       getPrimaryCalendar().createEvent(title, startTime, endTime, { description: description });
       
-      // Notify Admin
-      sendAdminNotification(name, email, phone, `${date} ${time}`, services, uid);
+      // Handle Rescheduling Logic
+      if (rescheduleUid) {
+        let oldDetails = "Unknown";
+        const allCals = getCalendars();
+        const now = new Date();
+        const future = new Date(now.getTime() + 60 * 24 * 60 * 60 * 1000);
+        
+        for (const cal of allCals) {
+          const events = cal.getEvents(now, future);
+          for (const ev of events) {
+            if (ev.getDescription().includes(`UID: ${rescheduleUid}`)) {
+              oldDetails = Utilities.formatDate(ev.getStartTime(), Session.getScriptTimeZone(), "dd/MM/yyyy HH:mm");
+              ev.deleteEvent();
+              cleanupTriggerByUID(rescheduleUid);
+              break;
+            }
+          }
+        }
+        sendAdminRescheduleNotification(name, email, phone, `${date} ${time}`, services, uid, oldDetails);
+      } else {
+        // Notify Admin (Normal Booking)
+        sendAdminNotification(name, email, phone, `${date} ${time}`, services, uid);
+      }
       
       // Send immediate confirmation with Manage link
       sendInitialConfirmationEmail(email, name, startTime, uid);
@@ -656,6 +677,34 @@ DETAILS:
 - UID: ${uid}
 
 The event and its 9:00 AM reminder have been removed from the system.`;
+
+  if (SENDER_ALIAS !== '') {
+    GmailApp.sendEmail(adminEmail, subject, body, { from: SENDER_ALIAS, name: SENDER_NAME });
+  } else {
+    MailApp.sendEmail(adminEmail, subject, body, { name: SENDER_NAME });
+  }
+}
+
+/**
+ * Sends a notification email to the clinic owner specifically about a RESCHEDULED appointment.
+ */
+function sendAdminRescheduleNotification(name, email, phone, slotStr, services, uid, oldDetails) {
+  const adminEmail = '1123alberto@gmail.com'; 
+  const subject = "★ RESCHEDULED Appointment - " + name;
+  const body = `A patient has changed their appointment date!
+  
+OLD APPOINTMENT:
+- Original Time: ${oldDetails}
+
+NEW APPOINTMENT DETAILS:
+- Name: ${name}
+- Email: ${email}
+- Phone: ${phone}
+- New Date/Time: ${slotStr}
+- Services: ${services || 'None'}
+- New UID: ${uid}
+
+The old event has been automatically removed from your calendar.`;
 
   if (SENDER_ALIAS !== '') {
     GmailApp.sendEmail(adminEmail, subject, body, { from: SENDER_ALIAS, name: SENDER_NAME });
