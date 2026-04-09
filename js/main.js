@@ -40,4 +40,51 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
   window.closeModal = closeModal;
+
+  // Sync Heights Implementation using Card 1 as reference
+  const syncArticleHeights = () => {
+    const slots = document.querySelectorAll('.article-slot');
+    if (slots.length > 0) {
+      // Reset heights first to measure natural height
+      slots.forEach(slot => slot.style.minHeight = 'auto');
+      
+      // Card 1 is the reference
+      const referenceHeight = slots[0].offsetHeight;
+      slots.forEach(slot => {
+        slot.style.minHeight = `${referenceHeight}px`;
+      });
+    }
+  };
+
+  // Initial sync and event listeners
+  window.addEventListener('load', () => {
+    setTimeout(syncArticleHeights, 200); // Wait for fonts/layout
+  });
+  window.addEventListener('resize', syncArticleHeights);
+  document.addEventListener('languageChanged', syncArticleHeights);
+
+  // Alternating Articles Logic
+  const articleSlots = document.querySelectorAll('.article-slot');
+  articleSlots.forEach((slot, index) => {
+    let currentIdx = 0;
+    const items = slot.querySelectorAll('.article-item');
+    if (items.length < 2) return;
+
+    // Staggered start for a more dynamic feel
+    setTimeout(() => {
+      setInterval(() => {
+        const currentItem = items[currentIdx];
+        currentIdx = (currentIdx + 1) % items.length;
+        const nextItem = items[currentIdx];
+
+        // Fade out current
+        currentItem.classList.remove('active-article');
+        currentItem.classList.add('inactive-article');
+
+        // Fade in next
+        nextItem.classList.remove('inactive-article');
+        nextItem.classList.add('active-article');
+      }, 8000); // Rotate every 8 seconds
+    }, index * 2000);
+  });
 });

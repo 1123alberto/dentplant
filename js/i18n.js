@@ -15,42 +15,72 @@
       'booking.btn': 'Ηλεκτρονικη Κρατηση',
 
       /* ── index.html — article cards ──────────── */
-      'card1.title': 'Οδοντικά Εμφυτεύματα: Πότε Είναι η Κατάλληλη Στιγμή;',
-      'card1.excerpt': 'Τα οδοντικά εμφυτεύματα αποτελούν την πλέον αξιόπιστη λύση για την αποκατάσταση των δοντιών. Ανακαλύψτε πότε αυτή εξαιρετική επιλογή είναι η ιδανική για εσάς και το χαμόγελό σας.',
-      'card2.title': 'Μίνι Οδοντικά Εμφυτεύματα',
-      'card2.excerpt': 'Τα "μίνι εμφυτεύματα" (Mini Implants) αποτελούν μια σύγχρονη και ελάχιστα επεμβατική λύση. Ας δούμε πότε πλεονεκτούν έναντι των παραδοσιακών εμφυτευμάτων.',
-      'card3.title': 'Ορθοδοντική Θεραπεία',
-      'card3.excerpt': 'Η αναβάθμιση της αισθητικής και της υγείας. Η ορθοδοντική φροντίζει για τη διόρθωση της θέσης των δοντιών, χαρίζοντάς σας ένα αρμονικό, λαμπερό και υγιές χαμόγελο.',
+      'card1.title': 'Είμαι κατάλληλος υποψήφιος για οδοντικά εμφυτεύματα;',
+      'card1.excerpt': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι κατάλληλοι για εμφυτεύματα. Τα υγιή ούλα και η επαρκής οστική μάζα αποτελούν τους βασικούς παράγοντες επιτυχίας.',
+      'card2.title': 'Το χρονοδιάγραμμα της θεραπείας οδοντικών εμφυτευμάτων',
+      'card2.excerpt': 'Η διαδικασία τοποθέτησης εμφυτεύματος είναι ξεκάθαρη αλλά απαιτεί χρόνο. Από την αρχική ενημέρωση μέχρι την τοποθέτηση της στεφάνης, η διαδρομή διαρκεί συνήθως 3-6 μήνες.',
+      'card3.title': 'Εμφυτεύματα, Γέφυρες ή Τεχνητές Οδοντοστοιχίες',
+      'card3.excerpt': 'Τα οδοντικά εμφυτεύματα υπερτερούν σαφώς. Προστατεύουν το οστό της γνάθου και δεν απαιτούν τρόχισμα των διπλανών δοντιών, προσφέροντας την πιο φυσική λύση.',
+      'card4.title': 'Οστικό Μόσχευμα και Εμφυτεύματα',
+      'card4.excerpt': 'Η έλλειψη οστικής μάζας σπάνια αποτελεί οριστικό πρόβλημα. Η τοποθέτηση οστικού μοσχεύματος είναι πλέον μια διαδικασία ρουτίνας που δημιουργεί το απαραίτητο θεμέλιο.',
+      'card5.title': 'Πόσο κοστίζουν πραγματικά τα οδοντικά εμφυτεύματα;',
+      'card5.excerpt': 'Τα εμφυτεύματα έχουν μεγαλύτερο αρχικό κόστος, αλλά η αντοχή τους στον χρόνο τα καθιστά την πιο συμφέρουσα και ποιοτική λύση για το μέλλον.',
+      'card6.title': 'Οδοντικά Εμφυτεύματα με Μέθη: Χωρίς άγχος',
+      'card6.excerpt': 'Το οδοντιατρικό άγχος είναι φυσιολογικό, αλλά η σύγχρονη "μέθη" καθιστά τη διαδικασία των εμφυτευμάτων πολύ πιο άνετη και ανώδυνη από όσο φαντάζεστε.',
 
-      /* ── index.html — modal 2 (implants) ─────── */
-      'modal2.title': 'Πότε Είναι η Κατάλληλη Στιγμή για Οδοντικά Εμφυτεύματα;',
-      'modal2.p1': 'Ίσως γνωρίζετε ήδη ότι τα οδοντικά εμφυτεύματα αποτελούν τον πιο σύγχρονο και αποτελεσματικό τρόπο για την αναπλήρωση φθαρμένων ή χαμένων δοντιών. Πότε, όμως, είναι η ιδανική στιγμή για να προχωρήσετε σε αυτή τη λύση;',
-      'modal2.p2': '<span class="font-bold text-gray-900">Για την αποκατάσταση της αισθητικής του προσώπου σας</span><br>Ο κύριος ρόλος των οδοντικών εμφυτευμάτων είναι να επαναφέρουν το χαμόγελό σας στην αρχική του αίγλη. Σε αντίθεση με τις γέφυρες, παρέχουν μια μόνιμη, εξαιρετικά φυσική δομή που αντέχει στον χρόνο.',
-      'modal2.p3': '<span class="font-bold text-gray-900">Για την προστασία και τη διατήρηση του οστού της γνάθου</span><br>Η απώλεια δοντιών μπορεί βαθμιαία να οδηγήσει σε αλλοίωση και απορρόφηση του οστού. Καθυστερώντας την τοποθέτηση ενός εμφυτεύματος ρισκάρετε την απώλεια οστικής μάζας που είναι απαραίτητη για τη μελλοντική στήριξή του.',
-      'modal2.p4': 'Για μια εξατομικευμένη ενημέρωση και για να μάθετε πώς μπορούμε να επαναφέρουμε το χαμόγελό σας, επικοινωνήστε σήμερα με το <span class="text-brand-blue font-bold">Οδοντιατρείο του Παλαιού Φαλήρου</span> στο 210 931-2651.',
+      /* ── index.html — modal 2 (Candidate) ─────── */
+      'modal2.title': 'Είμαι κατάλληλος υποψήφιος για οδοντικά εμφυτεύματα; Όλα όσα πρέπει να γνωρίζετε',
+      'modal2.p1': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι εξαιρετικοί υποψήφιοι για οδοντικά εμφυτεύματα. Οι βασικοί παράγοντες που καθορίζουν την καταλληλότητα είναι η υγεία των ούλων και η επαρκής οστική μάζα στη γνάθο για τη στήριξη του εμφυτεύματος.',
+      'modal2.p2': 'Καταστάσεις όπως ο διαβήτης ή το ιστορικό καπνίσματος δεν σας αποκλείουν απαραίτητα — απλώς απαιτούν μια πιο προσεκτική αξιολόηση και προετοιμασία από την ομάδα μας.',
+      'modal2.p3': '<span class="font-bold text-gray-900">Τι γίνεται αν έχω χάσει οστό;</span><br>Αν σας έχουν πει στο παρελθόν ότι έχετε χάσει πολύ οστό, μην ανησυχείτε. Η τοποθέτηση οστικού μοσχεύματος μπορεί συχνά να αποκαταστήσει το θεμέλιο που απαιτείται για ένα επιτυχημένο εμφύτευμα.',
+      'modal2.p4': 'Ο καλύτερος τρόπος για να μάθετε με σιγουριά είναι μια απλή διαγνωστική επίσκεψη. Η ομάδα μας θα αξιολογήσει το ιστορικό σας, θα λάβει ένα 3D scan και θα σας δώσει μια ξεκάθαρη και ειλικρινή απάντηση. Οι περισσότεροι ασθενείς εκπλήσσονται ευχάριστα όταν μαθαίνουν ότι πληρούν τις προϋποθέσεις.',
 
-      /* ── index.html — modal 3 (mini implants) ── */
-      'modal3.title': 'Μίνι Οδοντικά Εμφυτεύματα (Mini Implants)',
-      'modal3.p1': 'Μια ιδιαίτερα δημοφιλής τάση στη σύγχρονη οδοντιατρική είναι η επιλογή των "μίνι οδοντικών εμφυτευμάτων" έναντι των παραδοσιακών. Ας εξετάσουμε ποια είναι τα οφέλη και ποιοι οι πιθανοί περιορισμοί.',
-      'modal3.p2': '<span class="font-bold text-gray-900">Τα Πλεονεκτήματα</span><br>Τα μίνι εμφυτεύματα είναι ελάχιστα επεμβατικά, απαιτούν λιγότερο χρόνο τοποθέτησης και συχνά ενδείκνυνται για μικρότερους χώρους ή για ασθενείς με περιορισμένη οστική μάζα όπου τα κλασικά εμφυτεύματα δεν θα μπορούσαν να στηριχθούν.',
-      'modal3.p3': '<span class="font-bold text-gray-900">Τι Πρέπει να Προσέξετε</span><br>Επειδή πρόκειται για μια νεότερη προσέγγιση σε σχέση με τα συμβατικά εμφυτεύματα, δεν διαθέτουμε ακόμα μακροχρόνιες μελέτες δεκαετιών για την αντοχή τους σε όλες τις συνθήκες. Η σωστή διάγνωση και ανάλυση 3D του οστού σας είναι απαραίτητη προγραμματίζοντας τη θεραπεία.',
+      /* ── index.html — modal 3 (Timeline) ── */
+      'modal3.title': 'Το χρονοδιάγραμμα της θεραπείας οδοντικών εμφυτευμάτων: Τι να περιμένετε',
+      'modal3.p1': 'Η διαδικασία των εμφυτευμάτων είναι μια καλά σχεδιασμένη διαδρομή που απαιτεί χρόνο για να διασφαλιστεί η μόνιμη σταθερότητα. Ας δούμε τα βασικά βήματα:',
+      'modal3.p2': '<span class="font-bold text-gray-900">1. Διάγνωση & Σχεδιασμός:</span> Αξιολογούμε την κατάσταση των δοντιών, των ούλων και του οστού σας, δημιουργώντας ένα απόλυτα εξατομικευμένο πλάνο θεραπείας.',
+      'modal3.p3': '<span class="font-bold text-gray-900">2. Τοποθέτηση Εμφυτεύματος:</span> Ένας μικρός πείρος τιτανίου τοποθετείται στη γνάθο με τοπική αναισθησία. Οι περισσότεροι ασθενείς αναφέρουν ελάχιστη έως καθόλου ενόχληση μετά τη διαδικασία.',
+      'modal3.p4': '<span class="font-bold text-gray-900">3. Επούλωση (Οστεοενσωμάτωση):</span> Κατά τη διάρκεια 2–4 μηνών, το εμφύτευμα ενσωματώνεται φυσικά με το οστό, δημιουργώντας μια σταθερή και μόνιμη βάση.',
+      'modal3.p5': '<span class="font-bold text-gray-900">4. Τοποθέτηση Στεφάνης:</span> Μόλις ολοκληρωθεί η επούλωση, τοποθετείται η τελική στεφάνη (θήκη). Το αποτέλεσμα μοιάζει, έχει την αίσθηση και λειτουργεί ακριβώς όπως ένα φυσικό δόντι.',
+      'modal3.p6': 'Από την αρχή μέχρι το τέλος, η διαδικασία διαρκεί συνήθως 3–6 μήνες — το αποτέλεσμα όμως είναι σχεδιασμένο να διαρκέσει μια ζωή.',
 
-      /* ── index.html — modal 4 (orthodontics) ─── */
-      'modal4.title': 'Ο ρόλος της Ορθοδοντικής',
-      'modal4.p1': 'Η ορθοδοντική είναι ο τομέας της οδοντιατρικής που επικεντρώνεται στη διόρθωση της θέσης των δοντιών και των γνάθων, προσφέροντας λειτουργικότητα και αισθητική αρμονία.',
-      'modal4.p2': '<span class="font-bold text-gray-900">Τα "στραβά" δόντια δεν είναι μόνο αισθητικό ζήτημα:</span><br>1. Δυσκολεύουν τον σωστό καθαρισμό, αυξάνοντας τον κίνδυνο τερηδόνας και ουλίτιδας.<br>2. Προκαλούν ανισομερή κατανομή των δυνάμεων κατά τη μάσηση, που μπορεί να οδηγήσει σε φθορές.',
-      'modal4.p3': '<span class="font-bold text-gray-900">Η Ορθοδοντική στην Εμφυτευματολογία</span><br>Σε αρκετές περιπτώσεις ασθενών με ελλείψεις δοντιών, η ορθοδοντική θεραπεία προηγείται, ώστε να δημιουργηθεί ο κατάλληλος χώρος για την ασφαλή τοποθέτηση ενός εμφυτεύματος. Απαιτείται στενή συνεργασία των δύο ειδικοτήτων για ένα τέλειο τελικό αποτέλεσμα.',
+      /* ── index.html — modal 4 (Comparison) ─── */
+      'modal4.title': 'Εμφυτεύματα, Γέφυρες ή Τεχνητές Οδοντοστοιχίες: Ποιο είναι το σωστό για εσάς;',
+      'modal4.p1': 'Όταν πρόκειται για την αντικατάσταση δοντιών, έχετε τρεις κύριες επιλογές — οι οποίες όμως δεν είναι ισότιμες μεταξύ τους.',
+      'modal4.p2': '<span class="font-bold text-gray-900">Οι Τεχνητές Οδοντοστοιχίες (μασέλες)</span> είναι αφαιρούμενες και οικονομικές, αλλά μπορεί να μετακινούνται, να προκαλούν δυσφορία και δεν εμποδίζουν την απώλεια οστού στη γνάθο με την πάροδο του χρόνου.',
+      'modal4.p3': '<span class="font-bold text-gray-900">Οι Γέφυρες</span> είναι σταθερές και φαίνονται φυσικές, απαιτούν όμως το τρόχισμα υγιών γειτονικών δοντιών για να λειτουργήσουν ως στηρίγματα — ένας μόνιμος συμβιβασμός για τα υγιή σας δόντια.',
+      'modal4.p4': '<span class="font-bold text-gray-900">Τα Οδοντικά Εμφυτεύματα</span> αποτελούν την κορυφαία λύση. Αντικαθιστούν τη ρίζα καθώς και το δόντι, διατηρούν το οστό της γνάθου σας και δεν επηρεάζουν τα γύρω δόντια. Είναι ό,τι πιο κοντινό σε ένα φυσικό δόντι προσφέρει η σύγχρονη οδοντιατρική.',
+      'modal4.p5': 'Για τους περισσότερους ασθενείς, τα εμφυτεύματα αποτελούν την πιο έξυπνη μακροπρόθεσμη επένδυση για το χαμόγελο και τη στοματική τους υγεία.',
+
+      /* ── index.html — modal 5 (Bone Grafting) ─── */
+      'modal5.title': 'Οστικό Μόσχευμα και Εμφυτεύματα: Γιατί η απώλεια οστού δεν αποτελεί εμπόδιο',
+      'modal5.p1': 'Ένας συνηθισμένος λόγος που ορισμένοι ασθενείς πιστεύουν ότι δεν μπορούν να βάλουν εμφυτεύματα είναι η έλλειψη οστού. Όταν ένα δόντι χάνεται, το οστό της γνάθου κάτω από αυτό σταδιακά συρρικνώνεται.',
+      'modal5.p2': 'Αυτό όμως σπάνια σημαίνει το τέλος της προσπάθειας. Η τοποθέτηση οστικού μοσχεύματος είναι μια διαδικασία ρουτίνας που "χτίζει" ξανά το χαμένο οστό χρησιμοποιώντας φυσικά ή συνθετικά υλικά.',
+      'modal5.p3': 'Μόλις το μόσχευμα ενσωματωθεί —συνήθως μέσα σε λίγους μήνες— η περιοχή είναι έτοιμη να υποστηρίξει ένα εμφύτευμα με την ίδια ασφάλεια όπως κάθε άλλη. Πολλοί από τους ασθενείς μας που αρχικά είχαν λάβει αρνητική απάντηση αλλού, απέκτησαν επιτυχημένα εμφυτεύματα μετά από μια διαδικασία ανάπλασης οστού.',
+
+      /* ── index.html — modal 6 (Cost) ─── */
+      'modal6.title': 'Πόσο κοστίζουν πραγματικά τα οδοντικά εμφυτεύματα;',
+      'modal6.p1': 'Τα οδοντικά εμφυτεύματα έχουν ένα υψηλότερο αρχικό κόστος σε σύγκριση με άλλες επιλογές. Ωστόσο, στην πραγματικότητα, αποτελούν σχεδόν πάντα την πιο οικονομική λύση σε βάθος χρόνου.',
+      'modal6.p2': 'Οι τεχνητές οδοντοστοιχίες και οι γέφυρες συχνά χρειάζονται αντικατάσταση, επισκευή ή προσαρμογή με το πέρασμα των ετών. Τα εμφυτεύματα, με τη σωστή φροντίδα, διαρκούν για δεκαετίες — συχνά για μια ολόκληρη ζωή.',
+      'modal6.p3': 'Πέρα από το οικονομικό σκέλος, σκεφτείτε την ποιότητα ζωής: τα εμφυτεύματα σας επιτρέπουν να τρώτε, να μιλάτε και να χαμογελάτε με απόλυτη αυτοπεποίθηση, χωρίς την ανησυχία μετακινήσεων ή ενοχλήσεων.',
+
+      /* ── index.html — modal 7 (Sedation) ─── */
+      'modal7.title': 'Οδοντικά Εμφυτεύματα με Μέθη: Μια εμπειρία χωρίς στρες',
+      'modal7.p1': 'Το οδοντιατρικό άγχος είναι απίστευτα συνηθισμένο και απόλυτα κατανοητό. Τα ευχάριστα νέα είναι ότι η χειρουργική τοποθέτηση εμφυτευμάτων σήμερα είναι πολύ πιο άνετη από ό,τι περιμένουν οι περισσότεροι ασθενείς.',
+      'modal7.p2': 'Προσφέρουμε επιλογές "μέθης" (καταστολής) προσαρμοσμένες στο δικό σας επίπεδο άγχους. Είτε προτιμάτε μια ελαφριά χαλάρωση είτε μια βαθύτερη καταστολή (IV sedation), θα διασφαλίσουμε ότι αισθάνεστε απόλυτα ασφαλείς και ήρεμοι καθ’ όλη τη διάρκεια.',
+      'modal7.p3': 'Οι περισσότεροι ασθενείς εκπλήσσονται από το πόσο λίγο αισθάνονται και το πόσο γρήγορα τελειώνει η διαδικασία. Η ίδια η επέμβαση πραγματοποιείται με τοπική αναισθησία, που σημαίνει ότι δεν υπάρχει πόνος κατά τη διάρκεια του χειρουργείου.',
+      'modal7.p4': 'Αν ο φόβος σας εμποδίζει από το να αποκτήσετε το χαμόγελο που σας αξίζει, ας το συζητήσουμε. Μια εμπειρία χωρίς άγχος ξεκινά με μια απλή κουβέντα.',
+
 
       /* ── Quotes ───────────────────────────────── */
       'quote.index': '&quot; Η υγεία και η λειτουργικότητα του χαμόγελού σας αποτελούν για εμάς κορυφαία προτεραιότητα.<br>Στο υπερσύγχρονο ιατρείο μας, συνδυάζουμε την επιστημονική αρτιότητα με την ανθρώπινη προσέγγιση. Σας καλωσορίζουμε σε ένα περιβάλλον όπου η προσωπική φροντίδα συναντά την καινοτομία. &quot;',
-      'quote.about': '&quot; Η αφοσίωσή μας στην επιστήμη της οδοντιατρικής μεταφράζεται σε εξατομικευμένη και ουσιαστική φροντίδα για κάθε ασθενή.<br>Με οδηγό τη συνεχή εξέλιξη και το σεβασμό στις ανάγκες σας, χτίζουμε σχέσεις εμπιστοσύνης που διαρκούν. Αποτελεί τιμή μας να αναλαμβάνουμε τη φροντίδα του χαμόγελού σας. &quot;',
-      'quote.services': '&quot; Προσφέρουμε ένα ευρύ φάσμα σύγχρονων οδοντιατρικών θεραπειών, απόλυτα προσαρμοσμένων στις δικές σας μοναδικές απαιτήσεις.<br>Με την υποστήριξη τεχνολογίας αιχμής και εξειδικευμένης γνώσης, διασφαλίζουμε ανώδυνα και άριστα αποτελέσματα. Κάθε θεραπεία σχεδιάζεται με γνώμονα τη βέλτιστη στοματική σας υγεία. &quot;',
-      'quote.contact': '&quot; Είμαστε πάντα στη διάθεσή σας για να ακούσουμε τις ανάγκες σας και να επιλύσουμε όποιες απορίες έχετε.<br>Επικοινωνήστε μαζί μας σήμερα για να προγραμματίσουμε την επόμενη επίσκεψή σας στο ιατρείο. Με μεγάλη χαρά αναμένουμε να σας εξυπηρετήσουμε από κοντά. &quot;',
+      'quote.about': '&quot; Στόχος μου είναι να γεφυρώσω το χάσμα ανάμεσα στην εξατομικευμένη, ήπια φροντίδα ενός οικογενειακού ιατρείου και στην πολυπλοκότητα της σύγχρονης χειρουργικής. Είτε πρόκειται για μια απλή προληπτική εξέταση είτε για μια σύνθετη επέμβαση, η προσοχή μας είναι πάντα στραμμένη στη μακροπρόθεσμη υγεία και την αυτοπεποίθηση των ασθενών μας. &quot;',
+      'quote.services': '&quot; Προσφέρουμε ένα πλήρες φάσμα σύγχρονων οδοντιατρικών θεραπειών, καθεμία από τις οποίες είναι προσαρμοσμένη στις πραγματικές σας ανάγκες.<br>Με την υποστήριξη της τελευταίας λέξης της τεχνολογίας και πολυετή εμπειρία, στοχεύουμε σε αποτελέσματα που φαίνονται φυσικά και αντέχουν στον χρόνο. Κάθε μας απόφαση οδηγείται από τη δική σας στοματική υγεία. &quot;',
 
-      /* ── about.html — biography ───────────────── */
-      'about.p1': 'Με βαθιά αφοσίωση στην επιστήμη και τον άνθρωπο, ο Δρ. Άγγελος Μοσχόπουλος ξεκίνησε την ακαδημαϊκή του πορεία στο Πανεπιστήμιο McGill, ολοκληρώνοντας το 1992 τις σπουδές του στη Βιολογία, με εξειδίκευση στη Μικροβιολογία και την Ανοσολογία.',
+      /* ── about.html — biography sections ──────── */
+      'about.p1': '<strong class="text-gray-900">Δρ. Αλβέρτος Μοσχόπουλος</strong> αποφοίτησε από την Ιατρική Σχολή Semmelweis το 1993, έχοντας ήδη θέσει τις βάσεις για μια καριέρα αφιερωμένη στην επιστημονική εξέλιξη.',
       'about.p2': 'Η αγάπη του για την έρευνα τον οδήγησε στο Ελληνικό Ινστιτούτο Παστέρ, όπου εργάστηκε ως ερευνητής για δύο χρόνια, προτού αφοσιωθεί στην Οδοντιατρική, λαμβάνοντας το πτυχίο του από το Πανεπιστήμιο Semmelweis το 1999.',
-      'about.p3': 'Ο Δρ. Μοσχόπουλος ασκεί την οδοντιατρική στα νότια προάστια από το 2002, καλωσορίζοντας τους ασθενείς του στην προσωπική του κλινική εμφυτευμάτων στο Παλαιό Φάληρο. Παράλληλα, από το 2003 αποτελεί Επιστημονικό Σύμβουλο στο τμήμα Στοματικής και Γναθοπροσωπικής Χειρουργικής του Νοσοκομείου Metropolitan.',
+      'about.p3': 'Ο Δρ. Μοσχόπουλος ασκεί την οδοντιατρική στα νότια προάστια από το 2002, καλωσορίζοντας τους ασθενείς του στην προσωπική του κλινική εμφυτευμάτων στο Παλαιό Φαλήρου. Παράλληλα, από το 2003 αποτελεί Επιστημονικό Σύμβουλο στο τμήμα Στοματικής και Γναθοπροσωπικής Χειρουργικής του Νοσοκομείου Metropolitan.',
       'about.p4': 'Εκεί έχει αναπτύξει υψηλή εξειδίκευση και εμπειρία στις θεραπείες με οδοντικά εμφυτεύματα, δίνοντας ιδιαίτερη έμφαση στην άρτια διαχείριση και την πλήρη αισθητική και λειτουργική αποκατάσταση του χαμόγελου.',
       'about.p5': 'Με όραμα την προσφορά στην κοινωνία, το 2001 συνέβαλε καθοριστικά στην ίδρυση της Οδοντιατρικής Κλινικής των Δημοτικών Ιατρείων Παλαιού Φαλήρου.',
       'about.p6': 'Εδώ και περισσότερες από δύο δεκαετίες, φροντίζει με χαρά και υπευθυνότητα την προληπτική οδοντιατρική των παιδιών του δήμου. Η πολύτιμη εθελοντική του δράση τιμήθηκε το 2015 σε ειδική τελετή από τους Δήμους Παλαιού Φαλήρου και Πειραιά.',
@@ -113,17 +143,16 @@
       'mg.cancel_btn': 'Ακύρωση Ραντεβού',
       'mg.reschedule_btn': 'Αλλαγή Ραντεβού',
       'mg.confirm_title': 'Επιβεβαίωση Ακύρωσης',
-      'mg.confirm_text': 'Είστε σίγουροι ότι θέλετε να ακυρώσετε το ραντεβού σας; Αυτή η ενέργεια δεν αναιρείται.',
+      'mg.confirm_text': 'Είστε σίγουροι ότι θέλετε να ακυρώσετε το ραντεβού σας; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.',
       'mg.confirm_yes': 'Ναι, Ακύρωση',
-      'mg.confirm_no': 'Όχι, Πίσω',
-      'mg.cancel_success': 'Το ραντεβού σας ακυρώθηκε επιτυχώς.',
-      'mg.redirecting': 'Θα μεταφερθείτε στην αρχική σελίδα σε λίγα δευτερόλεπτα...',
+      'mg.confirm_no': 'Όχι, Επιστροφή',
+      'mg.cancel_success': 'Το ραντεβού σας ακυρώθηκε με επιτυχία.',
+      'mg.redirecting': 'Επιστροφή στην αρχική σελίδα σε λίγα δευτερόλεπτα...',
     },
-
     en: {
       /* ── Navigation ───────────────────────────── */
       'nav.home': 'Home',
-      'nav.doctor': 'The Dentist',
+      'nav.doctor': 'The Doctor',
       'nav.services': 'Services',
       'nav.contact': 'Contact',
 
@@ -131,45 +160,74 @@
       'booking.btn': 'Online Appointment',
 
       /* ── index.html — article cards ──────────── */
-      'card1.title': 'Dental Implants: When Is the Right Time?',
-      'card1.excerpt': 'Dental implants are the most reliable solution for tooth restoration. Discover when this exceptional option is ideal for you and your smile.',
-      'card2.title': 'Mini Dental Implants',
-      'card2.excerpt': 'Mini Implants are a modern, minimally invasive solution. Let us explore when they offer advantages over traditional implants.',
-      'card3.title': 'Orthodontic Treatment',
-      'card3.excerpt': 'Elevating both aesthetics and health. Orthodontics corrects tooth alignment, gifting you a harmonious, radiant, and healthy smile.',
+      'card1.title': 'Am I a Candidate for Dental Implants?',
+      'card1.excerpt': 'Most adults who are missing one or more teeth are good candidates for dental implants. Healthy gums and sufficient jawbone are key.',
+      'card2.title': 'The Dental Implant Timeline',
+      'card2.excerpt': 'The implant process is straightforward but takes time. From consultation to final crown, the journey typically takes 3–6 months.',
+      'card3.title': 'Implants vs. Bridges vs. Dentures',
+      'card3.excerpt': 'Dental implants stand alone. They replace the root as well as the tooth, preserve your jawbone, and require no damage to surrounding teeth, unlike bridges or dentures.',
+      'card4.title': 'Bone Grafting and Implants',
+      'card4.excerpt': 'Insufficient bone is rarely the end of the story. Bone grafting is a routine procedure that can rebuild the foundation needed for your smile.',
+      'card5.title': 'How Much Do Dental Implants Really Cost?',
+      'card5.excerpt': 'Implants have a higher upfront cost but last decades. They are almost always the most cost-effective solution for quality of life.',
+      'card6.title': 'Dental Implants Under Sedation',
+      'card6.excerpt': 'Dental anxiety is common, but modern sedation makes implant surgery far more comfortable than expected.',
 
-      /* ── index.html — modal 2 (implants) ─────── */
-      'modal2.title': 'When Is the Right Time for Dental Implants?',
-      'modal2.p1': 'You may already know that dental implants are the most modern and effective way to replace missing or damaged teeth. But when exactly is the ideal moment to take this step?',
-      'modal2.p2': '<span class="font-bold text-gray-900">To restore your facial aesthetics</span><br>The primary role of dental implants is to bring your smile back to its original splendour. Unlike bridges, they provide a permanent, highly natural structure that stands the test of time.',
-      'modal2.p3': '<span class="font-bold text-gray-900">To protect and preserve jawbone density</span><br>Tooth loss can gradually lead to bone resorption and deterioration. Delaying implant placement risks losing the bone mass essential for future support.',
-      'modal2.p4': 'For a personalised consultation and to learn how we can restore your smile, contact the <span class="text-brand-blue font-bold">Paleo Faliro Dental Clinic</span> today at 210 931-2651.',
+      /* ── index.html — modal 2 (Candidate) ─────── */
+      'modal2.title': 'Am I a Candidate for Dental Implants? What You Need to Know',
+      'modal2.p1': 'Most adults who are missing one or more teeth are good candidates for dental implants. The key factors are healthy gums and sufficient jawbone to support the implant.',
+      'modal2.p2': 'Conditions like diabetes or a history of smoking don\'t necessarily rule you out — they simply require a more careful assessment by our team.',
+      'modal2.p3': '<span class="font-bold text-gray-900">Lost too much bone?</span><br>If you\'ve been told you\'ve lost too much bone, don\'t worry. Bone grafting can often restore the foundation needed for a successful implant.',
+      'modal2.p4': 'The best way to find out is a simple consultation. Our team will evaluate your mouth, take a scan, and give you a clear, honest answer. Most patients are surprised to learn they qualify.',
 
-      /* ── index.html — modal 3 (mini implants) ── */
-      'modal3.title': 'Mini Dental Implants',
-      'modal3.p1': 'A particularly popular trend in modern dentistry is choosing mini dental implants over traditional ones. Let us examine the benefits and potential limitations.',
-      'modal3.p2': '<span class="font-bold text-gray-900">The Advantages</span><br>Mini implants are minimally invasive, require less placement time, and are often indicated for smaller spaces or patients with limited bone mass where conventional implants would not be viable.',
-      'modal3.p3': '<span class="font-bold text-gray-900">What You Should Know</span><br>As a newer approach compared to conventional implants, long-term multi-decade studies on their durability in all conditions are still limited. Thorough diagnosis and 3D bone analysis are essential when planning treatment.',
+      /* ── index.html — modal 3 (Timeline) ── */
+      'modal3.title': 'The Dental Implant Timeline: What to Expect from Start to Finish',
+      'modal3.p1': 'The implant process is straightforward, though it does take time for permanent stability. Here\'s a simple overview of what to expect:',
+      'modal3.p2': '<span class="font-bold text-gray-900">1. Consultation & planning:</span> We assess your teeth, gums, and bone structure and create a personalised treatment plan.',
+      'modal3.p3': '<span class="font-bold text-gray-900">2. Implant placement:</span> A small titanium post is placed into the jawbone under local anaesthesia. Most patients report minimal discomfort.',
+      'modal3.p4': '<span class="font-bold text-gray-900">3. Healing (osseointegration):</span> Over 2–4 months, the implant fuses naturally with the bone — creating a stable, permanent foundation.',
+      'modal3.p5': '<span class="font-bold text-gray-900">4. Crown fitting:</span> Once healed, a custom-made crown is attached. The result looks, feels, and functions just like a natural tooth.',
+      'modal3.p6': 'From start to finish, the journey typically takes 3–6 months — and the result is designed to last a lifetime.',
 
-      /* ── index.html — modal 4 (orthodontics) ─── */
-      'modal4.title': 'The Role of Orthodontics',
-      'modal4.p1': 'Orthodontics is the dental specialty focused on correcting the position of teeth and jaws, delivering functional restoration and aesthetic harmony.',
-      'modal4.p2': '<span class="font-bold text-gray-900">Crooked teeth are not just an aesthetic issue:</span><br>1. They make proper cleaning difficult, increasing the risk of cavities and gingivitis.<br>2. They cause uneven force distribution during chewing, which can lead to premature wear.',
-      'modal4.p3': '<span class="font-bold text-gray-900">Orthodontics in Implantology</span><br>In many cases involving missing teeth, orthodontic treatment precedes implant placement to create the proper space for safe positioning. Close collaboration between both specialities is essential for a perfect final result.',
+      /* ── index.html — modal 4 (Comparison) ─── */
+      'modal4.title': 'Implants vs. Bridges vs. Dentures: Which Is Right for You?',
+      'modal4.p1': 'When replacing missing teeth, you have three main options — and they\'re not all equal.',
+      'modal4.p2': '<span class="font-bold text-gray-900">Dentures</span> are removable and affordable, but can slip, feel uncomfortable, and don\'t prevent bone loss over time.',
+      'modal4.p3': '<span class="font-bold text-gray-900">Bridges</span> are fixed and look natural, but require grinding down healthy neighbouring teeth to act as anchors — a permanent compromise.',
+      'modal4.p4': '<span class="font-bold text-gray-900">Dental implants</span> stand alone. They replace the root as well as the tooth, preserve your jawbone, and require no damage to surrounding teeth.',
+      'modal4.p5': 'For most patients who are candidates, implants are simply the smartest long-term investment in their smile and oral health.',
+
+      /* ── index.html — modal 5 (Bone Grafting) ─── */
+      'modal5.title': 'Bone Grafting and Implants: Why It\'s Not a Problem If You\'ve Lost Bone',
+      'modal5.p1': 'One of the most common reasons patients are told they can\'t have implants is insufficient bone. When a tooth is lost, the jawbone beneath it gradually shrinks.',
+      'modal5.p2': 'But this is rarely the end of the story. Bone grafting is a routine procedure that rebuilds lost bone using natural or synthetic material.',
+      'modal5.p3': 'Once the graft has integrated —usually within a few months— the area is ready to support an implant just like any other. Many of our patients who were initially told "no" elsewhere have gone on to receive successful implants after grafting.',
+
+      /* ── index.html — modal 6 (Cost) ─── */
+      'modal6.title': 'How Much Do Dental Implants Really Cost — and Are They Worth It?',
+      'modal6.p1': 'Dental implants have a higher upfront cost than other options. But when you look at the full picture, they are almost always the most cost-effective solution over time.',
+      'modal6.p2': 'Dentures and bridges need to be replaced, repaired, and adjusted over the years. Implants, with proper care, last decades — often a lifetime.',
+      'modal6.p3': 'Beyond money, consider quality of life: implants let you eat, speak, and smile with complete confidence, without worrying about attachments or movement.',
+
+      /* ── index.html — modal 7 (Sedation) ─── */
+      'modal7.title': 'Dental Implants Under Sedation: A Stress-Free Experience',
+      'modal7.p1': 'Dental anxiety is incredibly common — and completely understandable. The good news is that implant surgery today is far more comfortable than most patients expect.',
+      'modal7.p2': 'We offer sedation options tailored to your level of anxiety. Whether you prefer light oral sedation or deeper IV sedation, we\'ll make sure you feel safe and at ease throughout.',
+      'modal7.p3': 'Most patients are genuinely surprised by how little they feel — and how quickly it\'s over. The procedure itself is performed under local anaesthesia, meaning there is no pain during the surgery.',
+      'modal7.p4': 'If fear has been holding you back from getting the smile you deserve, let\'s talk. A stress-free experience starts with a simple conversation.',
 
       /* ── Quotes ───────────────────────────────── */
       'quote.index': '&quot; The health and functionality of your smile are our top priority.<br>In our state-of-the-art practice, we combine scientific excellence with a human touch. We welcome you to an environment where personalised care meets innovation. &quot;',
       'quote.about': '&quot; My goal is to bridge the gap between personalized, gentle care of a family practice and the complexities of surgery. Whether we are performing a surgical procedure or a routine check-up, our focus is always on the long-term well-being and confidence of our patients. &quot;',
       'quote.services': '&quot; We provide a full range of modern dental treatments, each one tailored to what you actually need.<br>Backed by the latest technology and years of hands-on expertise, we aim for results that look natural and last. Your oral health drives every decision we make. &quot;',
-      'quote.contact': '&quot; We are always at your disposal to listen to your needs and address any questions you may have.<br>Contact us today to schedule your next visit to our practice. We look forward to welcoming you. &quot;',
 
-      /* ── about.html — biography ───────────────── */
-      'about.p1': 'With a career spanning over two decades and two continents, Dr. Angelo Moschopoulos brings a rare depth of scientific knowledge and clinical precision to the field of restorative and implant dentistry. His approach combines the rigorous discipline of biological research with the artistry of modern dental aesthetics, ensuring that every patient receives care that is as functional as it is beautiful.',
-      'about.p2': 'Dr. Moshopoulos’s journey began at McGill University in Montreal, where he earned his Bachelor of Science in 1992, specializing in Microbiology and Immunology. This deep understanding of the biological foundations of human health remains a cornerstone of his practice today.',
-      'about.p3': 'Following his undergraduate studies, he dedicated two years to high-level research at the Hellenic Pasteur Institute, contributing to the advancement of medical science before transitioning his focus to clinical dentistry. He earned his Doctor of Dental Medicine from Semmelweis University in 1999, blending his background in bioscience with advanced dental surgery.',
-      'about.p4': 'Since 2002, Dr. Moshopoulos has served the southern suburbs of Athens through his private practice in Paleo Faliro. His clinical expertise is further bolstered by his longstanding role in the Department of Oral and Maxillofacial Surgery at Metropolitan Hospital, a position he has held since 2003. This dual role in both private practice and a major hospital environment allows him to stay at the forefront of surgical innovations, with a specific emphasis on:<ul class="list-disc ml-6 mt-4 space-y-2"><li><strong>Functional Rehabilitation:</strong> Restoring the full power of the bite and oral health.</li><li><strong>Aesthetic Integration:</strong> Ensuring dental work complements the natural features of the patient.</li><li><strong>Precision Implant Placement:</strong> Utilizing the latest techniques for long-term stability.</li></ul>',
-      'about.p5': 'Beyond his clinical achievements, Dr. Moshopoulos is deeply invested in the health of the Paleo Faliro community. In 2001, he was instrumental in establishing the Dental Clinic at the Municipal Medical Center of Paleo Faliro.',
-      'about.p6': 'Since then he has volunteered his time providing essential preventive dental care to local school children. This dedication to public health was formally recognized in 2015, when he was honored at a joint ceremony hosted by the Municipalities of Paleo Faliro and Piraeus for his distinguished volunteer service.',
+      /* ── about.html — biography sections ──────── */
+      'about.p1': '<strong class="text-gray-900">Dr. Albert Moshopoulos</strong> graduated from Semmelweis Medical School in 1993, already laying the groundwork for a career dedicated to scientific progress.',
+      'about.p2': 'His passion for research led him to the Hellenic Pasteur Institute, where he worked as a researcher for two years before focusing on Dentistry, receiving his degree from Semmelweis University in 1999.',
+      'about.p3': 'Dr. Moshopoulos has been practicing dentistry in the southern suburbs since 2002, welcoming his patients to his personal implant clinic in Paleo Faliro. Since 2003, he has also served as a Scientific Consultant in the Oral and Maxillofacial Surgery Department of Metropolitan Hospital.',
+      'about.p4': 'There, he has developed high expertise and experience in dental implant treatments, with a particular focus on meticulous management and the complete aesthetic and functional restoration of the smile.',
+      'about.p5': 'With a vision of contributing to society, in 2001 he played a key role in founding the Dental Clinic of the Municipal Clinics of Paleo Faliro.',
+      'about.p6': 'For over two decades, he has joyfully and responsibly overseen the preventive dentistry of the municipality\'s children. His valuable volunteer work was honored in 2015 at a special ceremony by the Municipalities of Paleo Faliro and Piraeus.',
 
       /* ── services.html ────────────────────────── */
       'services.p1': 'At our practice, we believe that exceptional dentistry is built on a foundation of trust and meticulous planning. Our core philosophy is simple: your long-term oral health is our primary metric of success. We eschew transient solutions in favor of comprehensive treatment protocols. This means every procedure is backed by thorough diagnostic planning, education regarding daily hygiene, and an unwavering commitment to preventive care. We don\'t just restore teeth; we protect your future health.',

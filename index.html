@@ -9,6 +9,36 @@
   <link rel="icon" href="images/dental-implant-circle-256-torqued.png" type="image/png">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Julius+Sans+One%7CNoto+Sans:400,b%7COpen+Sans:400,600,600i,b,i">
+  <style>
+    /* Alternating Articles Custom Styles */
+    .article-slot {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .article-item {
+      grid-area: 1 / 1;
+      transition: opacity 1500ms ease-in-out;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .article-item.active-article {
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+      pointer-events: auto;
+    }
+
+    .article-item.inactive-article {
+      opacity: 0;
+      visibility: hidden;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
 </head>
 
 <body class="bg-white overflow-x-hidden">
@@ -56,59 +86,91 @@
     </div>
   </header>
 
-  <section class="flex flex-wrap justify-center items-start bg-gradient-to-b from-brand-blue to-white py-16 px-4">
-    <!-- Article 1 -->
-    <div
-      class="bg-white rounded-lg p-6 max-w-sm w-full mx-4 my-6 shadow-xl fade-in relative transition-transform hover:-translate-y-2">
-      <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
-        <img alt="Placeholder" class="w-full h-full object-cover" src="images/elderly-couple-smiling.jpg"
-          loading="lazy">
+  <section class="flex flex-wrap justify-center items-stretch bg-gradient-to-b from-brand-blue to-white py-16 px-4">
+    <!-- Slot 1 -->
+    <div class="article-slot relative max-w-sm w-full mx-4 my-6 bg-white rounded-lg shadow-xl">
+      <!-- Article 1 -->
+      <div class="article-item active-article p-6 fade-in">
+        <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
+          <img alt="Placeholder" class="w-full h-full object-cover" src="images/elderly-couple-smiling.jpg"
+            loading="lazy">
+        </div>
+        <button
+          class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
+          data-modal-target="modal-2">+</button>
+        <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
+          data-i18n="card1.title">...</h4>
+        <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card1.excerpt">...</p>
       </div>
-      <button
-        class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
-        data-modal-target="modal-2">+</button>
-      <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-        data-i18n="card1.title">
-        Οδοντικά Εμφυτεύματα: Πότε Είναι η Κατάλληλη Στιγμή;</h4>
-      <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card1.excerpt">Τα οδοντικά εμφυτεύματα αποτελούν
-        την πλέον αξιόπιστη λύση
-        για την αποκατάσταση των δοντιών. Ανακαλύψτε πότε αυτή εξαιρετική επιλογή είναι η ιδανική για εσάς και το
-        χαμόγελό σας.</p>
+      <!-- Article 4 -->
+      <div class="article-item inactive-article p-6">
+        <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
+          <img alt="Placeholder" class="w-full h-full object-cover" src="images/implants-800x299.jpg" loading="lazy">
+        </div>
+        <button
+          class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
+          data-modal-target="modal-5">+</button>
+        <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
+          data-i18n="card4.title">...</h4>
+        <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card4.excerpt">...</p>
+      </div>
     </div>
 
-    <!-- Article 2 -->
-    <div
-      class="bg-white rounded-lg p-6 max-w-sm w-full mx-4 my-6 shadow-xl fade-in relative transition-transform hover:-translate-y-2 delay-100">
-      <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
-        <img alt="Placeholder" class="w-full h-full object-cover" src="images/mini-dental-implants-1.jpg"
-          loading="lazy">
+    <!-- Slot 2 -->
+    <div class="article-slot relative max-w-sm w-full mx-4 my-6 bg-white rounded-lg shadow-xl">
+      <!-- Article 2 -->
+      <div class="article-item active-article p-6 fade-in delay-100">
+        <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
+          <img alt="Placeholder" class="w-full h-full object-cover" src="images/article_2.png"
+            loading="lazy">
+        </div>
+        <button
+          class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
+          data-modal-target="modal-3">+</button>
+        <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
+          data-i18n="card2.title">...</h4>
+        <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card2.excerpt">...</p>
       </div>
-      <button
-        class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
-        data-modal-target="modal-3">+</button>
-      <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-        data-i18n="card2.title">Μίνι
-        Οδοντικά Εμφυτεύματα</h4>
-      <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card2.excerpt">Τα "μίνι εμφυτεύματα" (Mini
-        Implants) αποτελούν μια σύγχρονη
-        και ελάχιστα επεμβατική λύση. Ας δούμε πότε πλεονεκτούν έναντι των παραδοσιακών εμφυτευμάτων.</p>
+      <!-- Article 5 -->
+      <div class="article-item inactive-article p-6">
+        <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
+          <img alt="Placeholder" class="w-full h-full object-cover" src="images/article_5.png" loading="lazy">
+        </div>
+        <button
+          class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
+          data-modal-target="modal-6">+</button>
+        <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
+          data-i18n="card5.title">...</h4>
+        <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card5.excerpt">... </p>
+      </div>
     </div>
 
-    <!-- Article 3 -->
-    <div
-      class="bg-white rounded-lg p-6 max-w-sm w-full mx-4 my-6 shadow-xl fade-in relative transition-transform hover:-translate-y-2 delay-200">
-      <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
-        <img alt="Placeholder" class="w-full h-full object-cover" src="images/smile-with-braces.jpg" loading="lazy">
+    <!-- Slot 3 -->
+    <div class="article-slot relative max-w-sm w-full mx-4 my-6 bg-white rounded-lg shadow-xl">
+      <!-- Article 3 -->
+      <div class="article-item active-article p-6 fade-in delay-200">
+        <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
+          <img alt="Placeholder" class="w-full h-full object-cover" src="images/article_3.png" loading="lazy">
+        </div>
+        <button
+          class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
+          data-modal-target="modal-4">+</button>
+        <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
+          data-i18n="card3.title">...</h4>
+        <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card3.excerpt">...</p>
       </div>
-      <button
-        class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
-        data-modal-target="modal-4">+</button>
-      <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-        data-i18n="card3.title">
-        Ορθοδοντική Θεραπεία</h4>
-      <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card3.excerpt">Η αναβάθμιση της αισθητικής και
-        της υγείας. Η ορθοδοντική
-        φροντίζει για τη διόρθωση της θέσης των δοντιών, χαρίζοντάς σας ένα αρμονικό, λαμπερό και υγιές χαμόγελο.</p>
+      <!-- Article 6 -->
+      <div class="article-item inactive-article p-6">
+        <div class="w-full h-48 md:h-56 rounded-md overflow-hidden mb-8 border border-gray-200">
+          <img alt="Placeholder" class="w-full h-full object-cover" src="images/article_6.png" loading="lazy">
+        </div>
+        <button
+          class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none"
+          data-modal-target="modal-7">+</button>
+        <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
+          data-i18n="card6.title">...</h4>
+        <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card6.excerpt">...</p>
+      </div>
     </div>
   </section>
 
@@ -118,28 +180,14 @@
       class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
       <button
         class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
-      <img alt="Dental Implants" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6"
-        src="images/implants-800x299.jpg">
-      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal2.title">Πότε Είναι η
-        Κατάλληλη Στιγμή για
-        Οδοντικά Εμφυτεύματα;</h6>
+      <img alt="Dental Implants candidate" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6"
+        src="images/elderly-couple-smiling.jpg">
+      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal2.title">...</h6>
       <div class="text-gray-700 space-y-4 font-open text-base leading-relaxed">
-        <p data-i18n="modal2.p1">Ίσως γνωρίζετε ήδη ότι τα οδοντικά εμφυτεύματα αποτελούν τον πιο σύγχρονο και
-          αποτελεσματικό τρόπο για την
-          αναπλήρωση φθαρμένων ή χαμένων δοντιών. Πότε, όμως, είναι η ιδανική στιγμή για να προχωρήσετε σε αυτή τη λύση;
-        </p>
-        <p data-i18n-html="modal2.p2"><span class="font-bold text-gray-900">Για την αποκατάσταση της αισθητικής του
-            προσώπου σας</span><br>Ο κύριος
-          ρόλος των οδοντικών εμφυτευμάτων είναι να επαναφέρουν το χαμόγελό σας στην αρχική του αίγλη. Σε αντίθεση με
-          τις γέφυρες, παρέχουν μια μόνιμη, εξαιρετικά φυσική δομή που αντέχει στον χρόνο.</p>
-        <p data-i18n-html="modal2.p3"><span class="font-bold text-gray-900">Για την προστασία και τη διατήρηση του οστού
-            της γνάθου</span><br>Η
-          απώλεια δοντιών μπορεί βαθμιαία να οδηγήσει σε αλλοίωση και απορρόφηση του οστού. Καθυστερώντας την τοποθέτηση
-          ενός εμφυτεύματος ρισκάρετε την απώλεια οστικής μάζας που είναι απαραίτητη για τη μελλοντική στήριξή του.</p>
-        <p data-i18n-html="modal2.p4">Για μια εξατομικευμένη ενημέρωση και για να μάθετε πώς μπορούμε να επαναφέρουμε το
-          χαμόγελό σας,
-          επικοινωνήστε σήμερα με το <span class="text-brand-blue font-bold">Οδοντιατρείο του Παλαιού Φαλήρου</span> στο
-          210 931-2651.</p>
+        <p data-i18n="modal2.p1">...</p>
+        <p data-i18n="modal2.p2">...</p>
+        <p data-i18n-html="modal2.p3">...</p>
+        <p data-i18n="modal2.p4">...</p>
       </div>
     </div>
   </div>
@@ -149,24 +197,16 @@
       class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
       <button
         class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
-      <img alt="Mini Implants" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6"
-        src="images/mini-implant.jpg">
-      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal3.title">Μίνι Οδοντικά
-        Εμφυτεύματα (Mini
-        Implants)</h6>
+      <img alt="Timeline" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6"
+        src="images/article_2.png">
+      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal3.title">...</h6>
       <div class="text-gray-700 space-y-4 font-open text-base leading-relaxed">
-        <p data-i18n="modal3.p1">Μια ιδιαίτερα δημοφιλής τάση στη σύγχρονη οδοντιατρική είναι η επιλογή των "μίνι
-          οδοντικών εμφυτευμάτων"
-          έναντι των παραδοσιακών. Ας εξετάσουμε ποια είναι τα οφέλη και ποιοι οι πιθανοί περιορισμοί.</p>
-        <p data-i18n-html="modal3.p2"><span class="font-bold text-gray-900">Τα Πλεονεκτήματα</span><br>Τα μίνι
-          εμφυτεύματα είναι ελάχιστα
-          επεμβατικά, απαιτούν λιγότερο χρόνο τοποθέτησης και συχνά ενδείκνυνται για μικρότερους χώρους ή για ασθενείς
-          με περιορισμένη οστική μάζα όπου τα κλασικά εμφυτεύματα δεν θα μπορούσαν να στηριχθούν.</p>
-        <p data-i18n-html="modal3.p3"><span class="font-bold text-gray-900">Τι Πρέπει να Προσέξετε</span><br>Επειδή
-          πρόκειται για μια νεότερη
-          προσέγγιση σε σχέση με τα συμβατικά εμφυτεύματα, δεν διαθέτουμε ακόμα μακροχρόνιες μελέτες δεκαετιών για την
-          αντοχή τους σε όλες τις συνθήκες. Η σωστή διάγνωση και ανάλυση 3D του οστού σας είναι απαραίτητη
-          προγραμματίζοντας τη θεραπεία.</p>
+        <p data-i18n="modal3.p1">...</p>
+        <p data-i18n-html="modal3.p2">...</p>
+        <p data-i18n-html="modal3.p3">...</p>
+        <p data-i18n-html="modal3.p4">...</p>
+        <p data-i18n-html="modal3.p5">...</p>
+        <p data-i18n="modal3.p6">...</p>
       </div>
     </div>
   </div>
@@ -176,22 +216,64 @@
       class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
       <button
         class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
-      <img alt="Orthodontics" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6" src="images/orthodontic.jpg">
-      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal4.title">Ο ρόλος της
-        Ορθοδοντικής</h6>
+      <img alt="Comparison" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6" src="images/article_3.png">
+      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal4.title">...</h6>
       <div class="text-gray-700 space-y-4 font-open text-base leading-relaxed">
-        <p data-i18n="modal4.p1">Η ορθοδοντική είναι ο τομέας της οδοντιατρικής που επικεντρώνεται στη διόρθωση της
-          θέσης των δοντιών και των
-          γνάθων, προσφέροντας λειτουργικότητα και αισθητική αρμονία.</p>
-        <p data-i18n-html="modal4.p2"><span class="font-bold text-gray-900">Τα "στραβά" δόντια δεν είναι μόνο αισθητικό
-            ζήτημα:</span><br>1.
-          Δυσκολεύουν τον σωστό καθαρισμό, αυξάνοντας τον κίνδυνο τερηδόνας και ουλίτιδας.<br>2. Προκαλούν ανισομερή
-          κατανομή των δυνάμεων κατά τη μάσηση, που μπορεί να οδηγήσει σε φθορές.</p>
-        <p data-i18n-html="modal4.p3"><span class="font-bold text-gray-900">Η Ορθοδοντική στην
-            Εμφυτευματολογία</span><br>Σε αρκετές περιπτώσεις
-          ασθενών με ελλείψεις δοντιών, η ορθοδοντική θεραπεία προηγείται, ώστε να δημιουργηθεί ο κατάλληλος χώρος για
-          την ασφαλή τοποθέτηση ενός εμφυτεύματος. Απαιτείται στενή συνεργασία των δύο ειδικοτήτων για ένα τέλειο τελικό
-          αποτέλεσμα.</p>
+        <p data-i18n="modal4.p1">...</p>
+        <p data-i18n-html="modal4.p2">...</p>
+        <p data-i18n-html="modal4.p3">...</p>
+        <p data-i18n-html="modal4.p4">...</p>
+        <p data-i18n="modal4.p5">...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder Modals for new articles -->
+  <div id="modal-5" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+    <div
+      class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
+      <button
+        class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
+      <img alt="Bone Grafting" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6"
+        src="images/implants-800x299.jpg">
+      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal5.title">...</h6>
+      <div class="text-gray-700 space-y-4 font-open text-base leading-relaxed">
+        <p data-i18n="modal5.p1">...</p>
+        <p data-i18n="modal5.p2">...</p>
+        <p data-i18n="modal5.p3">...</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-6" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+    <div
+      class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
+      <button
+        class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
+      <img alt="Cost" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6"
+        src="images/article_5.png">
+      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal6.title">...</h6>
+      <div class="text-gray-700 space-y-4 font-open text-base leading-relaxed">
+        <p data-i18n="modal6.p1">...</p>
+        <p data-i18n="modal6.p2">...</p>
+        <p data-i18n="modal6.p3">...</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-7" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+    <div
+      class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
+      <button
+        class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl leading-none">&times;</button>
+      <img alt="Sedation" class="w-full h-auto max-h-64 object-cover rounded-lg mb-6"
+        src="images/article_6.png">
+      <h6 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal7.title">...</h6>
+      <div class="text-gray-700 space-y-4 font-open text-base leading-relaxed">
+        <p data-i18n="modal7.p1">...</p>
+        <p data-i18n="modal7.p2">...</p>
+        <p data-i18n="modal7.p3">...</p>
+        <p data-i18n="modal7.p4">...</p>
       </div>
     </div>
   </div>
