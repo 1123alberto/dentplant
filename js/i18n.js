@@ -11,6 +11,10 @@
       'nav.services': 'Υπηρεσιες',
       'nav.contact': 'Επικοινωνια',
 
+      /* ── Hero / Standalone Header ──────────────── */
+      'hero.name': 'Άγγελος Μοσχόπουλος',
+      'hero.title': 'Κλινική Οδοντικών Εμφυτευμάτων',
+
       /* ── Shared booking button ────────────────── */
       'booking.btn': 'Ηλεκτρονικη Κρατηση',
 
@@ -155,6 +159,10 @@
       'nav.doctor': 'The Doctor',
       'nav.services': 'Services',
       'nav.contact': 'Contact',
+
+      /* ── Hero / Standalone Header ──────────────── */
+      'hero.name': 'Dr. Angelo Moshopoulos',
+      'hero.title': 'Dental Implant Clinic',
 
       /* ── Shared booking button ────────────────── */
       'booking.btn': 'Online Appointment',
@@ -339,7 +347,14 @@
       : (translations['el'][key] || key);
   }
 
-  document.addEventListener('DOMContentLoaded', () => applyLanguage(currentLang));
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam && (langParam === 'el' || langParam === 'en')) {
+      currentLang = langParam;
+    }
+    applyLanguage(currentLang);
+  });
 
   window.i18n = { applyLanguage, toggleLanguage, getCurrentLang, t, translations };
 })();

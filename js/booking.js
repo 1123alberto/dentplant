@@ -24,13 +24,21 @@ function goToStep(stepNumber) {
     document.querySelectorAll('.booking-step').forEach(el => el.style.display = 'none');
     document.getElementById(`booking-step-${stepNumber}`).style.display = 'block';
 
-    // Dynamically widen modal container for 2-column details step
-    const modalContent = document.querySelector('#booking-modal > .bg-white');
+    // Dynamically widen container for 2-column details step
+    const modalContent = document.querySelector('#booking-modal > .bg-white') || document.querySelector('.booking-standalone-wrapper');
     if (modalContent) {
         if (stepNumber === 3) {
-            modalContent.classList.replace('max-w-[500px]', 'max-w-[600px]');
+            if (modalContent.classList.contains('max-w-[500px]')) {
+                modalContent.classList.replace('max-w-[500px]', 'max-w-[600px]');
+            } else {
+                modalContent.classList.add('max-w-[600px]');
+            }
         } else {
-            modalContent.classList.replace('max-w-[600px]', 'max-w-[500px]');
+            if (modalContent.classList.contains('max-w-[600px]')) {
+                modalContent.classList.replace('max-w-[600px]', 'max-w-[500px]');
+            } else {
+                modalContent.classList.add('max-w-[500px]');
+            }
         }
     }
 
