@@ -285,6 +285,20 @@
       'faq.a5': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι κατάλληλοι υποψήφιοι. Κατά την πρώτη επίσκεψη, αξιολογούμε την υγεία των ούλων και την ποιότητα του οστού για να καθορίσουμε την καταλληλότερη λύση για εσάς.',
       'faq.q6': 'Τι είναι η οστική ανάπλαση και πότε είναι απαραίτητη;',
       'faq.a6': 'Η οστική ανάπλαση είναι μια σύγχρονη τεχνική που χρησιμοποιείται όταν το φυσικό οστό δεν είναι επαρκές για να στηρίξει το εμφύτευμα. Μέσω αυτής της διαδικασίας, αναδομούμε το θεμέλιο του χαμόγελού σας για απόλυτη σταθερότητα.',
+
+      /* ── Image Alts ─────────────────────────── */
+      'alt.logo': 'Λογότυπο Dentplant Clinic - Άγγελος Μοσχόπουλος Εμφυτεύματα Παλαιό Φάληρο',
+      'alt.hero_implants': 'Λεπτομέρεια διαδικασίας τοποθέτησης οδοντικών εμφυτευμάτων υψηλής ποιότητας',
+      'alt.couple': 'Χαμογελαστό ζευγάρι ηλικιωμένων που απολαμβάνει τη ζωή με οδοντικά εμφυτεύματα',
+      'alt.bone_graft': 'Οστικό μόσχευμα για επιτυχημένα οδοντικά εμφυτεύματα',
+      'alt.timeline': 'Αναλυτικό χρονοδιάγραμμα θεραπείας εμφυτευμάτων από την ενημέρωση έως την αποκατάσταση',
+      'alt.comparison': 'Σύγκριση οδοντικών εμφυτευμάτων έναντι παραδοσιακών γεφυρών',
+      'alt.cost': 'Διαφανής κοστολόγηση και τιμές οδοντικών εμφυτευμάτων',
+      'alt.sedation': 'Ανώδυνη οδοντιατρική χειρουργική με μέθη (Sedation)',
+      'alt.doctor': 'Ο ιατρός Άγγελος Μοσχόπουλος στο οδοντιατρείο του στο Παλαιό Φάληρο',
+      'alt.fb': 'Επισκεφθείτε την Dentplant Clinic στο Facebook',
+      'alt.ig': 'Ακολουθήστε τον Άγγελο Μοσχόπουλο στο Instagram',
+      'alt.li': 'Επαγγελματικό προφίλ του Άγγελου Μοσχόπουλου στο LinkedIn',
     },
     en: {
     'title.home': 'Dental Implants | Paleo Faliro | Dr. Angelo Moshopoulos',
@@ -564,6 +578,20 @@
       'faq.a5': 'Most adults who have lost one or more teeth are suitable candidates. During your first visit, we evaluate the health of your gums and the quality of the bone to determine the best solution for you.',
       'faq.q6': 'What is bone grafting and when is it necessary?',
       'faq.a6': 'Bone grafting is a modern technique used when the natural bone is insufficient to support the implant. Through this process, we rebuild the foundation of your smile for absolute stability.',
+
+      /* ── Image Alts ─────────────────────────── */
+      'alt.logo': 'Dentplant Clinic Logo - Dr. Angelo Moshopoulos Dental Implants Paleo Faliro',
+      'alt.hero_implants': 'Close-up of high-quality dental implant procedure at Dentplant Clinic',
+      'alt.couple': 'Smiling elderly couple enjoying life with dental implants',
+      'alt.bone_graft': 'Bone grafting procedure for successful dental implants',
+      'alt.timeline': 'Detailed dental implant treatment timeline from consultation to recovery',
+      'alt.comparison': 'Comparison of dental implants vs traditional bridge solutions',
+      'alt.cost': 'Transparent dental implant cost and surgical pricing details',
+      'alt.sedation': 'Conscious sedation for painless dental implant surgery in Paleo Faliro',
+      'alt.doctor': 'Dr. Angelo Moshopoulos at his dental implant clinic in Paleo Faliro Athens',
+      'alt.fb': 'Visit Dentplant Clinic on Facebook',
+      'alt.ig': 'Follow Dr. Angelo Moshopoulos on Instagram',
+      'alt.li': 'Dr. Angelo Moshopoulos professional LinkedIn profile',
     }
   };
 
@@ -579,6 +607,11 @@
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (t[key] !== undefined) el.textContent = t[key];
+    });
+
+    document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+      const key = el.getAttribute('data-i18n-alt');
+      if (t[key] !== undefined) el.setAttribute('alt', t[key]);
     });
 
     document.querySelectorAll('[data-i18n-html]').forEach(el => {
