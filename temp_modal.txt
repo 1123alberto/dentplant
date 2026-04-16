@@ -1,78 +1,4 @@
-<!DOCTYPE html>
-<html lang="el">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Επικοινωνια - Dr. Angelo Moshopoulos Dental Implant Clinic</title>
-  <link rel="stylesheet" href="css/output.css?v=11">
-  <link rel="icon" href="images/dental-implant-circle-256-torqued.png" type="image/png">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Julius+Sans+One%7CNoto+Sans:400,b%7COpen+Sans:400,600,600i,b,i">
-  <style>
-    html {
-      overflow-y: scroll;
-    }
-  </style>
-</head>
-
-<body class="bg-white overflow-x-hidden pt-20 min-h-screen flex flex-col">
-
-  <nav
-    class="fixed top-0 w-full bg-brand-blue shadow-md z-50 px-6 py-3 flex items-center justify-between transition-transform duration-300">
-    <a href="index.html" class="w-12 h-12 rounded-full shadow-strong overflow-hidden flex-shrink-0 bg-white">
-      <img alt="implant logo" class="w-full h-full object-contain" src="images/dental-implant-circle-256-torqued.png"
-        loading="lazy">
-    </a>
-    <div class="flex items-center gap-4">
-      <div
-        class="flex items-center space-x-4 md:space-x-8 text-white text-[11px] leading-tight md:text-xs md:leading-normal font-medium uppercase font-noto">
-        <a class="hover:text-gray-200 transition-colors" href="index.html" data-i18n="nav.home">Αρχικη</a>
-        <a class="hover:text-gray-200 transition-colors" href="about.html" data-i18n="nav.doctor">Ο Ιατρος</a>
-        <a class="hover:text-gray-200 transition-colors" href="services.html" data-i18n="nav.services">Υπηρεσιες</a>
-        <a class="text-yellow-300 transition-colors" href="contact.html" data-i18n="nav.contact">Επικοινωνια</a>
-      </div>
-      <button onclick="i18n.toggleLanguage()"
-        class="lang-toggle text-white border border-white/50 rounded px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase hover:bg-white/20 transition-all duration-300 flex-shrink-0">EN</button>
-    </div>
-  </nav>
-
-  <main class="flex-grow container mx-auto px-4 py-16 max-w-5xl text-center">
-    <div class="text-center w-full px-4">
-      <h1
-        class="text-[#2e4d6d] text-center font-Julius Sans One font-thin text-3xl md:text-5xl max-w-4xl mx-auto leading-tight transition-transform delay-300">
-        <span class="text-4xl md:text-4xl font-medium">Dr. Angelo Moshopoulos</span>
-        <span class="text-2xl md:text-2xl block mb-4 font-normal">Dental Implant Clinic</span>
-      </h1>
-    </div>
-
-    <hr class="w-full md:w-5/6 mx-auto border-gray-200 border-t-[1px] my-10">
-
-    <div class="text-[#415a77] font-open tracking-[0.05em] text-lg md:text-xl max-w-lg mx-auto pb-4">
-      <p class="mb-6 leading-relaxed">
-        <span class="block">Πλατεία Ντάβαρη 2</span>
-        <span class="block">Παλαιό Φάληρο</span>
-        <span class="block">17563</span>
-      </p>
-      <p class="leading-relaxed">
-        <span class="block" data-i18n="contact.landline">τηλ.: 210 931 2651</span>
-      </p>
-    </div>
-
-    <div class="mt-12 text-center">
-      <a href="booking.html"
-        class="inline-block px-8 py-3 bg-gray-100 text-gray-700 rounded-[8px] shadow-medium border border-gray-200 hover:bg-gray-700 hover:text-yellow-300 transition-all duration-500 opacity-85 font-bold uppercase tracking-wider text-sm font-open"
-        data-i18n="booking.btn">Ηλεκτρονικη Κρατηση</a>
-    </div>
-
-    <div class="mt-20 w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl h-[450px] border border-gray-200">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.9805465592185!2d23.70132771485438!3d37.93088491093627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bc3a830a699f%3A0xf2274ba25d3fcaf6!2sPl.%20Ntavari%202%2C%20Paleo%20Faliro%20175%2064!5e0!3m2!1sen!2sgr!4v1621705178291!5m2!1sen!2sgr"
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </main>
-
-  <!-- Booking Modal -->
+﻿<!-- Booking Modal -->
   <div id="booking-modal"
     class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div
@@ -82,10 +8,11 @@
 
       <section id="booking" class="booking-section">
         <div class="container mx-auto">
+          <!-- Header is only for Step 1 -->
           <div id="booking-main-header" class="section-header text-center mb-6">
-            <h2 class="text-xl font-open font-bold text-[#1a365d] tracking-tight" data-i18n="bm.title">Κλείστε το
-              Ραντεβού σας</h2>
-            <p class="text-gray-500 mt-1 text-xs tracking-wide" data-i18n="bm.subtitle">Επιλέξτε ημερομηνία και ώρα.</p>
+            <h2 class="text-xl font-open font-bold text-[#1a365d] tracking-tight" data-i18n="bm.title">ÎšÎ»ÎµÎ¯ÏƒÏ„Îµ Ï„Î¿
+              Î¡Î±Î½Ï„ÎµÎ²Î¿Ï ÏƒÎ±Ï‚</h2>
+            <p class="text-gray-500 mt-1 text-xs tracking-wide" data-i18n="bm.subtitle">Î•Ï€Î¹Î»Î­Î¾Ï„Îµ Î·Î¼ÎµÏÎ¿Î¼Î·Î½Î¯Î± ÎºÎ±Î¹ ÏŽÏÎ±.</p>
           </div>
 
           <div class="booking-widget">
@@ -115,7 +42,7 @@
               <button
                 class="back-btn text-[#64748b] hover:text-[#1a365d] mb-5 flex items-center text-xs tracking-wide uppercase font-bold"
                 onclick="goToStep(1)" data-i18n="bm.step2.back">
-                &larr; <span class="ml-1">Πίσω στο Ημερολόγιο</span>
+                &larr; <span class="ml-1">Î Î¯ÏƒÏ‰ ÏƒÏ„Î¿ Î—Î¼ÎµÏÎ¿Î»ÏŒÎ³Î¹Î¿</span>
               </button>
               <h3 class="step-title font-open font-bold text-center text-xl mb-6 text-[#1a365d]"
                 id="selected-date-display">...</h3>
@@ -129,10 +56,10 @@
               <button
                 class="back-btn text-[#64748b] hover:text-[#1a365d] mb-4 flex items-center text-xs tracking-wide uppercase font-bold"
                 onclick="goToStep(2)" data-i18n="bm.step3.back">
-                &larr; <span class="ml-1">Πίσω στις Ώρες</span>
+                &larr; <span class="ml-1">Î Î¯ÏƒÏ‰ ÏƒÏ„Î¹Ï‚ ÎÏÎµÏ‚</span>
               </button>
               <h3 class="step-title font-open font-bold text-xl text-center mb-3 text-[#1a365d]"
-                data-i18n="bm.step3.title">Στοιχεία Επικοινωνίας</h3>
+                data-i18n="bm.step3.title">Î£Ï„Î¿Î¹Ï‡ÎµÎ¯Î± Î•Ï€Î¹ÎºÎ¿Î¹Î½Ï‰Î½Î¯Î±Ï‚</h3>
               <p
                 class="selected-slot-info mb-5 text-center text-[#475569] text-sm md:text-base border-b border-gray-100 pb-3">
                 <strong id="final-date-time">...</strong>
@@ -144,8 +71,8 @@
                   <div class="flex flex-col space-y-4">
                     <div class="form-group flex flex-col items-start w-full">
                       <label for="b-name" class="font-bold text-[#1a365d] text-xs mb-1"
-                        data-i18n="bm.name.label">Ονοματεπώνυμο *</label>
-                      <input type="text" id="b-name" required placeholder="π.χ. Μαρία Παπαδοπούλου"
+                        data-i18n="bm.name.label">ÎŸÎ½Î¿Î¼Î±Ï„ÎµÏ€ÏŽÎ½Ï…Î¼Î¿ *</label>
+                      <input type="text" id="b-name" required placeholder="Ï€.Ï‡. ÎœÎ±ÏÎ¯Î± Î Î±Ï€Î±Î´Î¿Ï€Î¿ÏÎ»Î¿Ï…"
                         data-i18n-placeholder="bm.name.placeholder"
                         class="w-full px-3 py-2 border border-gray-200 rounded focus:outline-none focus:border-[#0284c7] focus:ring-1 focus:ring-[#0284c7] text-gray-700 placeholder-gray-400 text-sm transition-all shadow-sm">
                     </div>
@@ -158,7 +85,7 @@
                     </div>
                     <div class="form-group flex flex-col items-start w-full">
                       <label for="b-phone" class="font-bold text-[#1a365d] text-xs mb-1"
-                        data-i18n="bm.phone.label">Κινητό Τηλέφωνο *</label>
+                        data-i18n="bm.phone.label">ÎšÎ¹Î½Î·Ï„ÏŒ Î¤Î·Î»Î­Ï†Ï‰Î½Î¿ *</label>
                       <input type="tel" id="b-phone" required placeholder="6930000000"
                         data-i18n-placeholder="bm.phone.placeholder"
                         class="w-full px-3 py-2 border border-gray-200 rounded focus:outline-none focus:border-[#0284c7] focus:ring-1 focus:ring-[#0284c7] text-gray-700 placeholder-gray-400 text-sm transition-all shadow-sm">
@@ -167,63 +94,63 @@
 
                   <!-- Right Column: Checkboxes -->
                   <div class="flex flex-col mt-4 md:mt-0 border-t border-gray-100 pt-4 md:border-none md:pt-0">
-                    <p class="font-bold text-[#1a365d] text-sm mb-1" data-i18n="bm.services.heading">Ενδιαφέρομαι για...
+                    <p class="font-bold text-[#1a365d] text-sm mb-1" data-i18n="bm.services.heading">Î•Î½Î´Î¹Î±Ï†Î­ÏÎ¿Î¼Î±Î¹ Î³Î¹Î±...
                     </p>
 
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="έλεγχο"
+                      <input type="checkbox" name="services" value="Î­Î»ÎµÎ³Ï‡Î¿"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.checkup">έλεγχο</span>
+                      <span data-i18n="bm.svc.checkup">Î­Î»ÎµÎ³Ï‡Î¿</span>
                     </label>
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="καθαρισμό"
+                      <input type="checkbox" name="services" value="ÎºÎ±Î¸Î±ÏÎ¹ÏƒÎ¼ÏŒ"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.cleaning">καθαρισμό</span>
+                      <span data-i18n="bm.svc.cleaning">ÎºÎ±Î¸Î±ÏÎ¹ÏƒÎ¼ÏŒ</span>
                     </label>
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="απονεύρωση"
+                      <input type="checkbox" name="services" value="Î±Ï€Î¿Î½ÎµÏÏÏ‰ÏƒÎ·"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.rootcanal">απονεύρωση</span>
+                      <span data-i18n="bm.svc.rootcanal">Î±Ï€Î¿Î½ÎµÏÏÏ‰ÏƒÎ·</span>
                     </label>
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="αισθητική οδοντιατρική / λεύκανση"
+                      <input type="checkbox" name="services" value="Î±Î¹ÏƒÎ¸Î·Ï„Î¹ÎºÎ® Î¿Î´Î¿Î½Ï„Î¹Î±Ï„ÏÎ¹ÎºÎ® / Î»ÎµÏÎºÎ±Î½ÏƒÎ·"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.cosmetic">αισθητική οδοντιατρική / λεύκανση</span>
+                      <span data-i18n="bm.svc.cosmetic">Î±Î¹ÏƒÎ¸Î·Ï„Î¹ÎºÎ® Î¿Î´Î¿Î½Ï„Î¹Î±Ï„ÏÎ¹ÎºÎ® / Î»ÎµÏÎºÎ±Î½ÏƒÎ·</span>
                     </label>
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="οδοντοστοιχίες"
+                      <input type="checkbox" name="services" value="Î¿Î´Î¿Î½Ï„Î¿ÏƒÏ„Î¿Î¹Ï‡Î¯ÎµÏ‚"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.dentures">οδοντοστοιχίες</span>
+                      <span data-i18n="bm.svc.dentures">Î¿Î´Î¿Î½Ï„Î¿ÏƒÏ„Î¿Î¹Ï‡Î¯ÎµÏ‚</span>
                     </label>
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="ελλιπές ή σπασμένα δόντια"
+                      <input type="checkbox" name="services" value="ÎµÎ»Î»Î¹Ï€Î­Ï‚ Î® ÏƒÏ€Î±ÏƒÎ¼Î­Î½Î± Î´ÏŒÎ½Ï„Î¹Î±"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.missing">ελλιπές ή σπασμένα δόντια</span>
+                      <span data-i18n="bm.svc.missing">ÎµÎ»Î»Î¹Ï€Î­Ï‚ Î® ÏƒÏ€Î±ÏƒÎ¼Î­Î½Î± Î´ÏŒÎ½Ï„Î¹Î±</span>
                     </label>
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="εξαγωγή φρονιμίτη"
+                      <input type="checkbox" name="services" value="ÎµÎ¾Î±Î³Ï‰Î³Î® Ï†ÏÎ¿Î½Î¹Î¼Î¯Ï„Î·"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.wisdom">εξαγωγή φρονιμίτη</span>
+                      <span data-i18n="bm.svc.wisdom">ÎµÎ¾Î±Î³Ï‰Î³Î® Ï†ÏÎ¿Î½Î¹Î¼Î¯Ï„Î·</span>
                     </label>
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="οδοντικά εμφυτεύματα"
+                      <input type="checkbox" name="services" value="Î¿Î´Î¿Î½Ï„Î¹ÎºÎ¬ ÎµÎ¼Ï†Ï…Ï„ÎµÏÎ¼Î±Ï„Î±"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.implants">οδοντικά εμφυτεύματα</span>
+                      <span data-i18n="bm.svc.implants">Î¿Î´Î¿Î½Ï„Î¹ÎºÎ¬ ÎµÎ¼Ï†Ï…Ï„ÎµÏÎ¼Î±Ï„Î±</span>
                     </label>
                     <!-- Other Checkbox + Input -->
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
                       <input type="checkbox" id="other-service-checkbox" name="services" value="other"
                         class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <input type="text" id="other-service-input" placeholder="Άλλο"
+                      <input type="text" id="other-service-input" placeholder="Î†Î»Î»Î¿"
                         data-i18n-placeholder="bm.svc.other.ph"
                         class="w-full px-3 py-1.5 border border-gray-200 rounded focus:outline-none focus:border-[#0284c7] text-gray-700 placeholder-gray-400 text-sm transition-all focus:ring-1 focus:ring-[#0284c7]"
                         onclick="document.getElementById('other-service-checkbox').checked = true;">
@@ -235,7 +162,7 @@
                   <button type="submit"
                     class="btn btn-primary inline-block bg-[#0284c7] text-white font-bold py-3 px-[20px] rounded-[2rem] hover:bg-blue-600 transition shadow-md text-sm uppercase tracking-wide"
                     id="submit-booking-btn" data-i18n="bm.submit">
-                    Επιβεβαίωση Ραντεβού
+                    Î•Ï€Î¹Î²ÎµÎ²Î±Î¯Ï‰ÏƒÎ· Î¡Î±Î½Ï„ÎµÎ²Î¿Ï
                   </button>
                 </div>
                 <div class="booking-loader mt-3 flex justify-center" id="submit-loader" style="display: none;">
@@ -247,55 +174,17 @@
 
             <!-- Step 4: Success Message -->
             <div id="booking-step-4" class="booking-step text-center py-6" style="display: none;">
-              <div class="success-icon text-5xl text-green-500 mb-4 font-bold">✓</div>
-              <h3 class="step-title font-open text-xl font-bold text-[#1a365d] mb-3" data-i18n="bm.step4.title">Το
-                ραντεβού σας προστέθηκε!</h3>
-              <p class="text-gray-500 text-sm" data-i18n="bm.step4.text">Θα λάβετε σύντομα ένα email επιβεβαίωσης. Σας
-                περιμένουμε.</p>
+              <div class="success-icon text-5xl text-green-500 mb-4 font-bold">âœ“</div>
+              <h3 class="step-title font-open text-xl font-bold text-[#1a365d] mb-3" data-i18n="bm.step4.title">Î¤Î¿
+                ÏÎ±Î½Ï„ÎµÎ²Î¿Ï ÏƒÎ±Ï‚ Ï€ÏÎ¿ÏƒÏ„Î­Î¸Î·ÎºÎµ!</h3>
+              <p class="text-gray-500 text-sm" data-i18n="bm.step4.text">Î˜Î± Î»Î¬Î²ÎµÏ„Îµ ÏƒÏÎ½Ï„Î¿Î¼Î± Î­Î½Î± email ÎµÏ€Î¹Î²ÎµÎ²Î±Î¯Ï‰ÏƒÎ·Ï‚. Î£Î±Ï‚
+                Ï€ÎµÏÎ¹Î¼Î­Î½Î¿Ï…Î¼Îµ.</p>
               <button
                 class="btn btn-secondary mt-8 px-6 py-2 border border-gray-300 rounded-[2rem] text-gray-600 hover:bg-gray-50 transition text-sm font-bold shadow-sm"
-                onclick="location.reload()" data-i18n="bm.step4.new">Νέο Ραντεβού</button>
+                onclick="location.reload()" data-i18n="bm.step4.new">ÎÎ­Î¿ Î¡Î±Î½Ï„ÎµÎ²Î¿Ï</button>
             </div>
           </div>
         </div>
       </section>
     </div>
-  </div>
-
-  <section class="py-12 bg-white">
-    <hr class="w-4/5 mx-auto border-gray-200">
-    <div
-      class="w-11/12 md:w-3/4 mx-auto bg-brand-light text-brand-blue text-center rounded-lg p-8 italic tracking-wide text-lg font-open my-12 fade-in shadow-inner"
-      data-i18n-html="quote.contact">
-      &quot; Είμαστε πάντα στη διάθεσή σας για να ακούσουμε τις ανάγκες σας και να επιλύσουμε όποιες απορίες έχετε.
-      <br>Επικοινωνήστε μαζί μας σήμερα για να προγραμματίσουμε την επόμενη επίσκεψή σας στο ιατρείο. Με μεγάλη χαρά
-      αναμένουμε να σας εξυπηρετήσουμε από κοντά. &quot;
-    </div>
-    <hr class="w-4/5 mx-auto border-gray-200">
-  </section>
-
-  <div class="text-center mt-8 mb-12 fade-in flex justify-center space-x-6">
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-facebook.png" alt="facebook"></a>
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-instagram.png" alt="Insta"></a>
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-linkedin.png" alt="linkedin"></a>
-  </div>
-
-  <footer class="py-12 bg-brand-blue">
-    <p class="text-white text-center font-bold tracking-wide text-lg mb-4 font-noto" data-i18n-html="footer.address">
-      Πλατεία Ντάβαρη 2, Παλαιό Φάληρο<br>τηλ. 210 931 2651
-    </p>
-    <p class="text-white/70 text-center font-noto text-sm" data-i18n-html="footer.copyright">
-      Copyright 2026. Dentplant Clinic. <br>All Rights Reserved.
-    </p>
-  </footer>
-
-  <script src="js/i18n.js"></script>
-  <script src="js/outofview.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/booking.js?v=3" defer></script>
-</body>
-
-</html>
+  </d
