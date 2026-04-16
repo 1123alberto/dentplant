@@ -252,7 +252,7 @@
       'nav.contact': 'Contact',
 
       /* ── Hero / Standalone Header ──────────────── */
-      'hero.name': 'Angelo Moshopoulos',
+      'hero.name': 'Dr. Angelo Moshopoulos',
       'hero.title': 'Dental Implant Clinic',
 
       /* ── Shared booking button ────────────────── */
@@ -321,9 +321,9 @@
       'quote.services': '&quot; We provide a full range of modern dental treatments, each one tailored to what you actually need.<br>Backed by the latest technology and years of hands-on expertise, we aim for results that look natural and last. Your oral health drives every decision we make. &quot;',
 
       /* ── about.html — biography sections ──────── */
-      'about.p1': 'Combining a deep commitment to scientific progress with a patient-centered approach, <strong class="text-gray-900">Angelo Moshopoulos</strong> began his academic career at McGill University. He graduated in 1992 with a degree in Biology, specializing in Microbiology and Immunology.',
+      'about.p1': 'Combining a deep commitment to scientific progress with a patient-centered approach, <strong class="text-gray-900">Dr. Angelo Moshopoulos</strong> began his academic career at McGill University. He graduated in 1992 with a degree in Biology, specializing in Microbiology and Immunology.',
       'about.p2': 'His early passion for research led him to a two-year tenure as a researcher at the Hellenic Pasteur Institute, after which he dedicated himself to clinical dentistry, earning his degree from Semmelweis University in 1999.',
-      'about.p3': 'Angelo Moshopoulos has served the southern suburbs since 2002, welcoming patients to his private practice in Paleo Faliro. Since 2003, he has also served as a Consultant in the Oral and Maxillofacial Surgery Department at Metropolitan Hospital.',
+      'about.p3': 'Dr. Moshopoulos has served the southern suburbs since 2002, welcoming patients to his private practice in Paleo Faliro. Since 2003, he has also served as a Consultant in the Oral and Maxillofacial Surgery Department at Metropolitan Hospital.',
       'about.p4': 'In these roles, he has developed extensive expertise in dental implantology, with a focus on precision-led treatments that achieve both aesthetic harmony and complete functional restoration.',
       'about.p5': 'Driven by a vision of community service, he played a key role in the 2001 founding of the Paleo Faliro Municipal Dental Clinic.',
       'about.p6': 'For over two decades, he has voluntarily overseen preventive dental care for the municipality’s children. His dedication to community service was honored in 2015 at a special ceremony by the Municipalities of Paleo Faliro and Piraeus.',
@@ -342,7 +342,7 @@
       'footer.copyright': 'Copyright 2026. Dentplant Clinic. <br>All Rights Reserved.',
       'footer.disclaimer': 'Information provided on this site is for educational purposes only and does not substitute for professional medical consultation.',
       'footer.membership': 'Member of the Dental Association of Piraeus',
-      'footer.medical_review': 'Medically reviewed by Angelo Moshopoulos, DDS | Updated: April 2026',
+      'footer.medical_review': 'Medically reviewed by Dr. Angelo Moshopoulos, DDS | Updated: April 2026',
       'footer.privacy': 'Privacy Policy',
 
       /* ── privacy.html ─────────────────────────── */
@@ -463,7 +463,7 @@
 
       /* ── Social Proof / Reviews ──────────────── */
       'reviews.title': 'Care That Inspires Confidence',
-      'reviews.text': "Our patients' satisfaction is our greatest reward. Discover why hundreds of patients trust Angelo Moshopoulos for their dental health.",
+      'reviews.text': "Our patients' satisfaction is our greatest reward. Discover why hundreds of patients trust Dr. Moshopoulos for their dental health.",
       'reviews.btn': 'View Google Reviews',
 
       /* ── Management Portal ───────────────────── */
