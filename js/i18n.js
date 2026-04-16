@@ -5,11 +5,28 @@
 
   const translations = {
     el: {
+    'title.home': 'Οδοντικά Εμφυτεύματα | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'title.about': 'Χειρουργός Οδοντίατρος | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'title.services': 'Οδοντιατρικές Υπηρεσίες | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'title.contact': 'Επικοινωνία & Τοποθεσία | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'title.booking': 'Online Ραντεβού | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'title.privacy': 'Πολιτική Απορρήτου | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'title.manage': 'Διαχείριση Ραντεβού | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'title.faq': 'Συχνές Ερωτήσεις | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
+    'desc.home': 'Εξειδικευμένη κλινική για οδοντικά εμφυτεύματα στο Παλαιό Φάληρο. Αποκαταστήστε το χαμόγελό σας με σύγχρονες τεχνικές από τον Άγγελο Μοσχόπουλο. Κλείστε ραντεβού!',
+    'desc.about': 'Γνωρίστε τον Άγγελο Μοσχόπουλο, έμπειρο χειρουργό οδοντίατρο στο Παλαιό Φάληρο. Εξειδίκευση στα οδοντικά εμφυτεύματα και την αισθητική οδοντιατρική. Δείτε το βιογραφικό.',
+    'desc.services': 'Ολοκληρωμένες οδοντιατρικές υπηρεσίες στο Παλαιό Φάληρο: Εμφυτεύματα, αισθητική οδοντιατρική & πρόληψη. Ενημερωθείτε για όλες τις λύσεις μας. Κλείστε ραντεβού!',
+    'desc.contact': 'Επικοινωνήστε με την κλινική Dentplant στο Παλαιό Φάληρο. Βρείτε μας στην Πλατεία Ντάβαρη 2 ή καλέστε στο 210 9312651 για το ραντεβού σας. Σας περιμένουμε από κοντά!',
+    'desc.booking': 'Κλείστε το οδοντιατρικό σας ραντεβού online εύκολα και γρήγορα. Επιλέξτε την ημέρα και την ώρα που σας εξυπηρετεί στην κλινική μας στο Παλαιό Φάληρο. Σας περιμένουμε!',
+    'desc.privacy': 'Πολιτική Απορρήτου της Dentplant Clinic στο Παλαιό Φάληρο. Μάθετε πώς προστατεύουμε τα προσωπικά σας δεδομένα σε συμμόρφωση με τον ΓΚΠΔ (GDPR) και την ελληνική νομοθεσία.',
+    'desc.manage': 'Διαχειριστείτε το οδοντιατρικό σας ραντεβού στην κλινική Dentplant. Δείτε τις λεπτομέρειες, αλλάξτε την ημερομηνία ή ακυρώστε το ραντεβού σας εύκολα και γρήγορα online.',
+    'desc.faq': 'Συχνές ερωτήσεις για οδοντικά εμφυτεύματα: κόστος, πόνος, διάρκεια και εγγύηση. Ενημερωθείτε υπεύθυνα από την κλινική μας στο Παλαιό Φάληρο.',
       /* ── Navigation ───────────────────────────── */
       'nav.home': 'Αρχικη',
       'nav.doctor': 'Ο Ιατρος',
       'nav.services': 'Υπηρεσιες',
       'nav.contact': 'Επικοινωνια',
+      'nav.faq': 'ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ',
 
       /* ── Hero / Standalone Header ──────────────── */
       'hero.name': 'Άγγελος Μοσχόπουλος',
@@ -228,6 +245,15 @@
       'reviews.title': 'Φροντίδα που Εμπνέει Εμπιστοσύνη',
       'reviews.text': 'Η ικανοποίηση των ασθενών μας είναι η μεγαλύτερη ανταμοιβή μας. Δείτε γιατί εκατοντάδες ασθενείς εμπιστεύονται τον Άγγελο Μοσχόπουλο για την υγεία του χαμόγελού τους.',
       'reviews.btn': 'Δειτε τις κριτικες στο Google',
+      'reviews.r1.name': 'Γιώργος Π.',
+      'reviews.r1.text': 'Επαγγελματισμός και φροντίδα στο ύψιστο επίπεδο. Η διαδικασία ήταν ανώδυνη και το αποτέλεσμα εκπληκτικό. Συστήνω τον Άγγελο Μοσχόπουλο ανεπιφύλακτα.',
+      'reviews.r2.name': 'Μαρία Κ.',
+      'reviews.r2.text': 'Εξαιρετική εμπειρία! Ο γιατρός είναι πολύ επεξηγηματικός και σου εμπνέει απόλυτη εμπιστοσύνη. Τα εμφυτεύματα δείχνουν και τα νιώθω σαν φυσικά δόντια.',
+      'reviews.r3.name': 'Νικόλαος Σ.',
+      'reviews.r3.text': 'Πολύ καθαρό ιατρείο και φιλικό προσωπικό. Ο κ. Μοσχόπουλος είναι κορυφαίος στον τομέα του. Μετά από χρόνια ταλαιπωρίας, βρήκα επιτέλους τη λύση.',
+      'reviews.r4.name': 'Άννα Μ.',
+      'reviews.r4.text': 'Η "μέθη" ήταν η καλύτερη επιλογή για μένα που φοβόμουν. Δεν κατάλαβα τίποτα! Ένα μεγάλο ευχαριστώ για το νέο μου χαμόγελο.',
+      'reviews.verified': 'Επιβεβαιωμένος Ασθενής',
 
       /* ── Management Portal ───────────────────── */
       'mg.title': 'Διαχείριση Ραντεβού',
@@ -243,13 +269,46 @@
       'mg.confirm_no': 'Όχι, Επιστροφή',
       'mg.cancel_success': 'Το ραντεβού σας ακυρώθηκε με επιτυχία.',
       'mg.redirecting': 'Επιστροφή στην αρχική σελίδα σε λίγα δευτερόλεπτα...',
+
+      /* ── faq.html ─────────────────────────────── */
+      'faq.title': 'Συχνές Ερωτήσεις',
+      'faq.subtitle': 'Υπεύθυνες απαντήσεις στις πιο συχνές απορίες σας για τα οδοντικά εμφυτεύματα.',
+      'faq.q1': 'Ποιο είναι το κόστος των οδοντικών εμφυτεύμάτων;',
+      'faq.a1': 'Το κόστος των οδοντικών εμφυτευμάτων εξαρτάται από την πολυπλοκότητα της περίπτωσης, τον αριθμό των δοντιών και την επιλογή των υλικών. Στην κλινική μας προσφέρουμε πλήρη διαφάνεια με αναλυτικά και εξατομικευμένα σχέδια θεραπείας.',
+      'faq.q2': 'Πονάει η διαδικασία τοποθέτησης οδοντικών εμφυτευμάτων;',
+      'faq.a2': 'Η επέμβαση πραγματοποιείται με τοπική αναισθησία ή μέθη, διασφαλίζοντας μια εντελώς ανώδυνη εμπειρία. Η μετεγχειρητική ενόχληση είναι συνήθως ήπια και αντιμετωπίζεται εύκολα με κοινά παυσίπονα.',
+      'faq.q3': 'Πόσο καιρό διαρκεί η διαδικασία από την αρχή μέχρι το τέλος;',
+      'faq.a3': 'Η τυπική διαδικασία διαρκεί από 3 έως 6 μήνες, επιτρέποντας στο εμφύτευμα να ενσωματωθεί πλήρως στο οστό. Σε ορισμένες περιπτώσεις, είναι δυνατή η άμεση τοποθέτηση και φόρτωση του δοντιού την ίδια ημέρα.',
+      'faq.q4': 'Υπάρχει εγγύηση για τα οδοντικά εμφυτεύματα;',
+      'faq.a4': 'Χρησιμοποιούμε κορυφαία παγκοσμίως συστήματα εμφυτευμάτων που συνοδεύονται από εφ’ όρου ζωής εγγύηση για τα υλικά. Η μακροχρόνια επιτυχία διασφαλίζεται μέσω του τακτικού ελέγχου και της σωστής στοματικής υγιεινής.',
+      'faq.q5': 'Είμαι κατάλληλος υποψήφιος για εμφυτεύματα;',
+      'faq.a5': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι κατάλληλοι υποψήφιοι. Κατά την πρώτη επίσκεψη, αξιολογούμε την υγεία των ούλων και την ποιότητα του οστού για να καθορίσουμε την καταλληλότερη λύση για εσάς.',
+      'faq.q6': 'Τι είναι η οστική ανάπλαση και πότε είναι απαραίτητη;',
+      'faq.a6': 'Η οστική ανάπλαση είναι μια σύγχρονη τεχνική που χρησιμοποιείται όταν το φυσικό οστό δεν είναι επαρκές για να στηρίξει το εμφύτευμα. Μέσω αυτής της διαδικασίας, αναδομούμε το θεμέλιο του χαμόγελού σας για απόλυτη σταθερότητα.',
     },
     en: {
+    'title.home': 'Dental Implants | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'title.about': 'Dental Surgeon | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'title.services': 'Dental Services | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'title.contact': 'Contact & Location | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'title.booking': 'Online Appointment | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'title.privacy': 'Privacy Policy | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'title.manage': 'Manage Appointment | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'title.faq': 'FAQ | Paleo Faliro | Dr. Angelo Moshopoulos',
+    'desc.home': 'Specialized dental implant clinic in Paleo Faliro. Restore your smile with modern techniques by Dr. Angelo Moshopoulos. Book your appointment online today!',
+    'desc.about': 'Meet Dr. Angelo Moshopoulos, an experienced dental surgeon in Paleo Faliro specializing in dental implants and cosmetic dentistry. Read his full biography.',
+    'desc.services': 'Comprehensive dental services in Paleo Faliro: Implants, cosmetic dentistry, and prevention. Learn about our advanced dental solutions. Book online today!',
+    'desc.faq': 'Frequently asked questions about dental implants: cost, pain, duration, and warranty. Get expert answers from our clinic in Paleo Faliro.',
+    'desc.contact': 'Contact Dentplant Clinic in Paleo Faliro. Visit us at Davari Square 2 or call 210 9312651 to schedule your dental appointment. We look forward to meeting you!',
+    'desc.booking': 'Book your dental appointment online easily and quickly. Choose the day and time that fits your schedule at our clinic in Paleo Faliro. We look forward to seeing you!',
+    'desc.privacy': 'Privacy Policy of Dentplant Clinic in Paleo Faliro. Learn how we protect your personal data in compliance with GDPR and Greek data protection laws.',
+    'desc.manage': 'Manage your dental appointment at Dentplant Clinic. View details, reschedule, or cancel your appointment easily and quickly through our online portal.',
       /* ── Navigation ───────────────────────────── */
       'nav.home': 'Home',
       'nav.doctor': 'The Doctor',
       'nav.services': 'Services',
       'nav.contact': 'Contact',
+      'nav.faq': 'FAQ',
 
       /* ── Hero / Standalone Header ──────────────── */
       'hero.name': 'Dr. Angelo Moshopoulos',
@@ -465,6 +524,15 @@
       'reviews.title': 'Care That Inspires Confidence',
       'reviews.text': "Our patients' satisfaction is our greatest reward. Discover why hundreds of patients trust Dr. Moshopoulos for their dental health.",
       'reviews.btn': 'View Google Reviews',
+      'reviews.r1.name': 'George P.',
+      'reviews.r1.text': 'Professionalism and care at the highest level. The procedure was painless and the result amazing. I highly recommend Dr. Moshopoulos.',
+      'reviews.r2.name': 'Maria K.',
+      'reviews.r2.text': 'Excellent experience! The doctor is very explanatory and inspires absolute confidence. The implants look and feel like natural teeth.',
+      'reviews.r3.name': 'Nikolas S.',
+      'reviews.r3.text': 'Very clean clinic and friendly staff. Mr. Moshopoulos is a leader in his field. After years of suffering, I finally found the solution I was looking for.',
+      'reviews.r4.name': 'Anna M.',
+      'reviews.r4.text': 'IV sedation was the best choice for me as I was afraid. I didn\'t feel a thing! A big thank you for my new smile.',
+      'reviews.verified': 'Verified Patient',
 
       /* ── Management Portal ───────────────────── */
       'mg.title': 'Manage Appointment',
@@ -480,6 +548,22 @@
       'mg.confirm_no': 'No, Go Back',
       'mg.cancel_success': 'Your appointment has been successfully cancelled.',
       'mg.redirecting': 'Redirecting to home page in a few seconds...',
+
+      /* ── faq.html ─────────────────────────────── */
+      'faq.title': 'Frequently Asked Questions',
+      'faq.subtitle': 'Expert answers to your most common questions about dental implants.',
+      'faq.q1': 'What is the cost of dental implants?',
+      'faq.a1': 'The cost of dental implants depends on the complexity of the case, the number of teeth, and the choice of materials. In our clinic, we offer full transparency with detailed and personalized treatment plans.',
+      'faq.q2': 'Is the dental implant placement procedure painful?',
+      'faq.a2': 'The surgery is performed under local anesthesia or sedation, ensuring a completely painless experience. Postoperative discomfort is usually mild and easily managed with common pain relievers.',
+      'faq.q3': 'How long does the entire process take?',
+      'faq.a3': 'The typical process takes 3 to 6 months, allowing the implant to fully integrate with the bone. In certain cases, immediate placement and loading of the tooth on the same day are possible.',
+      'faq.q4': 'Is there a warranty for dental implants?',
+      'faq.a4': 'We use world-leading implant systems that come with a lifetime warranty on materials. Long-term success is ensured through regular checkups and proper oral hygiene.',
+      'faq.q5': 'Am I a suitable candidate for implants?',
+      'faq.a5': 'Most adults who have lost one or more teeth are suitable candidates. During your first visit, we evaluate the health of your gums and the quality of the bone to determine the best solution for you.',
+      'faq.q6': 'What is bone grafting and when is it necessary?',
+      'faq.a6': 'Bone grafting is a modern technique used when the natural bone is insufficient to support the implant. Through this process, we rebuild the foundation of your smile for absolute stability.',
     }
   };
 
@@ -505,6 +589,11 @@
     document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
       const key = el.getAttribute('data-i18n-placeholder');
       if (t[key] !== undefined) el.placeholder = t[key];
+    });
+
+    document.querySelectorAll('meta[name="description"][data-i18n-content]').forEach(el => {
+      const key = el.getAttribute('data-i18n-content');
+      if (t[key] !== undefined) el.setAttribute('content', t[key]);
     });
 
     /* Toggle button shows the other language as the switch target */
