@@ -98,7 +98,6 @@
       'quote.about': '&quot; Η αφοσίωσή μας στην επιστήμη της οδοντιατρικής μεταφράζεται σε εξατομικευμένη και ουσιαστική φροντίδα για κάθε ασθενή. <br>Με οδηγό τη συνεχή εξέλιξη και το σεβασμό στις ανάγκες σας, χτίζουμε σχέσεις εμπιστοσύνης που διαρκούν. Αποτελεί τιμή μας να αναλαμβάνουμε τη φροντίδα του χαμόγελού σας. &quot;',
       'quote.services': '&quot; Προσφέρουμε ένα πλήρες φάσμα σύγχρονων οδοντιατρικών θεραπειών, καθεμία από τις οποίες είναι προσαρμοσμένη στις πραγματικές σας ανάγκες.<br>Με την υποστήριξη της τελευταίας λέξης της τεχνολογίας και πολυετή εμπειρία, στοχεύουμε σε αποτελέσματα που φαίνονται φυσικά και αντέχουν στον χρόνο. Κάθε μας απόφαση οδηγείται από τη δική σας στοματική υγεία. &quot;',
       'quote.faq': '&quot; Στόχος μας είναι η πλήρης ενημέρωση και η απόλυτη διαφάνειά σας σε κάθε βήμα. <br>Είμαστε εδώ για να απαντήσουμε σε κάθε σας απορία και να σας βοηθήσουμε να λάβετε την καλύτερη απόφαση για το χαμόγελό σας. Η εμπιστοσύνη σας είναι η μεγαλύτερη ανταμοιβή μας. &quot;',
-
       /* ── about.html — biography sections ──────── */
       'about.p1': 'Με βαθιά αφοσίωση στην επιστήμη και τον άνθρωπο, ο <strong class="text-gray-900">Άγγελος Μοσχόπουλος</strong> ξεκίνησε την ακαδημαϊκή του πορεία στο Πανεπιστήμιο McGill, ολοκληρώνοντας το 1992 τις σπουδές του στη Βιολογία, με εξειδίκευση στη Μικροβιολογία και την Ανοσολογία.',
       'about.p2': 'Η αγάπη του για την έρευνα τον οδήγησε στο Ελληνικό Ινστιτούτο Παστέρ, όπου εργάστηκε ως ερευνητής για δύο χρόνια, προτού αφοσιωθεί στην Οδοντιατρική, λαμβάνοντας το πτυχίο του από το Πανεπιστήμιο Semmelweis το 1999.',
@@ -131,12 +130,34 @@
       /* ── Footer ───────────────────────────────── */
       'footer.address': 'Πλατεία Ντάβαρη 2, Παλαιό Φάληρο<br>τηλ. 210 931 2651',
       'footer.copyright': 'Copyright 2026. Dentplant Clinic. <br>Με την επιφύλαξη παντός δικαιώματος.',
-      'footer.disclaimer': 'Η ενημέρωση σε αυτόν τον ιστότοπο παρέχεται αποκλειστικά για εκπαιδευτικούς σκοπούς και δεν υποκαθιστά την επαγγελματική ιατρική συμβουλή.',
+      'footer.disclaimer': 'Μια Σημείωση για την Υγεία σας: Μας αρέσει να μοιραζόμαστε την οδοντιατρική μας τεχνογνωσία, αλλά παρακαλούμε να θυμάστε ότι οι πληροφορίες σε αυτόν τον ιστότοπο προορίζονται για ενημέρωση και όχι για προσωπική διάγνωση. Ένας ιστότοπος δεν μπορεί να αντικαταστήσει τη δια ζώσης εξέταση. Εάν αντιμετωπίζετε ένα επείγον οδοντιατρικό περιστατικό, παρακαλούμε καλέστε εμάς ή τις τοπικές υπηρεσίες έκτακτης ανάγκης αμέσως. <a href="disclaimer.html" class="underline decoration-white/30 hover:text-white transition-colors">[Διαβάστε την Πλήρη Ιατρική Αποποίηση]</a>',
       'footer.metropolitan': '<a href="https://www.metropolitan-hospital.gr/el/" target="_blank" class="hover:text-white group transition-colors inline-flex items-center gap-1">Metropolitan Hospital <span class="group-hover:translate-x-0.5 transition-transform text-[10px] opacity-70">→</span></a>',
       'footer.membership': 'Μέλος του <a href="https://www.osp.gr/odontiatros/%ce%bc%ce%bf%cf%83%cf%87%ce%bf%cf%80%ce%bf%cf%85%ce%bb%ce%bf%cf%83-%ce%b1%ce%b3%ce%b3%ce%b5%ce%bb%ce%bf%cf%83-2/#" target="_blank" class="hover:text-white group transition-colors inline-flex items-center gap-1">Οδοντιατρικού Συλλόγου Πειραιώς <span class="group-hover:translate-x-0.5 transition-transform text-[10px] opacity-70">→</span></a>',
       'footer.doctoranytime': '<a href="https://www.doctoranytime.gr/d/Odontiatros/moshopoulos-aggelos" target="_blank" class="hover:text-white group transition-colors inline-flex items-center gap-1">Doctoranytime Προφίλ <span class="group-hover:translate-x-0.5 transition-transform text-[10px] opacity-70">→</span></a>',
       'footer.medical_review': 'Ελέγχθηκε ιατρικά από τον Άγγελο Μοσχόπουλο, DMD | Ενημέρωση: Απρίλιος 2026',
       'footer.privacy': 'Πολιτική Απορρήτου',
+ 
+      /* ── disclaimer.html ───────────────────────── */
+      'disclaimer.title': 'Ιατρική Ενημέρωση & Διαφάνεια',
+      'disclaimer.body': `
+        <p>Στην κλινική του Δρ. Άγγελου Μοσχόπουλου, πιστεύουμε ότι οι ενημερωμένοι ασθενείς έχουν τα καλύτερα αποτελέσματα. Αυτή η σελίδα περιγράφει πώς να χρησιμοποιείτε τις πληροφορίες στον ιστότοπό μας με ασφάλεια.</p>
+        <p><strong>Τελευταία ενημέρωση: Απρίλιος 2026</strong></p>
+
+        <h2>1. Δεν έχουμε γνωρίσει ακόμα το χαμόγελό σας</h2>
+        <p>Η περιήγηση σε αυτόν τον ιστότοπο ή η χρήση της φόρμας κρατήσεών μας είναι ένα εξαιρετικό πρώτο βήμα, αλλά δεν σας καθιστά επίσημα ασθενή του Δρ. Μοσχόπουλου. Αυτή η ιδιαίτερη σχέση "Γιατρού-Ασθενούς" ξεκινά μόνο όταν κάθεστε στην καρέκλα μας για μια κλινική εξέταση και έχουμε αξιολογήσει μαζί το ιστορικό σας.</p>
+
+        <h2>2. Ενημέρωση, όχι Συμβουλή</h2>
+        <p>Δίνουμε μεγάλη προσοχή στα άρθρα μας για τα εμφυτεύματα και τη στοματική υγεία. Ωστόσο, αυτό το περιεχόμενο προορίζεται για ενημέρωση και όχι ως θεραπευτικό σχέδιο. Κάθε στόμα είναι διαφορετικό — ό,τι λειτουργεί για ένα άτομο μπορεί να μην είναι κατάλληλο για εσάς. Πάντα να ζητάτε τη συμβουλή ενός εξειδικευμένου επαγγελματία πριν λάβετε αποφάσεις για την υγεία σας.</p>
+
+        <h2>3. Πραγματικά Αποτελέσματα, Προσωπικές Ιστορίες</h2>
+        <p>Οι φωτογραφίες και οι μαρτυρίες που βλέπετε εδώ αφορούν πραγματικούς ασθενείς με πραγματικά αποτελέσματα. Ωστόσο, η οδοντιατρική εμφυτευματολογία είναι μια βιολογική διαδικασία. Επειδή ο καθένας θεραπεύεται διαφορετικά, αυτές οι ιστορίες είναι παραδείγματα του τι είναι εφικτό και όχι μια κυριολεκτική εγγύηση πανομοιότυπων αποτελεσμάτων για κάθε περίπτωση.</p>
+
+        <h2>4. Εάν πονάτε αυτή τη στιγμή</h2>
+        <p>Ο ιστότοπός μας και οι φόρμες επικοινωνίας δεν παρακολουθούνται όλο το 24ωρο για επείγοντα περιστατικά. Εάν αντιμετωπίζετε έντονο πόνο, πρήξιμο ή τραυματισμό, παρακαλούμε μην περιμένετε απάντηση μέσω email. Καλέστε την κλινική μας απευθείας στο <a href="tel:2109312651" class="font-bold text-brand-blue hover:underline">210 931 2651</a> ή επισκεφθείτε το πλησιέστερο τμήμα επειγόντων περιστατικών.</p>
+
+        <h2>5. Τεχνική Ακρίβεια</h2>
+        <p>Κάνουμε το καλύτερο δυνατό για να διατηρούμε αυτόν τον ιστότοπο ενημερωμένο με την τελευταία οδοντιατρική τεχνολογία του 2026. Εάν συνδεόμαστε με μια ερευνητική εργασία ή έναν οδοντιατρικό σύλλογο, είναι επειδή το θεωρούμε χρήσιμο, αλλά δεν ελέγχουμε ούτε μας ανήκει το περιεχόμενο σε αυτούς τους εξωτερικούς ιστότοπους.</p>
+      `,
 
       /* ── privacy.html ─────────────────────────── */
       'privacy.title': 'Πολιτική Απορρήτου',
@@ -317,6 +338,7 @@
       'days.sun': 'Κυριακή',
       'hours.mon_fri': '10:00 – 20:00',
       'hours.closed': 'Κλειστά',
+      'hours.by_phone': 'Τηλεφωνικά',
     },
     en: {
     'title.home': 'Dental Implants | Paleo Faliro | Dr. Angelo Moshopoulos',
@@ -447,12 +469,34 @@
       /* ── Footer ───────────────────────────────── */
       'footer.address': 'Plateia Ntavari 2, Paleo Faliro<br>tel. 210 931 2651',
       'footer.copyright': 'Copyright 2026. Dentplant Clinic. <br>All Rights Reserved.',
-      'footer.disclaimer': 'Information provided on this site is for educational purposes only and does not substitute for professional medical consultation.',
+      'footer.disclaimer': 'A Note on Your Health: We love sharing our dental expertise, but please remember that the info on this site is for education, not a personal diagnosis. A website can’t replace an in-person exam. If you have a dental emergency, please call us or local emergency services immediately. <a href="disclaimer.html" class="underline decoration-white/30 hover:text-white transition-colors">[Read our Full Medical Disclaimer]</a>',
       'footer.metropolitan': '<a href="https://www.metropolitan-hospital.gr/el/" target="_blank" class="hover:text-white group transition-colors inline-flex items-center gap-1">Metropolitan Hospital <span class="group-hover:translate-x-0.5 transition-transform text-[10px] opacity-70">→</span></a>',
       'footer.membership': 'Member of the <a href="https://www.osp.gr/odontiatros/%ce%bc%ce%bf%cf%83%cf%87%ce%bf%cf%80%ce%bf%cf%85%ce%bb%ce%bf%cf%83-%ce%b1%ce%b3%ce%b3%ce%b5%ce%bb%ce%bf%cf%83-2/#" target="_blank" class="hover:text-white group transition-colors inline-flex items-center gap-1">Dental Association of Piraeus <span class="group-hover:translate-x-0.5 transition-transform text-[10px] opacity-70">→</span></a>',
       'footer.doctoranytime': '<a href="https://www.doctoranytime.gr/d/Odontiatros/moshopoulos-aggelos" target="_blank" class="hover:text-white group transition-colors inline-flex items-center gap-1">Doctoranytime Profile <span class="group-hover:translate-x-0.5 transition-transform text-[10px] opacity-70">→</span></a>',
       'footer.medical_review': 'Medically reviewed by Dr. Angelo Moshopoulos, DMD | Updated: April 2026',
       'footer.privacy': 'Privacy Policy',
+
+      /* ── disclaimer.html ───────────────────────── */
+      'disclaimer.title': 'Medical Information & Transparency',
+      'disclaimer.body': `
+        <p>At Dr. Angelo Moshopoulos’s clinic, we believe informed patients have the best outcomes. This page outlines how to use the information on our site safely.</p>
+        <p><strong>Last Updated: April 2026</strong></p>
+
+        <h2>1. We haven’t met your smile yet</h2>
+        <p>Browsing this site or using our booking form is a great first step, but it doesn't officially make you a patient of Dr. Moshopoulos. That special "Doctor-Patient" relationship starts only when you’re sitting in our chair for a clinical examination and we’ve reviewed your history together.</p>
+
+        <h2>2. Education, not Advice</h2>
+        <p>We put a lot of care into our articles on implants and oral health. However, this content is meant to educate, not to act as a treatment plan. Every mouth is different—what works for one person might not be right for you. Always seek the advice of a qualified professional before making health decisions.</p>
+
+        <h2>3. Real Results, Individual Stories</h2>
+        <p>The photos and testimonials you see here are real patients with real results. However, dental implantology is a biological process. Because everyone heals differently, these stories are examples of what’s possible, not a literal guarantee of identical results for every case.</p>
+
+        <h2>4. If you’re in pain right now</h2>
+        <p>Our website and contact forms are not monitored 24/7 for emergencies. If you are experiencing severe pain, swelling, or an injury, please don't wait for an email reply. Call our clinic directly at <a href="tel:2109312651" class="font-bold text-brand-blue hover:underline">210 931 2651</a> or visit the nearest emergency room.</p>
+
+        <h2>5. Technical Accuracy</h2>
+        <p>We do our best to keep this site updated with the latest in 2026 dental technology. If we link to a research paper or a dental association, it’s because we find it helpful, but we don't control or "own" the content on those external sites.</p>
+      `,
 
       /* ── privacy.html ─────────────────────────── */
       'privacy.title': 'Privacy Policy',
@@ -631,6 +675,7 @@
       'days.sun': 'Sunday',
       'hours.mon_fri': '10:00 – 20:00',
       'hours.closed': 'Closed',
+      'hours.by_phone': 'By phone',
 
       /* ── index.html — article cards ──────────── */
       'card1.title': 'Am I a Candidate for Dental Implants?',

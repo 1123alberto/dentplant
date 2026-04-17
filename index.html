@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="el">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,7 +20,6 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
-
     .article-item {
       grid-area: 1 / 1;
       transition: opacity 1500ms ease-in-out;
@@ -29,21 +27,18 @@
       flex-direction: column;
       height: 100%;
     }
-
     .article-item.active-article {
       opacity: 1;
       visibility: visible;
       z-index: 10;
       pointer-events: auto;
     }
-
     .article-item.inactive-article {
       opacity: 0;
       visibility: hidden;
       z-index: 0;
       pointer-events: none;
     }
-
     /* Premium Booking Overrides */
     :root {
         --clr-accent-blue: #0284c7;
@@ -51,46 +46,38 @@
         --font-display: 'Julius Sans One', sans-serif;
         --font-body: 'Open Sans', sans-serif;
     }
-
     #booking-modal .bg-white {
         font-family: var(--font-body);
         border-radius: 1.5rem;
         box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
     }
-
     .calendar-nav-btn {
         transition: all 0.2s ease;
         border: 1px solid #e2e8f0 !important;
     }
-
     .calendar-nav-btn:hover {
         border-color: var(--clr-accent-blue) !important;
         color: var(--clr-accent-blue) !important;
     }
-
     .date-btn {
         transition: all 0.2s ease;
         border-radius: 8px !important;
     }
-
     .date-btn:not(.disabled):hover {
         background: #f1f5f9;
         color: var(--clr-accent-blue);
     }
-
     .time-slot-btn {
         border-radius: 12px !important;
         transition: all 0.2s ease;
         border: 1px solid #e2e8f0 !important;
         font-weight: 500 !important;
     }
-
     .time-slot-btn:hover {
         border-color: var(--clr-accent-blue) !important;
         color: var(--clr-accent-blue);
         transform: translateY(-2px);
     }
-
     .btn-primary {
         background: var(--clr-brand-blue) !important;
         font-family: var(--font-display);
@@ -98,7 +85,6 @@
         letter-spacing: 0.1em;
         border-radius: 2rem !important;
     }
-
     .btn-primary:hover {
         background: var(--clr-accent-blue) !important;
     }
@@ -177,9 +163,7 @@
     }
     </script>
 </head>
-
 <body class="bg-white overflow-x-hidden">
-
   <nav
     class="fixed top-0 w-full bg-brand-blue shadow-md z-50 px-6 py-3 flex items-center justify-between transition-transform duration-300">
     <a href="#" class="w-12 h-12 rounded-full shadow-strong overflow-hidden flex-shrink-0 bg-white">
@@ -199,7 +183,6 @@
         class="lang-toggle text-white border border-white/50 rounded px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase hover:bg-white/20 transition-all duration-300 flex-shrink-0">EN</button>
     </div>
   </nav>
-
   <header
     class="min-h-screen bg-brand-blue bg-[url('../images/tools_wallpaper.jpg')] bg-cover bg-scroll md:bg-fixed bg-center bg-no-repeat flex flex-col justify-center items-center relative pt-20">
     <div class="text-center w-full px-4">
@@ -226,7 +209,6 @@
       </div>
     </div>
   </header>
-
   <section class="flex flex-wrap justify-center items-stretch bg-gradient-to-b from-brand-blue to-white py-16 px-4">
     <!-- Slot 1 -->
     <div class="article-slot relative max-w-sm w-full mx-4 my-6 bg-white rounded-lg shadow-xl">
@@ -257,7 +239,6 @@
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card4.excerpt">Η έλλειψη οστικής μάζας σπάνια αποτελεί οριστικό πρόβλημα. Η τοποθέτηση οστικού μοσχεύματος είναι πλέον μια διαδικασία ρουτίνας που δημιουργεί το απαραίτητο θεμέλιο.</p>
       </div>
     </div>
-
     <!-- Slot 2 -->
     <div class="article-slot relative max-w-sm w-full mx-4 my-6 bg-white rounded-lg shadow-xl">
       <!-- Article 2 -->
@@ -287,7 +268,6 @@
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card5.excerpt">Τα εμφυτεύματα έχουν μεγαλύτερο αρχικό κόστος, αλλά η αντοχή τους στον χρόνο τα καθιστά την πιο συμφέρουσα και ποιοτική λύση για το μέλλον.</p>
       </div>
     </div>
-
     <!-- Slot 3 -->
     <div class="article-slot relative max-w-sm w-full mx-4 my-6 bg-white rounded-lg shadow-xl">
       <!-- Article 3 -->
@@ -318,7 +298,6 @@
       </div>
     </div>
   </section>
-
   <!-- Modals -->
   <div id="modal-2" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div
@@ -336,7 +315,6 @@
       </div>
     </div>
   </div>
-
   <div id="modal-3" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div
       class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
@@ -356,7 +334,6 @@
       </div>
     </div>
   </div>
-
   <div id="modal-4" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div
       class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
@@ -375,7 +352,6 @@
       </div>
     </div>
   </div>
-
   <!-- Placeholder Modals for new articles -->
   <div id="modal-5" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div
@@ -392,7 +368,6 @@
       </div>
     </div>
   </div>
-
   <div id="modal-6" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div
       class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
@@ -409,7 +384,6 @@
       </div>
     </div>
   </div>
-
   <div id="modal-7" class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
     <div
       class="bg-white max-w-3xl w-full max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl relative p-6 md:p-10 hide-scrollbar">
@@ -427,7 +401,6 @@
       </div>
     </div>
   </div>
-
   <!-- Booking Modal -->
   <div id="booking-modal"
     class="modal fixed inset-0 z-[100] items-center justify-center bg-black/60 backdrop-blur-sm px-4">
@@ -435,7 +408,6 @@
       class="bg-white max-w-[500px] w-full shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative p-6 md:p-8 rounded-[1.5rem] font-open transition-all duration-300 ease-in-out transform">
       <button
         class="modal-close absolute top-5 right-5 text-gray-400 hover:text-[#1a365d] transition-colors text-2xl leading-none z-10">&times;</button>
-
       <section id="booking" class="booking-section">
         <div class="container mx-auto">
           <!-- Header is only for Step 1 -->
@@ -444,7 +416,6 @@
               Ραντεβού σας</h2>
             <p class="text-gray-500 mt-1 text-xs tracking-wide" data-i18n="bm.subtitle">Επιλέξτε ημερομηνία και ώρα.</p>
           </div>
-
           <div class="booking-widget">
             <!-- Step 1: Calendar -->
             <div id="booking-step-1" class="booking-step active">
@@ -466,7 +437,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Step 2: Time Slots -->
             <div id="booking-step-2" class="booking-step" style="display: none;">
               <button
@@ -480,7 +450,6 @@
                 <!-- JS will populate -->
               </div>
             </div>
-
             <!-- Step 3: Details Form -->
             <div id="booking-step-3" class="booking-step" style="display: none;">
               <button
@@ -494,7 +463,6 @@
                 class="selected-slot-info mb-5 text-center text-[#475569] text-sm md:text-base border-b border-gray-100 pb-3">
                 <strong id="final-date-time">Επιλεγμένο Ραντεβού</strong>
               </p>
-
               <form id="booking-form" class="custom-form w-full px-2">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
                   <!-- Left Column: Contact Details -->
@@ -521,12 +489,10 @@
                         class="w-full px-3 py-2 border border-gray-200 rounded focus:outline-none focus:border-[#0284c7] focus:ring-1 focus:ring-[#0284c7] text-gray-700 placeholder-gray-400 text-sm transition-all shadow-sm">
                     </div>
                   </div>
-
                   <!-- Right Column: Checkboxes -->
                   <div class="flex flex-col mt-4 md:mt-0 border-t border-gray-100 pt-4 md:border-none md:pt-0">
                     <p class="font-bold text-[#1a365d] text-sm mb-1" data-i18n="bm.services.heading">Ενδιαφέρομαι για...
                     </p>
-
                     <label
                       class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
                       <input type="checkbox" name="services" value="General Check"
@@ -547,7 +513,6 @@
                     </label>
                   </div>
                 </div>
-
                 <div class="text-center mt-6">
                   <button type="submit"
                     class="btn btn-primary inline-block bg-[#0284c7] text-white font-bold py-3 px-[20px] rounded-[2rem] hover:bg-blue-600 transition shadow-md text-sm uppercase tracking-wide"
@@ -561,7 +526,6 @@
                 </div>
               </form>
             </div>
-
             <!-- Step 4: Success Message -->
             <div id="booking-step-4" class="booking-step text-center py-6" style="display: none;">
               <div class="success-icon text-5xl text-green-500 mb-4 font-bold">✓</div>
@@ -578,7 +542,6 @@
       </section>
     </div>
   </div>
-
   <section class="py-24 bg-gray-50 overflow-hidden">
     <div class="container mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
@@ -588,7 +551,6 @@
           ★★★★★ <span class="ml-2 font-bold text-brand-blue text-lg">5.0 / 5.0</span>
         </div>
       </div>
-
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         <!-- Review 1 -->
         <div class="bg-white p-8 rounded-3xl shadow-premium border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
@@ -604,7 +566,6 @@
             </div>
           </div>
         </div>
-
         <!-- Review 2 -->
         <div class="bg-white p-8 rounded-3xl shadow-premium border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
           <div>
@@ -619,7 +580,6 @@
             </div>
           </div>
         </div>
-
         <!-- Review 3 -->
         <div class="bg-white p-8 rounded-3xl shadow-premium border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
           <div>
@@ -634,7 +594,6 @@
             </div>
           </div>
         </div>
-
         <!-- Review 4 -->
         <div class="bg-white p-8 rounded-3xl shadow-premium border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
           <div>
@@ -650,7 +609,6 @@
           </div>
         </div>
       </div>
-
       <div class="flex justify-center items-center mt-12 mb-12">
         <a href="https://www.google.com/maps/place/%CE%86%CE%B3%CE%B3%CE%B5%CE%BB%CE%BF%CF%82+%CE%9C%CE%BF%CF%83%CF%87%CF%8C%CF%80%CE%BF%CF%85%CE%BB%CE%BF%CF%82+%7C+i-smile+%26+Dentplant/@37.9302695,23.7035553,17.51z/data=!4m6!3m5!1s0x14a1bc37b5d18049:0x429c5800724d6f8d!8m2!3d37.9308807!4d23.7035164!16s%2Fg%2F1td3_grq?entry=ttu&g_ep=EgoyMDI2MDQxNC4wIKXMDSoASAFQAw%3D%3D" 
            target="_blank" 
@@ -659,7 +617,6 @@
       </div>
     </div>
   </section>
-
   <section class="py-12 bg-white">
     <hr class="w-4/5 mx-auto border-gray-200">
     <div
@@ -672,7 +629,6 @@
     </div>
     <hr class="w-4/5 mx-auto border-gray-200">
   </section>
-
   <div class="text-center mt-8 mb-12 fade-in flex justify-center space-x-6">
     <a href="https://www.facebook.com/dentplant/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
       <img class="w-10 h-10" src="socialicons/webicon-facebook.png" alt="facebook">
@@ -684,7 +640,6 @@
       <img class="w-10 h-10" src="socialicons/webicon-linkedin.png" alt="linkedin">
     </a>
   </div>
-
   <footer class="py-12 bg-brand-blue border-t border-white/10">
     <div class="container mx-auto px-6">
       <div class="flex flex-col items-center text-center space-y-6">
@@ -697,30 +652,26 @@
             <span class="group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
-
         <div class="max-w-2xl text-white/60 text-xs leading-relaxed font-open space-y-2">
-          <p data-i18n="footer.disclaimer">Η ενημέρωση σε αυτόν τον ιστότοπο παρέχεται αποκλειστικά για εκπαιδευτικούς σκοπούς και δεν υποκαθιστά την επαγγελματική ιατρική συμβουλή.</p>
+          <p data-i18n-html="footer.disclaimer">Η ενημέρωση σε αυτόν τον ιστότοπο παρέχεται αποκλειστικά για εκπαιδευτικούς σκοπούς και δεν υποκαθιστά την επαγγελματική ιατρική συμβουλή.</p>
           <p class="font-bold text-white/80 pt-4" data-i18n-html="footer.metropolitan"></p>
           <p class="font-bold text-white/80 py-1" data-i18n-html="footer.membership">Μέλος του Οδοντιατρικού Συλλόγου Πειραιά</p>
           <p class="font-bold text-white/80 pb-4" data-i18n-html="footer.doctoranytime"></p>
           <p class="italic" data-i18n="footer.medical_review">Ελέγχθηκε ιατρικά από τον Άγγελο Μοσχόπουλο, DMD | Ενημέρωση: Απρίλιος 2026</p>
         </div>
-
         <div class="flex flex-wrap justify-center gap-6 text-white/70 text-sm font-medium uppercase tracking-widest">
-          <a href="privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">Πολιτική Απορρήτου</a>
+                    
+                    <a href="privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">Πολιτική Απορρήτου</a>
         </div>
-
         <p class="text-white/40 font-noto text-[10px] uppercase tracking-tighter" data-i18n-html="footer.copyright">
           Copyright 2026. Dentplant Clinic. <br>All Rights Reserved.
         </p>
       </div>
     </div>
   </footer>
-
   <script src="js/i18n.js"></script>
   <script src="js/outofview.js"></script>
   <script src="js/main.js"></script>
   <script src="js/booking.js?v=3" defer></script>
 </body>
-
 </html>
