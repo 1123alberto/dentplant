@@ -97,6 +97,7 @@
       'quote.index': '&quot; Η υγεία και η λειτουργικότητα του χαμόγελού σας αποτελούν για εμάς κορυφαία προτεραιότητα.<br>Στο υπερσύγχρονο ιατρείο μας, συνδυάζουμε την επιστημονική αρτιότητα με την ανθρώπινη προσέγγιση. Σας καλωσορίζουμε σε ένα περιβάλλον όπου η προσωπική φροντίδα συναντά την καινοτομία. &quot;',
       'quote.about': '&quot; Η αφοσίωσή μας στην επιστήμη της οδοντιατρικής μεταφράζεται σε εξατομικευμένη και ουσιαστική φροντίδα για κάθε ασθενή. <br>Με οδηγό τη συνεχή εξέλιξη και το σεβασμό στις ανάγκες σας, χτίζουμε σχέσεις εμπιστοσύνης που διαρκούν. Αποτελεί τιμή μας να αναλαμβάνουμε τη φροντίδα του χαμόγελού σας. &quot;',
       'quote.services': '&quot; Προσφέρουμε ένα πλήρες φάσμα σύγχρονων οδοντιατρικών θεραπειών, καθεμία από τις οποίες είναι προσαρμοσμένη στις πραγματικές σας ανάγκες.<br>Με την υποστήριξη της τελευταίας λέξης της τεχνολογίας και πολυετή εμπειρία, στοχεύουμε σε αποτελέσματα που φαίνονται φυσικά και αντέχουν στον χρόνο. Κάθε μας απόφαση οδηγείται από τη δική σας στοματική υγεία. &quot;',
+      'quote.faq': '&quot; Στόχος μας είναι η πλήρης ενημέρωση και η απόλυτη διαφάνειά σας σε κάθε βήμα. <br>Είμαστε εδώ για να απαντήσουμε σε κάθε σας απορία και να σας βοηθήσουμε να λάβετε την καλύτερη απόφαση για το χαμόγελό σας. Η εμπιστοσύνη σας είναι η μεγαλύτερη ανταμοιβή μας. &quot;',
 
       /* ── about.html — biography sections ──────── */
       'about.p1': 'Με βαθιά αφοσίωση στην επιστήμη και τον άνθρωπο, ο <strong class="text-gray-900">Άγγελος Μοσχόπουλος</strong> ξεκίνησε την ακαδημαϊκή του πορεία στο Πανεπιστήμιο McGill, ολοκληρώνοντας το 1992 τις σπουδές του στη Βιολογία, με εξειδίκευση στη Μικροβιολογία και την Ανοσολογία.',
@@ -106,10 +107,20 @@
       'about.p5': 'Με όραμα την προσφορά στην κοινωνία, το 2001 συνέβαλε καθοριστικά στην ίδρυση της Οδοντιατρικής Κλινικής των Δημοτικών Ιατρείων Παλαιού Φαλήρου.',
       'about.p6': 'Εδώ και περισσότερες από δύο δεκαετίες, φροντίζει με χαρά και υπευθυνότητα την προληπτική οδοντιατρική των παιδιών του δήμου. Η πολύτιμη εθελοντική του δράση τιμήθηκε το 2015 σε ειδική τελετή από τους Δήμους Παλαιού Φαλήρου και Πειραιά.',
 
-      /* ── services.html ────────────────────────── */
-      'services.p1': 'Στο επίκεντρο της φιλοσοφίας μας βρίσκεται η ευημερία και το χαμόγελο κάθε ασθενούς. Πιστεύουμε ακράδαντα πως ο προσεκτικός σχεδιασμός της θεραπείας, η συστηματική εκπαίδευση στη σωστή στοματική υγιεινή και η προληπτική φροντίδα αποτελούν τα ισχυρότερα θεμέλια για υγιείς και ανθεκτικές αποκαταστάσεις που αντέχουν στον χρόνο.',
-      'services.p2': 'Το ταξίδι προς ένα τέλειο χαμόγελο ξεκινά πάντα από ένα υγιές θεμέλιο. Μέσα από σχολαστικό καθαρισμό, άμεση αντιμετώπιση της τερηδόνας και στοχευμένες θεραπείες, διασφαλίζουμε την ιδανική κατάσταση της στοματικής κοιλότητας. Μόνο τότε προχωράμε με σιγουριά και ασφάλεια στο επόμενο στάδιο της αποκατάστασης των δοντιών μέσω της σύγχρονης εμφυτευματολογίας.',
-      'services.p3': 'Γνωρίζοντας πως η επίσκεψη στον οδοντίατρο μπορεί να προκαλεί άγχος, έχουμε διαμορφούμε έναν χώρο ζεστό, φιλόξενο και απόλυτα άνετο. Με εύκολη πρόσβαση, μεγάλη ευελιξία στα ραντεβού και πρωταρχικό μας μέλημα τον απόλυτο σεβασμό στην ευαισθησία και τις ανάγκες σας, φροντίζουμε η εμπειρία σας μαζί μας να είναι πάντα ήρεμη, ανώδυνη και θετική.',
+      'services.p3': 'Γνωρίζοντας πως η επίσκεψη στον οδοντίατρο μπορεί να προκαλεί άγχος, έχουμε διαμορφώσει έναν χώρο ζεστό, φιλόξενο και απόλυτα άνετο. Με εύκολη πρόσβαση, μεγάλη ευελιξία στα ραντεβού και πρωταρχικό μας μέλημα τον απόλυτο σεβασμό στην ευαισθησία και τις ανάγκες σας, φροντίζουμε η εμπειρία σας μαζί μας να είναι πάντα ήρεμη, ανώδυνη και θετική.',
+      'svc.implants.title': 'Οδοντικά Εμφυτεύματα Παλαιό Φάληρο',
+      'svc.implants.desc': 'Η πλέον σύγχρονη και μόνιμη λύση για την αναπλήρωση χαμένων δοντιών. Τα οδοντικά εμφυτεύματα διατηρούν την υγεία της γνάθου και προσφέρουν την αίσθηση και τη λειτουργικότητα των φυσικών δοντιών, εξασφαλίζοντας ένα σταθερό χαμόγελο για μια ζωή.',
+      'svc.extractions.title': 'Χειρουργικές Εξαγωγές & Φρονιμίτες',
+      'svc.extractions.desc': 'Εξειδικευμένες χειρουργικές εξαγωγές εγκλείστων ή προβληματικών δοντιών. Με τη χρήση προηγμένων τεχνικών και απόλυτο σεβασμό στον ασθενή, η διαδικασία πραγματοποιείται ανώδυνα, ελαχιστοποιώντας τον χρόνο αποκατάστασης.',
+      'svc.bonegraft.title': 'Οστικό Μόσχευμα & Ανάπλαση',
+      'svc.bonegraft.desc': 'Η ανάπλαση οστού είναι απαραίτητη όταν η γνάθος δεν διαθέτει την απαιτούμενη μάζα για εμφυτεύματα. Χρησιμοποιούμε σύγχρονα μοσχεύματα για να δημιουργήσουμε ένα ισχυρό θεμέλιο, διασφαλίζοντας τη μακροχρόνια επιτυχία της θεραπείας σας.',
+      'svc.minorsurgery.title': 'Μικροχειρουργική Στόματος',
+      'svc.minorsurgery.desc': 'Λεπτές χειρουργικές παρεμβάσεις για τη διόρθωση προβλημάτων στα μαλακά μόρια και τα οστά της στοματικής κοιλότητας. Κάθε επέμβαση σχεδιάζεται με ακρίβεια για τη βελτίωση της στοματικής υγείας και της λειτουργικότητας.',
+      'svc.esthetic.title': 'Αισθητικές Παρεμβάσεις',
+      'svc.esthetic.desc': 'Αναβαθμίστε την αισθητική του χαμόγελού σας με εξατομικευμένες λύσεις. Από τη λεύκανση δοντιών έως τις όψεις και τις αισθητικές αποκαταστάσεις, συνδυάζουμε την επιστήμη με την τέχνη για ένα αποτέλεσμα που εκπέμπει αυτοπεποίθηση.',
+      'svc.preventive.title': 'Προληπτική Φροντίδα & Καθαρισμός',
+      'svc.preventive.desc': 'Η πρόληψη είναι η καλύτερη θεραπεία. Μέσα από τον επαγγελματικό καθαρισμό δοντιών και τον τακτικό έλεγχο, προστατεύουμε το χαμόγελό σας από την τερηδόνα και την περιοδοντική νόσο, διατηρώντας το υγιές και λαμπερό.',
+
 
       /* ── contact.html — phone labels ─────────── */
       'contact.landline': 'τηλ. 210 931 2651',
@@ -220,16 +231,11 @@
       'bm.phone.label': 'Κινητό Τηλέφωνο *',
       'bm.phone.placeholder': '6930000000',
       'bm.services.heading': 'Ενδιαφέρομαι για...',
-      'bm.svc.checkup': 'έλεγχο',
-      'bm.svc.cleaning': 'καθαρισμό',
-      'bm.svc.rootcanal': 'απονεύρωση',
-      'bm.svc.cosmetic': 'αισθητική οδοντιατρική / λεύκανση',
-      'bm.svc.dentures': 'οδοντοστοιχίες',
-      'bm.svc.missing': 'ελλιπές ή σπασμένα δόντια',
-      'bm.svc.wisdom': 'εξαγωγή φρονιμίτη',
-      'bm.svc.implants': 'οδοντικά εμφυτεύματα',
-      'bm.svc.other.ph': 'Άλλο',
+      'bm.svc.general_check': 'Γενικός Έλεγχος',
+      'bm.svc.dental_consult': 'Οδοντιατρική Εκτίμηση',
+      'bm.svc.surgical_consult': 'Χειρουργική Εκτίμηση',
       'bm.submit': 'Επιβεβαίωση Ραντεβού',
+
       'bm.step4.title': 'Το ραντεβού σας προστέθηκε!',
       'bm.step4.text': 'Θα λάβετε σύντομα ένα email επιβεβαίωσης. Σας περιμένουμε.',
       'bm.step4.new': 'Νέο Ραντεβού',
@@ -402,6 +408,7 @@
       'quote.index': '&quot; The health and functionality of your smile are our top priority.<br>In our state-of-the-art practice, we combine scientific excellence with a human touch. We welcome you to an environment where personalised care meets innovation. &quot;',
       'quote.about': '&quot; Our dedication to the science of dentistry is rooted in providing personalized, meaningful care for every individual. By embracing continuous innovation and maintaining a deep respect for our patients\' needs, we build relationships of trust that last a lifetime. It is a true honor to be entrusted with your smile. &quot;',
       'quote.services': '&quot; We provide a full range of modern dental treatments, each one tailored to what you actually need.<br>Backed by the latest technology and years of hands-on expertise, we aim for results that look natural and last. Your oral health drives every decision we make. &quot;',
+      'quote.faq': '&quot; Our goal is to provide full information and absolute transparency at every step. <br>We are here to answer all your questions and help you make the best decision for your smile. Your trust is our greatest reward. &quot;',
 
       /* ── about.html — biography sections ──────── */
       'about.p1': 'Combining a deep commitment to scientific progress with a patient-centered approach, <strong class="text-gray-900">Dr. Angelo Moshopoulos</strong> began his academic career at McGill University. He graduated in 1992 with a degree in Biology, specializing in Microbiology and Immunology.',
@@ -413,8 +420,21 @@
 
       /* ── services.html ────────────────────────── */
       'services.p1': 'At our practice, we believe that exceptional dentistry is built on a foundation of trust and meticulous planning. Our core philosophy is simple: your long-term oral health is our primary metric of success. We eschew transient solutions in favor of comprehensive treatment protocols. This means every procedure is backed by thorough diagnostic planning, education regarding daily hygiene, and an unwavering commitment to preventive care. We don\'t just restore teeth; we protect your future health.',
-      'services.p2': 'A beautiful smile is only as strong as the structures supporting it. To ensure the highest success rates for restorative and cosmetic work, we follow a strictly phased approach to care:<ul class="list-none space-y-6 mt-6"><li><strong class="text-gray-900">Phase I: Stabilization & Prevention</strong><div class="mt-2">Every journey begins with a comprehensive assessment and professional cleaning. We prioritize the health of your supporting tissues, addressing periodontal (gum) health and early-stage decay before proceeding to advanced treatments.</div></li><li><strong class="text-gray-900">Phase II: Restorative Excellence</strong><div class="mt-2">Once a healthy foundation is established, we move toward specialized interventions. From precision fillings to complex implant placement, our procedures are performed with a focus on structural durability and aesthetic harmony.</div></li><li><strong class="text-gray-900">Phase III: Maintenance & Education</strong><div class="mt-2">We empower our patients with the knowledge and tools necessary to maintain their results at home, ensuring that your investment in your smile lasts for a lifetime.</div></li></ul>',
-      'services.p3': 'We understand that for many, a visit to the dentist can be a source of apprehension. We have intentionally designed our practice to redefine that experience, blending clinical professionalism with a welcoming, stress-free environment.<div class="mt-10 space-y-6"><div class="font-bold text-xl text-gray-900 mb-4">Why Choose Our Practice?</div><ul class="list-none space-y-6"><li><strong class="text-gray-900">A Calming Environment:</strong><div class="mt-2">Our clinic is designed to be a tranquil space where you can feel at ease from the moment you arrive.</div></li><li><strong class="text-gray-900">A Compassionate Team:</strong><div class="mt-2">Our staff is specifically trained to support patients with dental anxiety, offering a gentle touch and clear communication at every step.</div></li><li><strong class="text-gray-900">Modern Convenience:</strong><div class="mt-2">We respect your time. To accommodate busy professional and family schedules, we offer flexible appointment times tailored to your needs.</div></li></ul></div>',
+      'services.p2': 'A beautiful smile is only as strong as the structures supporting it. To ensure the highest success rates for restorative and cosmetic work, we follow a strictly phased approach to care. We prioritize the health of your supporting tissues, addressing periodontal (gum) health and early-stage decay before proceeding to advanced treatments. Once a healthy foundation is established, we move toward specialized interventions. From precision fillings to complex implant placement, our procedures are performed with a focus on structural durability and aesthetic harmony.',
+      'services.p3': 'We understand that for many, a visit to the dentist can be a source of apprehension. We have intentionally designed our practice to redefine that experience, blending clinical professionalism with a welcoming, stress-free environment. Flexible appointment times and a compassionate team ensure your experience with us is calm, painless, and positive.',
+      'svc.implants.title': 'Dental Implants Paleo Faliro',
+      'svc.implants.desc': 'The most modern and permanent solution for replacing missing teeth. Dental implants preserve jawbone health and provide the feel and function of natural teeth, ensuring a stable smile for a lifetime.',
+      'svc.extractions.title': 'Surgical Extractions & Wisdom Teeth',
+      'svc.extractions.desc': 'Specialized surgical extractions for impacted or problematic teeth. Using advanced techniques and absolute respect for the patient, the procedure is performed painlessly, minimizing recovery time.',
+      'svc.bonegraft.title': 'Bone Grafting & Regeneration',
+      'svc.bonegraft.desc': 'Bone regeneration is necessary when the jaw lacks the required mass for implants. We use modern grafts to create a strong foundation, ensuring the long-term success of your treatment.',
+      'svc.minorsurgery.title': 'Minor Oral Surgery',
+      'svc.minorsurgery.desc': 'Delicate surgical interventions to correct problems in the soft tissues and bones of the oral cavity. Each procedure is precisely designed to improve oral health and functionality.',
+      'svc.esthetic.title': 'Esthetic Procedures',
+      'svc.esthetic.desc': 'Enhance the aesthetics of your smile with personalized solutions. From teeth whitening to veneers and aesthetic restorations, we combine science with art for a result that radiates confidence.',
+      'svc.preventive.title': 'Preventive Care & Hygiene',
+      'svc.preventive.desc': 'Prevention is the best treatment. Through professional teeth cleaning and regular check-ups, we protect your smile from decay and periodontal disease, keeping it healthy and bright.',
+
 
       /* ── contact.html — phone labels ─────────── */
       'contact.landline': 'tel. 210 931 2651',
@@ -523,16 +543,11 @@
       'bm.phone.label': 'Mobile Phone *',
       'bm.phone.placeholder': '6930000000',
       'bm.services.heading': 'I am interested in...',
-      'bm.svc.checkup': 'check-up',
-      'bm.svc.cleaning': 'cleaning',
-      'bm.svc.rootcanal': 'root canal',
-      'bm.svc.cosmetic': 'cosmetic dentistry / whitening',
-      'bm.svc.dentures': 'dentures',
-      'bm.svc.missing': 'missing or broken teeth',
-      'bm.svc.wisdom': 'wisdom tooth extraction',
-      'bm.svc.implants': 'dental implants',
-      'bm.svc.other.ph': 'Other',
+      'bm.svc.general_check': 'General Check',
+      'bm.svc.dental_consult': 'Dental Consult',
+      'bm.svc.surgical_consult': 'Surgical Consult',
       'bm.submit': 'Confirm Appointment',
+
       'bm.step4.title': 'Your appointment is confirmed!',
       'bm.step4.text': 'You will receive a confirmation email shortly. We look forward to seeing you.',
       'bm.step4.new': 'New Appointment',

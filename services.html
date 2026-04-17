@@ -102,40 +102,85 @@
   </nav>
 
   <main class="flex-grow container mx-auto px-6 py-12 max-w-6xl">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mt-8">
-      <div class="text-gray-700 font-open text-lg leading-relaxed space-y-6">
+    <div class="mt-8">
+      <div class="text-gray-700 font-open text-lg leading-relaxed max-w-3xl mx-auto text-center space-y-6">
         <div data-i18n-html="services.p1">Στο επίκεντρο της φιλοσοφίας μας βρίσκεται η ευημερία και το χαμόγελο κάθε
           ασθενούς. Πιστεύουμε ακράδαντα πως
           ο προσεκτικός σχεδιασμός της θεραπείας, η συστηματική εκπαίδευση στη σωστή στοματική υγιεινή και η προληπτική
           φροντίδα αποτελούν τα ισχυρότερα θεμέλια για υγιείς και ανθεκτικές αποκαταστάσεις που αντέχουν στον χρόνο.
         </div>
-
-        <div class="w-full rounded-2xl overflow-hidden shadow-2xl my-8 md:hidden relative group">
-          <img alt="office image"
-            class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
-            src="images/budda.jpg">
-          <div class="absolute inset-0 bg-brand-blue opacity-10 group-hover:opacity-0 transition-opacity duration-500">
-          </div>
-        </div>
-        <div data-i18n-html="services.p2">Το ταξίδι προς ένα τέλειο χαμόγελο ξεκινά πάντα από ένα υγιές θεμέλιο. Μέσα
-          από σχολαστικό καθαρισμό, άμεση
-          αντιμετώπιση της τερηδόνας και στοχευμένες θεραπείες, διασφαλίζουμε την ιδανική κατάσταση της στοματικής
-          κοιλότητας. Μόνο τότε προχωράμε με σιγουριά και ασφάλεια στο επόμενο στάδιο της αποκατάστασης των δοντιών μέσω
-          της σύγχρονης εμφυτευματολογίας.</div>
-
         <div data-i18n-html="services.p3">Γνωρίζοντας πως η επίσκεψη στον οδοντίατρο μπορεί να προκαλεί άγχος, έχουμε
           διαμορφώσει έναν χώρο ζεστό,
-          φιλόξενο και απόλυτα άνετο. Με εύκολη πρόσβαση, μεγάλη ευελιξία στα ραντεβού —ακόμα και τα Σάββατα— και
+          φιλόξενο και απόλυτα άνετο. Με εύκολη πρόσβαση, μεγάλη ευελιξία στα ραντεβού και
           πρωταρχικό μας μέλημα τον απόλυτο σεβασμό στην ευαισθησία και τις ανάγκες σας, φροντίζουμε η εμπειρία σας μαζί
           μας να είναι πάντα ήρεμη, ανώδυνη και θετική.</div>
-
       </div>
-      <div
-        class="hidden md:block w-full rounded-2xl overflow-hidden shadow-2xl transition-transform hover:-translate-y-2 relative group mt-8 md:mt-0">
-        <img alt="office image text"
-          class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
-          src="images/budda.jpg">
-        <div class="absolute inset-0 bg-brand-blue opacity-10 group-hover:opacity-0 transition-opacity duration-500">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <!-- Service Card 1: Implants -->
+        <div class="bg-white p-8 rounded-2xl shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.638.319a2 2 0 01-1.833.003l-.638-.319a6 6 0 00-3.86-.517l-2.387.477a2 2 0 00-1.022.547l-.331.331a2 2 0 000 2.828l1.414 1.414a2 2 0 002.828 0l.331-.331a2 2 0 00.547-1.022M12 2a10 10 0 100 20 10 10 0 000-20z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-4 font-display" data-i18n="svc.implants.title">Οδοντικά Εμφυτεύματα Παλαιό Φάληρο</h3>
+          <p class="text-gray-600 leading-relaxed text-sm" data-i18n="svc.implants.desc"></p>
+        </div>
+
+        <!-- Service Card 2: Extractions -->
+        <div class="bg-white p-8 rounded-2xl shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-4 font-display" data-i18n="svc.extractions.title">Χειρουργικές Εξαγωγές & Φρονιμίτες</h3>
+          <p class="text-gray-600 leading-relaxed text-sm" data-i18n="svc.extractions.desc"></p>
+        </div>
+
+        <!-- Service Card 3: Bone Grafting -->
+        <div class="bg-white p-8 rounded-2xl shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-4 font-display" data-i18n="svc.bonegraft.title">Οστικό Μόσχευμα & Ανάπλαση</h3>
+          <p class="text-gray-600 leading-relaxed text-sm" data-i18n="svc.bonegraft.desc"></p>
+        </div>
+
+        <!-- Service Card 4: Minor Surgery -->
+        <div class="bg-white p-8 rounded-2xl shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-4 font-display" data-i18n="svc.minorsurgery.title">Μικροχειρουργική Στόματος</h3>
+          <p class="text-gray-600 leading-relaxed text-sm" data-i18n="svc.minorsurgery.desc"></p>
+        </div>
+
+        <!-- Service Card 5: Esthetic -->
+        <div class="bg-white p-8 rounded-2xl shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-4 font-display" data-i18n="svc.esthetic.title">Αισθητικές Παρεμβάσεις</h3>
+          <p class="text-gray-600 leading-relaxed text-sm" data-i18n="svc.esthetic.desc"></p>
+        </div>
+
+        <!-- Service Card 6: Preventive -->
+        <div class="bg-white p-8 rounded-2xl shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center text-center">
+          <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 text-brand-blue">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-brand-blue mb-4 font-display" data-i18n="svc.preventive.title">Προληπτική Φροντίδα & Καθαρισμός</h3>
+          <p class="text-gray-600 leading-relaxed text-sm" data-i18n="svc.preventive.desc"></p>
         </div>
       </div>
     </div>
@@ -159,7 +204,7 @@
         src="socialicons/webicon-facebook.png" alt="facebook"></a>
     <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
         src="socialicons/webicon-instagram.png" alt="Insta"></a>
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
+    <a href="https://www.linkedin.com/in/angelo-moshopoulos-a93476403/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
         src="socialicons/webicon-linkedin.png" alt="linkedin"></a>
   </div>
 
