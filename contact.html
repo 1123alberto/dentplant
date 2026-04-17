@@ -75,6 +75,19 @@
     html {
       overflow-y: scroll;
     }
+
+    /* Custom fix for opening hours compactness on mobile */
+    .hours-compact {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+      .hours-compact {
+        max-width: none;
+      }
+    }
   </style>
 </head>
 
@@ -111,7 +124,7 @@
 
     <hr class="w-full md:w-5/6 mx-auto border-gray-200 border-t-[1px] my-10">
 
-    <div class="grid grid-cols-1 gap-8 max-w-5xl mx-auto px-6 mt-4" style="grid-template-columns: 3fr 4fr 3fr;">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto px-6 mt-4">
 
       <!-- Location -->
       <div class="flex flex-col items-center text-center">
@@ -133,7 +146,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
         </svg>
         <h3 class="font-noto font-bold uppercase text-xs tracking-[0.25em] text-brand-blue mb-5" data-i18n="contact.hours.title">ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ</h3>
-        <div class="w-full space-y-3 text-lg">
+        <div class="w-full hours-compact space-y-3 text-lg">
           <div class="flex justify-between items-center gap-6">
             <span class="text-gray-600 font-open" data-i18n="days.mon_fri">Δευτέρα - Παρασκευή</span>
             <span class="font-bold text-gray-800 whitespace-nowrap" data-i18n="hours.mon_fri">10:00 – 20:00</span>
@@ -376,12 +389,15 @@
   </section>
 
   <div class="text-center mt-8 mb-12 fade-in flex justify-center space-x-6">
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-facebook.png" alt="facebook"></a>
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-instagram.png" alt="Insta"></a>
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-linkedin.png" alt="linkedin"></a>
+    <a href="https://www.facebook.com/dentplant/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-facebook.png" alt="facebook">
+    </a>
+    <a href="https://www.instagram.com/i_smile.gr/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-instagram.png" alt="Insta">
+    </a>
+    <a href="https://www.linkedin.com/in/angelo-moshopoulos-72611a14/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-linkedin.png" alt="linkedin">
+    </a>
   </div>
 
   <footer class="py-12 bg-brand-blue border-t border-white/10 mt-auto">

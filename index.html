@@ -103,7 +103,8 @@
     .btn-primary:hover {
         background: var(--clr-accent-blue) !important;
     }
-    <script type="application/ld+json">
+  </style>
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
@@ -161,7 +162,6 @@
       ]
     }
     </script>
-  </style>
 </head>
 
 <body class="bg-white overflow-x-hidden">
@@ -187,8 +187,7 @@
   </nav>
 
   <header
-    style="background-image: url('images/tools_wallpaper.jpg');"
-    class="min-h-screen bg-brand-blue bg-cover bg-scroll md:bg-fixed bg-center bg-no-repeat flex flex-col justify-center items-center relative pt-20">
+    class="min-h-screen bg-brand-blue bg-[url('../images/tools_wallpaper.jpg')] bg-cover bg-scroll md:bg-fixed bg-center bg-no-repeat flex flex-col justify-center items-center relative pt-20">
     <div class="text-center w-full px-4">
       <h1
         class="text-white text-center font-Julius Sans One font-thin text-3xl md:text-5xl max-w-4xl mx-auto leading-tight transition-transform delay-300">
@@ -704,12 +703,15 @@
   <hr class="w-4/5 mx-auto border-gray-200">
 
   <div class="text-center mt-8 mb-12 fade-in flex justify-center space-x-6">
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-facebook.png" alt="facebook"></a>
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-instagram.png" alt="Insta"></a>
-    <a href="#" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity"><img class="w-10 h-10"
-        src="socialicons/webicon-linkedin.png" alt="linkedin"></a>
+    <a href="https://www.facebook.com/dentplant/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-facebook.png" alt="facebook">
+    </a>
+    <a href="https://www.instagram.com/i_smile.gr/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-instagram.png" alt="Insta">
+    </a>
+    <a href="https://www.linkedin.com/in/angelo-moshopoulos-72611a14/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-linkedin.png" alt="linkedin">
+    </a>
   </div>
 
   <footer class="py-12 bg-brand-blue border-t border-white/10">

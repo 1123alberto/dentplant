@@ -304,7 +304,7 @@
       'footer.review_btn': 'ΑΞΙΟΛΟΓΗΣΤΕ ΜΑΣ ΣΤΟ GOOGLE',
       'contact.review_cta': 'Γράψτε μια Αξιολόγηση',
       'contact.hours.title': 'Ωράριο Λειτουργίας',
-      'days.mon_fri': 'Δευτέρα - Παρασκευή',
+      'days.mon_fri': 'Δευ - Παρ:',
       'days.sat': 'Σάββατο',
       'days.sun': 'Κυριακή',
       'hours.mon_fri': '10:00 – 20:00',

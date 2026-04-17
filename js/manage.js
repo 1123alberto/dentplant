@@ -40,10 +40,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     document.getElementById('final-cancel-btn').onclick = async () => {
         const btn = document.getElementById('final-cancel-btn');
+        const originalText = btn.textContent;
         btn.disabled = true;
         btn.textContent = '...';
 
         try {
+            // Note: mode 'no-cors' means we can't read the response, 
+            // but the request still reaches the Google Apps Script.
             await fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',
                 mode: 'no-cors',
@@ -56,9 +59,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 window.location.href = 'index.html';
             }, 5000);
         } catch (error) {
-            alert('Error cancelling appointment. Please try again.');
+            console.error('Cancellation error:', error);
+            alert(i18n.t('js.error') || 'Error cancelling appointment. Please try again.');
             btn.disabled = false;
-            btn.textContent = i18n.t('mg.confirm_yes');
+            btn.textContent = originalText;
         }
     };
 
