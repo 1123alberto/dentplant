@@ -612,6 +612,63 @@
       'days.sun': 'Sunday',
       'hours.mon_fri': '10:00 – 20:00',
       'hours.closed': 'Closed',
+
+      /* ── index.html — article cards ──────────── */
+      'card1.title': 'Am I a Candidate for Dental Implants?',
+      'card1.excerpt': 'Most adults who have lost one or more teeth are suitable for implants. Healthy gums and sufficient bone mass are the key success factors.',
+      'card2.title': 'From Diagnosis to Completion: Understanding the Process',
+      'card2.excerpt': 'The implant placement process is clear but takes time. From the initial consultation to the crown placement, the journey typically lasts 3-6 months.',
+      'card3.title': 'Implants, Bridges, or Dentures',
+      'card3.excerpt': 'Dental implants are clearly superior. They protect the jawbone and do not require grinding of adjacent teeth, offering the most natural solution.',
+      'card4.title': 'Bone Grafting and Implants',
+      'card4.excerpt': 'Lack of bone mass is rarely a permanent issue. Bone grafting is now a routine procedure that creates the necessary foundation.',
+      'card5.title': 'What do dental implants really cost?',
+      'card5.excerpt': 'Implants have a higher initial cost, but their durability over time makes them the most cost-effective and high-quality solution for the future.',
+      'card6.title': 'Dental Implants with Sedation: Stress-free',
+      'card6.excerpt': 'Dental anxiety is normal, but modern "sedation" makes the implant process much more comfortable and painless than you might imagine.',
+
+      /* ── index.html — modal 2 (Candidate) ─────── */
+      'modal2.title': 'Am I a Candidate for Dental Implants? Everything You Need to Know',
+      'modal2.p1': 'Most adults who have lost one or more teeth are excellent candidates for dental implants. The key factors determining suitability are gum health and sufficient bone mass in the jaw to support the implant.',
+      'modal2.p2': 'Conditions such as diabetes or a history of smoking do not necessarily exclude you — they simply require a more careful evaluation and preparation by our team.',
+      'modal2.p3': '<span class="font-bold text-gray-900">What if I have lost bone?</span><br>If you have been told in the past that you have lost too much bone, don\'t worry. Bone grafting can often restore the foundation required for a successful implant.',
+      'modal2.p4': 'The best way to find out for sure is with a simple diagnostic visit. Our team will evaluate your history, take a 3D scan, and give you a clear and honest answer. Most patients are pleasantly surprised to learn they qualify.',
+
+      /* ── index.html — modal 3 (Timeline) ── */
+      'modal3.title': 'From Diagnosis to Completion: Understanding the Process',
+      'modal3.p1': 'The implant process is a well-designed journey that takes time to ensure permanent stability. Let\'s see the basic steps:',
+      'modal3.p2': '<span class="font-bold text-gray-900">1. Diagnosis & Planning:</span> We evaluate the condition of your teeth, gums, and bone, creating a completely personalized treatment plan.',
+      'modal3.p3': '<span class="font-bold text-gray-900">2. Implant Placement:</span> A small titanium post is placed in the jaw under local anesthesia. Most patients report little to no discomfort after the procedure.',
+      'modal3.p4': '<span class="font-bold text-gray-900">3. Healing (Osseointegration):</span> Over 2–4 months, the implant naturally integrates with the bone, creating a stable and permanent base.',
+      'modal3.p5': '<span class="font-bold text-gray-900">4. Crown Placement:</span> Once healing is complete, the final crown is placed. The result looks, feels, and functions exactly like a natural tooth.',
+      'modal3.p6': 'From start to finish, the process typically takes 3–6 months — but the result is designed to last a lifetime.',
+
+      /* ── index.html — modal 4 (Comparison) ─── */
+      'modal4.title': 'Implants, Bridges, or Dentures: Which is right for you?',
+      'modal4.p1': 'When it comes to tooth replacement, you have three main options — but they are not created equal.',
+      'modal4.p2': '<span class="font-bold text-gray-900">Dentures</span> are removable and affordable, but they can move, cause discomfort, and do not prevent bone loss in the jaw over time.',
+      'modal4.p3': '<span class="font-bold text-gray-900">Bridges</span> are fixed and look natural, but they require the grinding of healthy adjacent teeth to function as supports — a permanent compromise for your healthy teeth.',
+      'modal4.p4': '<span class="font-bold text-gray-900">Dental Implants</span> are the premier solution. They replace both the root and the tooth, preserve your jawbone, and do not affect surrounding teeth. They are the closest thing to a natural tooth offered by modern dentistry.',
+      'modal4.p5': 'For most patients, implants are the smartest long-term investment for their smile and oral health.',
+
+      /* ── index.html — modal 5 (Bone Grafting) ─── */
+      'modal5.title': 'Bone Grafting and Implants: Why bone loss is not a barrier',
+      'modal5.p1': 'A common reason some patients believe they cannot get implants is a lack of bone. When a tooth is lost, the jawbone underneath it gradually shrinks.',
+      'modal5.p2': 'However, this rarely means the end of the effort. Bone grafting is a routine procedure that "rebuilds" the lost bone using natural or synthetic materials.',
+      'modal5.p3': 'Once the graft integrates —typically within a few months— the area is ready to support an implant with the same security as any other. Many of our patients who were originally told "no" elsewhere received successful implants after a bone regeneration process.',
+
+      /* ── index.html — modal 6 (Cost) ─── */
+      'modal6.title': 'What do dental implants really cost?',
+      'modal6.p1': 'Dental implants have a higher initial cost compared to other options. However, in reality, they are almost always the most economical solution in the long run.',
+      'modal6.p2': 'Dentures and bridges often need replacement, repair, or adjustment over the years. Implants, with proper care, last for decades — often for a lifetime.',
+      'modal6.p3': 'Beyond the financial aspect, consider the quality of life: implants allow you to eat, speak, and smile with absolute confidence, without the worry of movement or discomfort.',
+
+      /* ── index.html — modal 7 (Sedation) ─── */
+      'modal7.title': 'Dental Implants with Sedation: A stress-free experience',
+      'modal7.p1': 'Dental anxiety is incredibly common and perfectly understandable. The good news is that surgical implant placement today is much more comfortable than most patients expect.',
+      'modal7.p2': 'We offer "sedation" options tailored to your anxiety level. Whether you prefer light relaxation or deeper sedation (IV sedation), we will ensure you feel completely safe and calm throughout.',
+      'modal7.p3': 'Most patients are surprised by how little they feel and how quickly the procedure ends. The surgery itself is performed with local anesthesia, meaning there is no pain during the operation.',
+      'modal7.p4': 'If fear is stopping you from getting the smile you deserve, let\'s talk. A stress-free experience starts with a simple conversation.',
     }
   };
 
