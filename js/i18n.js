@@ -91,6 +91,7 @@
       'modal7.p2': 'Προσφέρουμε επιλογές "μέθης" (καταστολής) προσαρμοσμένες στο δικό σας επίπεδο άγχους. Είτε προτιμάτε μια ελαφριά χαλάρωση είτε μια βαθύτερη καταστολή (IV sedation), θα διασφαλίσουμε ότι αισθάνεστε απόλυτα ασφαλείς και ήρεμοι καθ’ όλη τη διάρκεια.',
       'modal7.p3': 'Οι περισσότεροι ασθενείς εκπλήσσονται από το πόσο λίγο αισθάνονται και το πόσο γρήγορα τελειώνει η διαδικασία. Η ίδια η επέμβαση πραγματοποιείται με τοπική αναισθησία, που σημαίνει ότι δεν υπάρχει πόνος κατά τη διάρκεια του χειρουργείου.',
       'modal7.p4': 'Αν ο φόβος σας εμποδίζει από το να αποκτήσετε το χαμόγελο που σας αξίζει, ας το συζητήσουμε. Μια εμπειρία χωρίς άγχος ξεκινά με μια απλή κουβέντα.',
+      'article.back_to_home': 'Επιστροφή στην Αρχική',
 
 
       /* ── Quotes ───────────────────────────────── */
@@ -427,6 +428,7 @@
       'modal7.p2': 'We offer sedation options tailored to your level of anxiety. Whether you prefer light oral sedation or deeper IV sedation, we\'ll make sure you feel safe and at ease throughout.',
       'modal7.p3': 'Most patients are genuinely surprised by how little they feel — and how quickly it\'s over. The procedure itself is performed under local anaesthesia, meaning there is no pain during the surgery.',
       'modal7.p4': 'If fear has been holding you back from getting the smile you deserve, let\'s talk. A stress-free experience starts with a simple conversation.',
+      'article.back_to_home': 'Return to Homepage',
 
       /* ── Quotes ───────────────────────────────── */
       'quote.index': '&quot; The health and functionality of your smile are our top priority.<br>In our state-of-the-art practice, we combine scientific excellence with a human touch. We welcome you to an environment where personalised care meets innovation. &quot;',
@@ -733,6 +735,7 @@
       'modal7.p2': 'We offer "sedation" options tailored to your anxiety level. Whether you prefer light relaxation or deeper sedation (IV sedation), we will ensure you feel completely safe and calm throughout.',
       'modal7.p3': 'Most patients are surprised by how little they feel and how quickly the procedure ends. The surgery itself is performed with local anesthesia, meaning there is no pain during the operation.',
       'modal7.p4': 'If fear is stopping you from getting the smile you deserve, let\'s talk. A stress-free experience starts with a simple conversation.',
+      'article.back_to_home': 'Return to Homepage',
     }
   };
 
