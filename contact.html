@@ -281,65 +281,18 @@
                   </div>
                   <!-- Right Column: Checkboxes -->
                   <div class="flex flex-col mt-4 md:mt-0 border-t border-gray-100 pt-4 md:border-none md:pt-0">
-                    <p class="font-bold text-[#1a365d] text-sm mb-1" data-i18n="bm.services.heading">Ενδιαφέρομαι για...
-                    </p>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="έλεγχο"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.checkup">έλεγχο</span>
+                    <p class="font-bold text-[#1a365d] text-sm mb-1" data-i18n="bm.services.heading">Ενδιαφέρομαι για...</p>
+                    <label class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
+                        <input type="checkbox" name="services" value="General Check" class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
+                        <span data-i18n="bm.svc.general_check">Γενικός Έλεγχος</span>
                     </label>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="καθαρισμό"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.cleaning">καθαρισμό</span>
+                    <label class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
+                        <input type="checkbox" name="services" value="Dental Consult" class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
+                        <span data-i18n="bm.svc.dental_consult">Οδοντιατρική Εκτίμηση</span>
                     </label>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="απονεύρωση"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.rootcanal">απονεύρωση</span>
-                    </label>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="αισθητική οδοντιατρική / λεύκανση"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.cosmetic">αισθητική οδοντιατρική / λεύκανση</span>
-                    </label>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="οδοντοστοιχίες"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.dentures">οδοντοστοιχίες</span>
-                    </label>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="ελλιπές ή σπασμένα δόντια"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.missing">ελλιπές ή σπασμένα δόντια</span>
-                    </label>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="εξαγωγή φρονιμίτη"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.wisdom">εξαγωγή φρονιμίτη</span>
-                    </label>
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" name="services" value="οδοντικά εμφυτεύματα"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <span data-i18n="bm.svc.implants">οδοντικά εμφυτεύματα</span>
-                    </label>
-                    <!-- Other Checkbox + Input -->
-                    <label
-                      class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
-                      <input type="checkbox" id="other-service-checkbox" name="services" value="other"
-                        class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
-                      <input type="text" id="other-service-input" placeholder="Άλλο"
-                        data-i18n-placeholder="bm.svc.other.ph"
-                        class="w-full px-3 py-1.5 border border-gray-200 rounded focus:outline-none focus:border-[#0284c7] text-gray-700 placeholder-gray-400 text-sm transition-all focus:ring-1 focus:ring-[#0284c7]"
-                        onclick="document.getElementById('other-service-checkbox').checked = true;">
+                    <label class="flex items-center space-x-2 text-sm text-gray-700 cursor-pointer hover:bg-gray-50 py-1 rounded transition group">
+                        <input type="checkbox" name="services" value="Surgical Consult" class="w-4 h-4 text-[#0284c7] rounded border-gray-300 cursor-pointer">
+                        <span data-i18n="bm.svc.surgical_consult">Χειρουργική Εκτίμηση</span>
                     </label>
                   </div>
                 </div>
