@@ -21,8 +21,8 @@ const diff = currentWeekStart.getDate() - day + (day === 0 ? -6 : 1);
 currentWeekStart.setDate(diff);
 
 function goToStep(stepNumber) {
-    document.querySelectorAll('.booking-step').forEach(el => el.style.display = 'none');
-    document.getElementById(`booking-step-${stepNumber}`).style.display = 'block';
+    document.querySelectorAll('.booking-step').forEach(el => el.classList.remove('active'));
+    document.getElementById(`booking-step-${stepNumber}`).classList.add('active');
 
     // Dynamically widen container for 2-column details step
     const wrapper = document.querySelector('.booking-standalone-wrapper');
