@@ -51,17 +51,17 @@
 
       /* ── index.html — modal 2 (Candidate) ─────── */
       'modal2.title': 'Είμαι κατάλληλος υποψήφιος για Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο;',
-      'modal2.p1': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι εξαιρετικοί υποψήφιοι για οδοντικά εμφυτεύματα. Οι βασικοί παράγοντες που καθορίζουν την καταλληλότητα είναι η υγεία των ούλων και η επαρκής οστική μάζα στη γνάθο για τη στήριξη του εμφυτεύματος.',
+      'modal2.p1': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι εξαιρετικοί υποψήφιοι για οδοντικά εμφυτεύματα. Οι βασικοί παράγοντες που καθορίζουν την καταλληλότητα είναι η υγεία των ούλων (απουσία ενεργής περιοδοντίτιδας) και η επαρκής οστική μάζα στη γνάθο.',
       'modal2.p2': 'Καταστάσεις όπως ο διαβήτης ή το ιστορικό καπνίσματος δεν σας αποκλείουν απαραίτητα — απλώς απαιτούν μια πιο προσεκτική αξιολόηση και προετοιμασία από την ομάδα μας.',
       'modal2.p3': '<span class="font-bold text-gray-900">Τι γίνεται αν έχω χάσει οστό;</span><br>Αν σας έχουν πει στο παρελθόν ότι έχετε χάσει πολύ οστό, μην ανησυχείτε. Η τοποθέτηση οστικού μοσχεύματος μπορεί συχνά να αποκαταστήσει το θεμέλιο που απαιτείται για ένα επιτυχημένο εμφύτευμα.',
-      'modal2.p4': 'Ο καλύτερος τρόπος για να μάθετε με σιγουριά είναι μια απλή διαγνωστική επίσκεψη. Η ομάδα μας θα αξιολογήσει το ιστορικό σας, θα λάβει ένα 3D scan και θα σας δώσει μια ξεκάθαρη και ειλικρινή απάντηση. Οι περισσότεροι ασθενείς εκπλήσσονται ευχάριστα όταν μαθαίνουν ότι πληρούν τις προϋποθέσεις.',
+      'modal2.p4': 'Ο καλύτερος τρόπος για να μάθετε με σιγουριά είναι μια απλή διαγνωστική επίσκεψη. Η ομάδα μας θα αξιολογήσει το ιστορικό σας, θα λάβει μια αξονική τομογραφία CBCT (Dental CT) και θα σας δώσει μια ξεκάθαρη απάντηση. Οι περισσότεροι ασθενείς εκπλήσσονται ευχάριστα όταν μαθαίνουν ότι πληρούν τις προϋποθέσεις.',
 
       /* ── index.html — modal 3 (Timeline) ── */
       'modal3.title': 'Διαδικασία για Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο: Από τη Διάγνωση στην Ολοκλήρωση',
       'modal3.p1': 'Η διαδικασία των εμφυτευμάτων είναι μια καλά σχεδιασμένη διαδρομή που απαιτεί χρόνο για να διασφαλιστεί η μόνιμη σταθερότητα. Ας δούμε τα βασικά βήματα:',
       'modal3.p2': '<span class="font-bold text-gray-900">1. Διάγνωση & Σχεδιασμός:</span> Αξιολογούμε την κατάσταση των δοντιών, των ούλων και του οστού σας, δημιουργώντας ένα απόλυτα εξατομικευμένο πλάνο θεραπείας.',
-      'modal3.p3': '<span class="font-bold text-gray-900">2. Τοποθέτηση Εμφυτεύματος:</span> Ένας μικρός πείρος τιτανίου τοποθετείται στη γνάθο με τοπική αναισθησία. Οι περισσότεροι ασθενείς αναφέρουν ελάχιστη έως καθόλου ενόχληση μετά τη διαδικασία.',
-      'modal3.p4': '<span class="font-bold text-gray-900">3. Επούλωση (Οστεοενσωμάτωση):</span> Κατά τη διάρκεια 2–4 μηνών, το εμφύτευμα ενσωματώνεται φυσικά με το οστό, δημιουργώντας μια σταθερή και μόνιμη βάση.',
+      'modal3.p3': '<span class="font-bold text-gray-900">2. Τοποθέτηση Εμφυτεύματος:</span> Ένας μικρός πείρος από τιτάνιο ιατρικού βαθμού τοποθετείται στη γνάθο με τοπική αναισθησία. Το τιτάνιο είναι απόλυτα βιοσυμβατό υλικό που επιτρέπει τη σταθερή σύνδεση με το οστό.',
+      'modal3.p4': '<span class="font-bold text-gray-900">3. Επούλωση (Οστεοενσωμάτωση):</span> Κατά τη διάρκεια 2–4 μηνών, το εμφύυτευμα ενσωματώνεται φυσικά με το οστό μέσω της οστεοενσωμάτωσης, δημιουργώντας μια σταθερή και μόνιμη βάση για το νέο σας δόντι.',
       'modal3.p5': '<span class="font-bold text-gray-900">4. Τοποθέτηση Στεφάνης:</span> Μόλις ολοκληρωθεί η επούλωση, τοποθετείται η τελική στεφάνη (θήκη). Το αποτέλεσμα μοιάζει, έχει την αίσθηση και λειτουργεί ακριβώς όπως ένα φυσικό δόντι.',
       'modal3.p6': 'Από την αρχή μέχρι το τέλος, η διαδικασία διαρκεί συνήθως 3–6 μήνες — το αποτέλεσμα όμως είναι σχεδιασμένο να διαρκέσει μια ζωή.',
 
@@ -75,7 +75,7 @@
 
       /* ── index.html — modal 5 (Bone Grafting) ─── */
       'modal5.title': 'Οστικό Μόσχευμα και Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο',
-      'modal5.p1': 'Ένας συνηθισμένος λόγος που ορισμένοι ασθενείς πιστεύουν ότι δεν μπορούν να βάλουν εμφυτεύματα είναι η έλλειψη οστού. Όταν ένα δόντι χάνεται, το οστό της γνάθου κάτω από αυτό σταδιακά συρρικνώνεται.',
+      'modal5.p1': 'Ένας συνηθισμένος λόγος που ορισμένοι ασθενείς πιστεύουν ότι δεν μπορούν να βάλουν εμφυτεύματα είναι η έλλειψη οστού. Όταν ένα δόντι χάνεται ή υπάρχει ιστορικό προχωρημένης περιοδοντίτιδας, το οστό της γνάθου κάτω από αυτό σταδιακά συρρικνώνεται.',
       'modal5.p2': 'Αυτό όμως σπάνια σημαίνει το τέλος της προσπάθειας. Η τοποθέτηση οστικού μοσχεύματος είναι μια διαδικασία ρουτίνας που "χτίζει" ξανά το χαμένο οστό χρησιμοποιώντας φυσικά ή συνθετικά υλικά.',
       'modal5.p3': 'Μόλις το μόσχευμα ενσωματωθεί —συνήθως μέσα σε λίγους μήνες— η περιοχή είναι έτοιμη να υποστηρίξει ένα εμφύτευμα με την ίδια ασφάλεια όπως κάθε άλλη. Πολλοί από τους ασθενείς μας που αρχικά είχαν λάβει αρνητική απάντηση αλλού, απέκτησαν επιτυχημένα εμφυτεύματα μετά από μια διαδικασία ανάπλασης οστού.',
 
@@ -389,17 +389,17 @@
 
       /* ── index.html — modal 2 (Candidate) ─────── */
       'modal2.title': 'Am I a Candidate for Dental Implants? What You Need to Know',
-      'modal2.p1': 'Most adults who are missing one or more teeth are good candidates for dental implants. The key factors are healthy gums and sufficient jawbone to support the implant.',
+      'modal2.p1': 'Most adults missing one or more teeth are excellent candidates for dental implants. Key factors include healthy gums (absence of active periodontitis) and sufficient jawbone density.',
       'modal2.p2': 'Conditions like diabetes or a history of smoking don\'t necessarily rule you out — they simply require a more careful assessment by our team.',
       'modal2.p3': '<span class="font-bold text-gray-900">Lost too much bone?</span><br>If you\'ve been told you\'ve lost too much bone, don\'t worry. Bone grafting can often restore the foundation needed for a successful implant.',
-      'modal2.p4': 'The best way to find out is a simple consultation. Our team will evaluate your mouth, take a scan, and give you a clear, honest answer. Most patients are surprised to learn they qualify.',
+      'modal2.p4': 'The best way to find out for sure is a simple diagnostic visit. Our team will evaluate your history, take a high-precision CBCT scan, and provide a clear, honest answer. Most patients are pleasantly surprised to learn they qualify.',
 
       /* ── index.html — modal 3 (Timeline) ── */
       'modal3.title': 'From Consultation to Completion: Understanding the Process',
       'modal3.p1': 'The implant process is straightforward, though it does take time for permanent stability. Here\'s a simple overview of what to expect:',
       'modal3.p2': '<span class="font-bold text-gray-900">1. Consultation & planning:</span> We assess your teeth, gums, and bone structure and create a personalised treatment plan.',
-      'modal3.p3': '<span class="font-bold text-gray-900">2. Implant placement:</span> A small titanium post is placed into the jawbone under local anaesthesia. Most patients report minimal discomfort.',
-      'modal3.p4': '<span class="font-bold text-gray-900">3. Healing (osseointegration):</span> Over 2–4 months, the implant fuses naturally with the bone — creating a stable, permanent foundation.',
+      'modal3.p3': '<span class="font-bold text-gray-900">2. Implant placement:</span> A small medical-grade titanium post is placed into the jawbone under local anaesthesia. Titanium is a bio-compatible material that ensures a secure bond with your bone.',
+      'modal3.p4': '<span class="font-bold text-gray-900">3. Healing (osseointegration):</span> Over 2–4 months, the implant fuses naturally with the bone through a process called osseointegration, creating a stable, permanent foundation.',
       'modal3.p5': '<span class="font-bold text-gray-900">4. Crown fitting:</span> Once healed, a custom-made crown is attached. The result looks, feels, and functions just like a natural tooth.',
       'modal3.p6': 'From start to finish, the journey typically takes 3–6 months — and the result is designed to last a lifetime.',
 
@@ -413,7 +413,7 @@
 
       /* ── index.html — modal 5 (Bone Grafting) ─── */
       'modal5.title': 'Bone Grafting and Implants: Why It\'s Not a Problem If You\'ve Lost Bone',
-      'modal5.p1': 'One of the most common reasons patients are told they can\'t have implants is insufficient bone. When a tooth is lost, the jawbone beneath it gradually shrinks.',
+      'modal5.p1': 'One of the most common reasons patients believe they can’t get implants is a lack of bone. When a tooth is lost or there is a history of advanced periodontitis, the jawbone underneath gradually shrinks.',
       'modal5.p2': 'But this is rarely the end of the story. Bone grafting is a routine procedure that rebuilds lost bone using natural or synthetic material.',
       'modal5.p3': 'Once the graft has integrated —usually within a few months— the area is ready to support an implant just like any other. Many of our patients who were initially told "no" elsewhere have gone on to receive successful implants after grafting.',
 
