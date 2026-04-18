@@ -13,8 +13,8 @@
     'title.privacy': 'Πολιτική Απορρήτου | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
     'title.manage': 'Διαχείριση Ραντεβού | Παλαιό Φάληρο | Άγγελος Μοσχόπουλος',
     'title.faq': 'Συχνές Ερωτήσεις για Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο',
-    'desc.home': 'Εξειδικευμένη κλινική για οδοντικά εμφυτεύματα στο Παλαιό Φάληρο. Αποκαταστήστε το χαμόγελό σας με σύγχρονες τεχνικές από τον Άγγελο Μοσχόπουλο. Κλείστε ραντεβού!',
-    'desc.about': 'Γνωρίστε τον Άγγελο Μοσχόπουλο, έμπειρο χειρουργό οδοντίατρο στο Παλαιό Φάληρο. Εξειδίκευση στα οδοντικά εμφυτεύματα και την αισθητική οδοντιατρική. Δείτε το βιογραφικό.',
+    'desc.home': 'Εξειδικευμένη κλινική για οδοντικά εμφυτεύματα τιτανίου στο Παλαιό Φάληρο. Αποκαταστήστε το χαμόγελό σας με σύγχρονες τεχνικές οστεοενσωμάτωσης από τον Άγγελο Μοσχόπουλο. Κλείστε ραντεβού!',
+    'desc.about': 'Γνωρίστε τον Άγγελο Μοσχόπουλο, έμπειρο χειρουργό οδοντίατρο στο Παλαιό Φάληρο. Εξειδίκευση στα οδοντικά εμφυτεύματα τιτανίου, την αντιμετώπιση της περιοδοντίτιδας και την αισθητική οδοντιατρική. Δείτε το βιογραφικό.',
     'desc.services': 'Ολοκληρωμένες οδοντιατρικές υπηρεσίες στο Παλαιό Φάληρο: Εμφυτεύματα, αισθητική οδοντιατρική & πρόληψη. Ενημερωθείτε για όλες τις λύσεις μας. Κλείστε ραντεβού!',
     'desc.contact': 'Επικοινωνήστε με την κλινική Dentplant στο Παλαιό Φάληρο. Βρείτε μας στην Πλατεία Ντάβαρη 2 ή καλέστε στο 210 9312651 για το ραντεβού σας. Σας περιμένουμε από κοντά!',
     'desc.booking': 'Κλείστε το οδοντιατρικό σας ραντεβού online εύκολα και γρήγορα. Επιλέξτε την ημέρα και την ώρα που σας εξυπηρετεί στην κλινική μας στο Παλαιό Φάληρο. Σας περιμένουμε!',
@@ -29,35 +29,35 @@
       'nav.faq': 'ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ',
 
       /* ── Hero / Standalone Header ──────────────── */
-      'hero.name': 'Άγγελος Μοσχόπουλος',
-      'hero.title': 'Εξειδικευμένη Κλινική Οδοντικών Εμφυτευμάτων στο Παλαιό Φάληρο',
+      'hero.name': 'Dr. Angelo Moshopoulos',
+      'hero.title': 'Dental Implant Clinic',
 
       /* ── Shared booking button ────────────────── */
       'booking.btn': 'Ηλεκτρονικη Κρατηση',
 
       /* ── index.html — article cards ──────────── */
-      'card1.title': 'Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο: Είμαι κατάλληλος υποψήφιος;',
+      'card1.title': 'Οδοντικά Εμφυτεύματα: Είμαι κατάλληλος υποψήφιος;',
       'card1.excerpt': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι κατάλληλοι για εμφυτεύματα. Τα υγιή ούλα και η επαρκής οστική μάζα αποτελούν τους βασικούς παράγοντες επιτυχίας.',
-      'card2.title': 'Διαδικασία Εμφυτευμάτων στο Παλαιό Φάληρο: Βήμα προς Βήμα',
+      'card2.title': 'Διαδικασία Εμφυτευμάτων: Βήμα προς Βήμα',
       'card2.excerpt': 'Η διαδικασία τοποθέτησης εμφυτεύματος είναι ξεκάθαρη αλλά απαιτεί χρόνο. Από την αρχική ενημέρωση μέχρι την τοποθέτηση της στεφάνης, η διαδρομή διαρκεί συνήθως 3-6 μήνες.',
-      'card3.title': 'Εμφυτεύματα ή Γέφυρες στο Παλαιό Φάληρο: Τι να επιλέξετε;',
+      'card3.title': 'Εμφυτεύματα ή Γέφυρες: Τι να επιλέξετε;',
       'card3.excerpt': 'Τα οδοντικά εμφυτεύματα υπερτερούν σαφώς. Προστατεύουν το οστό της γνάθου και δεν απαιτούν τρόχισμα των διπλανών δοντιών, προσφέροντας την πιο φυσική λύση.',
-      'card4.title': 'Οστικό Μόσχευμα & Εμφυτεύματα στο Παλαιό Φάληρο',
+      'card4.title': 'Οστικό Μόσχευμα & Εμφυτεύματα',
       'card4.excerpt': 'Η έλλειψη οστικής μάζας σπάνια αποτελεί οριστικό πρόβλημα. Η τοποθέτηση οστικού μοσχεύματος είναι πλέον μια διαδικασία ρουτίνας που δημιουργεί το απαραίτητο θεμέλιο.',
-      'card5.title': 'Κόστος για Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο',
+      'card5.title': 'Κόστος για Οδοντικά Εμφυτεύματα',
       'card5.excerpt': 'Τα εμφυτεύματα έχουν μεγαλύτερο αρχικό κόστος, αλλά η αντοχή τους στον χρόνο τα καθιστά την πιο συμφέρουσα και ποιοτική λύση για το μέλλον.',
-      'card6.title': 'Ανώδυνη Τοποθέτηση Εμφυτευμάτων με Μέθη στο Παλαιό Φάληρο',
+      'card6.title': 'Ανώδυνη Τοποθέτηση Εμφυτευμάτων με Μέθη',
       'card6.excerpt': 'Το οδοντιατρικό άγχος είναι φυσιολογικό, αλλά η σύγχρονη "μέθη" καθιστά τη διαδικασία των εμφυτευμάτων πολύ πιο άνετη και ανώδυνη από όσο φαντάζεστε.',
 
       /* ── index.html — modal 2 (Candidate) ─────── */
-      'modal2.title': 'Είμαι κατάλληλος υποψήφιος για Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο;',
-      'modal2.p1': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι εξαιρετικοί υποψήφιοι για οδοντικά εμφυτεύματα. Οι βασικοί παράγοντες που καθορίζουν την καταλληλότητα είναι η υγεία των ούλων (απουσία ενεργής περιοδοντίτιδας) και η επαρκής οστική μάζα στη γνάθο.',
+      'modal2.title': 'Είμαι κατάλληλος υποψήφιος για Οδοντικά Εμφυτεύματα;',
+      'modal2.p1': 'Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι εξαιρετικοί υποψήφιοι για οδοντικά εμφυτεύματα τιτανίου. Οι βασικοί παράγοντες που καθορίζουν την καταλληλότητα είναι η υγεία των ούλων (απουσία ενεργής περιοδοντίτιδας) και η επαρκής οστική μάζα στη γνάθο για άριστη οστεοενσωμάτωση.',
       'modal2.p2': 'Καταστάσεις όπως ο διαβήτης ή το ιστορικό καπνίσματος δεν σας αποκλείουν απαραίτητα — απλώς απαιτούν μια πιο προσεκτική αξιολόηση και προετοιμασία από την ομάδα μας.',
       'modal2.p3': '<span class="font-bold text-gray-900">Τι γίνεται αν έχω χάσει οστό;</span><br>Αν σας έχουν πει στο παρελθόν ότι έχετε χάσει πολύ οστό, μην ανησυχείτε. Η τοποθέτηση οστικού μοσχεύματος μπορεί συχνά να αποκαταστήσει το θεμέλιο που απαιτείται για ένα επιτυχημένο εμφύτευμα.',
       'modal2.p4': 'Ο καλύτερος τρόπος για να μάθετε με σιγουριά είναι μια απλή διαγνωστική επίσκεψη. Η ομάδα μας θα αξιολογήσει το ιστορικό σας, θα λάβει μια αξονική τομογραφία CBCT (Dental CT) και θα σας δώσει μια ξεκάθαρη απάντηση. Οι περισσότεροι ασθενείς εκπλήσσονται ευχάριστα όταν μαθαίνουν ότι πληρούν τις προϋποθέσεις.',
 
       /* ── index.html — modal 3 (Timeline) ── */
-      'modal3.title': 'Διαδικασία για Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο: Από τη Διάγνωση στην Ολοκλήρωση',
+      'modal3.title': 'Διαδικασία για Οδοντικά Εμφυτεύματα: Από τη Διάγνωση στην Ολοκλήρωση',
       'modal3.p1': 'Η διαδικασία των εμφυτευμάτων είναι μια καλά σχεδιασμένη διαδρομή που απαιτεί χρόνο για να διασφαλιστεί η μόνιμη σταθερότητα. Ας δούμε τα βασικά βήματα:',
       'modal3.p2': '<span class="font-bold text-gray-900">1. Διάγνωση & Σχεδιασμός:</span> Αξιολογούμε την κατάσταση των δοντιών, των ούλων και του οστού σας, δημιουργώντας ένα απόλυτα εξατομικευμένο πλάνο θεραπείας.',
       'modal3.p3': '<span class="font-bold text-gray-900">2. Τοποθέτηση Εμφυτεύματος:</span> Ένας μικρός πείρος από τιτάνιο ιατρικού βαθμού τοποθετείται στη γνάθο με τοπική αναισθησία. Το τιτάνιο είναι απόλυτα βιοσυμβατό υλικό που επιτρέπει τη σταθερή σύνδεση με το οστό.',
@@ -66,7 +66,7 @@
       'modal3.p6': 'Από την αρχή μέχρι το τέλος, η διαδικασία διαρκεί συνήθως 3–6 μήνες — το αποτέλεσμα όμως είναι σχεδιασμένο να διαρκέσει μια ζωή.',
 
       /* ── index.html — modal 4 (Comparison) ─── */
-      'modal4.title': 'Εμφυτεύματα, Γέφυρες ή Τεχνητές Οδοντοστοιχίες στο Παλαιό Φάληρο: Τι να επιλέξετε;',
+      'modal4.title': 'Εμφυτεύματα, Γέφυρες ή Τεχνητές Οδοντοστοιχίες: Τι να επιλέξετε;',
       'modal4.p1': 'Όταν πρόκειται για την αντικατάσταση δοντιών, έχετε τρεις κύριες επιλογές — οι οποίες όμως δεν είναι ισότιμες μεταξύ τους.',
       'modal4.p2': '<span class="font-bold text-gray-900">Οι Τεχνητές Οδοντοστοιχίες (μασέλες)</span> είναι αφαιρούμενες και οικονομικές, αλλά μπορεί να μετακινούνται, να προκαλούν δυσφορία και δεν εμποδίζουν την απώλεια οστού στη γνάθο με την πάροδο του χρόνου.',
       'modal4.p3': '<span class="font-bold text-gray-900">Οι Γέφυρες</span> είναι σταθερές και φαίνονται φυσικές, απαιτούν όμως το τρόχισμα υγιών γειτονικών δοντιών για να λειτουργήσουν ως στηρίγματα — ένας μόνιμος συμβιβασμός για τα υγιή σας δόντια.',
@@ -74,19 +74,19 @@
       'modal4.p5': 'Για τους περισσότερους ασθενείς, τα εμφυτεύματα αποτελούν την πιο έξυπνη μακροπρόθεσμη επένδυση για το χαμόγελο και τη στοματική τους υγεία.',
 
       /* ── index.html — modal 5 (Bone Grafting) ─── */
-      'modal5.title': 'Οστικό Μόσχευμα και Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο',
+      'modal5.title': 'Οστικό Μόσχευμα και Οδοντικά Εμφυτεύματα',
       'modal5.p1': 'Ένας συνηθισμένος λόγος που ορισμένοι ασθενείς πιστεύουν ότι δεν μπορούν να βάλουν εμφυτεύματα είναι η έλλειψη οστού. Όταν ένα δόντι χάνεται ή υπάρχει ιστορικό προχωρημένης περιοδοντίτιδας, το οστό της γνάθου κάτω από αυτό σταδιακά συρρικνώνεται.',
       'modal5.p2': 'Αυτό όμως σπάνια σημαίνει το τέλος της προσπάθειας. Η τοποθέτηση οστικού μοσχεύματος είναι μια διαδικασία ρουτίνας που "χτίζει" ξανά το χαμένο οστό χρησιμοποιώντας φυσικά ή συνθετικά υλικά.',
       'modal5.p3': 'Μόλις το μόσχευμα ενσωματωθεί —συνήθως μέσα σε λίγους μήνες— η περιοχή είναι έτοιμη να υποστηρίξει ένα εμφύτευμα με την ίδια ασφάλεια όπως κάθε άλλη. Πολλοί από τους ασθενείς μας που αρχικά είχαν λάβει αρνητική απάντηση αλλού, απέκτησαν επιτυχημένα εμφυτεύματα μετά από μια διαδικασία ανάπλασης οστού.',
 
       /* ── index.html — modal 6 (Cost) ─── */
-      'modal6.title': 'Πόσο κοστίζουν τα Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο;',
+      'modal6.title': 'Πόσο κοστίζουν τα Οδοντικά Εμφυτεύματα;',
       'modal6.p1': 'Τα οδοντικά εμφυτεύματα έχουν ένα υψηλότερο αρχικό κόστος σε σύγκριση με άλλες επιλογές. Ωστόσο, στην πραγματικότητα, αποτελούν σχεδόν πάντα την πιο οικονομική λύση σε βάθος χρόνου.',
       'modal6.p2': 'Οι τεχνητές οδοντοστοιχίες και οι γέφυρες συχνά χρειάζονται αντικατάσταση, επισκευή ή προσαρμογή με το πέρασμα των ετών. Τα εμφυτεύματα, με τη σωστή φροντίδα, διαρκούν για δεκαετίες — συχνά για μια ολόκληρη ζωή.',
       'modal6.p3': 'Πέρα από το οικονομικό σκέλος, σκεφτείτε την ποιότητα ζωής: τα εμφυτεύματα σας επιτρέπουν να τρώτε, να μιλάτε και να χαμογελάτε με απόλυτη αυτοπεποίθηση, χωρίς την ανησυχία μετακινήσεων ή ενοχλήσεων.',
 
       /* ── index.html — modal 7 (Sedation) ─── */
-      'modal7.title': 'Οδοντικά Εμφυτεύματα με Μέθη στο Παλαιό Φάληρο: Μια εμπειρία χωρίς στρες',
+      'modal7.title': 'Οδοντικά Εμφυτεύματα με Μέθη: Μια εμπειρία χωρίς στρες',
       'modal7.p1': 'Το οδοντιατρικό άγχος είναι απίστευτα συνηθισμένο και απόλυτα κατανοητό. Τα ευχάριστα νέα είναι ότι η χειρουργική τοποθέτηση εμφυτευμάτων σήμερα είναι πολύ πιο άνετη από ό,τι περιμένουν οι περισσότεροι ασθενείς.',
       'modal7.p2': 'Προσφέρουμε επιλογές "μέθης" (καταστολής) προσαρμοσμένες στο δικό σας επίπεδο άγχους. Είτε προτιμάτε μια ελαφριά χαλάρωση είτε μια βαθύτερη καταστολή (IV sedation), θα διασφαλίσουμε ότι αισθάνεστε απόλυτα ασφαλείς και ήρεμοι καθ’ όλη τη διάρκεια.',
       'modal7.p3': 'Οι περισσότεροι ασθενείς εκπλήσσονται από το πόσο λίγο αισθάνονται και το πόσο γρήγορα τελειώνει η διαδικασία. Η ίδια η επέμβαση πραγματοποιείται με τοπική αναισθησία, που σημαίνει ότι δεν υπάρχει πόνος κατά τη διάρκεια του χειρουργείου.',
@@ -108,9 +108,11 @@
       'about.p5': 'Με όραμα την προσφορά στην κοινωνία, το 2001 συνέβαλε καθοριστικά στην ίδρυση της Οδοντιατρικής Κλινικής των Δημοτικών Ιατρείων Παλαιού Φαλήρου.',
       'about.p6': 'Εδώ και περισσότερες από δύο δεκαετίες, φροντίζει με χαρά και υπευθυνότητα την προληπτική οδοντιατρική των παιδιών του δήμου. Η πολύτιμη εθελοντική του δράση τιμήθηκε το 2015 σε ειδική τελετή από τους Δήμους Παλαιού Φαλήρου και Πειραιά.',
 
+      'services.p1': 'Στο επίκεντρο της φιλοσοφίας μας βρίσκεται η ευημερία και το χαμόγελο κάθε ασθενούς. Πιστεύουμε ακράδαντα πως ο προσεκτικός σχεδιασμός της θεραπείας—συμπεριλαμβανομένης της αξονικής τομογραφίας CBCT—η συστηματική εκπαίδευση στη σωστή στοματική υγιεινή και η προληπτική φροντίδα αποτελούν τα ισχυρότερα θεμέλια για υγιείς και ανθεκτικές αποκαταστάσεις που αντέχουν στον χρόνο.',
+      'services.p2': 'Ένα όμορφο χαμόγελο είναι τόσο δυνατό όσο τα θεμέλιά του. Για να εξασφαλίσουμε τα υψηλότερα ποσοστά επιτυχίας, ακολουθούμε μια σταδιακή προσέγγιση. Δίνουμε προτεραιότητα στην υγεία των ούλων σας, αντιμετωπίζοντας εγκαίρως την περιοδοντίτιδα. Μόλις εξασφαλιστεί η υγεία των ιστών, προχωράμε στην τοποθέτηση εμφυτευμάτων τιτανίου, δίνοντας έμφαση στη δομική αντοχή, την τέλεια οστεοενσωμάτωση και την αισθητική αρμονία.',
       'services.p3': 'Γνωρίζοντας πως η επίσκεψη στον οδοντίατρο μπορεί να προκαλεί άγχος, έχουμε διαμορφώσει έναν χώρο ζεστό, φιλόξενο και απόλυτα άνετο. Με εύκολη πρόσβαση, μεγάλη ευελιξία στα ραντεβού και πρωταρχικό μας μέλημα τον απόλυτο σεβασμό στην ευαισθησία και τις ανάγκες σας, φροντίζουμε η εμπειρία σας μαζί μας να είναι πάντα ήρεμη, ανώδυνη και θετική.',
-      'svc.implants.title': 'Οδοντικά Εμφυτεύματα Παλαιό Φάληρο',
-      'svc.implants.desc': 'Η πλέον σύγχρονη και μόνιμη λύση για την αναπλήρωση χαμένων δοντιών. Τα οδοντικά εμφυτεύματα διατηρούν την υγεία της γνάθου και προσφέρουν την αίσθηση και τη λειτουργικότητα των φυσικών δοντιών, εξασφαλίζοντας ένα σταθερό χαμόγελο για μια ζωή.',
+      'svc.implants.title': 'Οδοντικά Εμφυτεύματα',
+      'svc.implants.desc': 'Η πλέον σύγχρονη και μόνιμη λύση για την αναπλήρωση χαμένων δοντιών. Τα οδοντικά εμφυτεύματα τιτανίου διατηρούν την υγεία της γνάθου μέσω της άριστης οστεοενσωμάτωσης και προσφέρουν την αίσθηση και τη λειτουργικότητα των φυσικών δοντιών, εξασφαλίζοντας ένα σταθερό χαμόγελο για μια ζωή.',
       'svc.extractions.title': 'Χειρουργικές Εξαγωγές & Φρονιμίτες',
       'svc.extractions.desc': 'Εξειδικευμένες χειρουργικές εξαγωγές εγκλείστων ή προβληματικών δοντιών. Με τη χρήση προηγμένων τεχνικών και απόλυτο σεβασμό στον ασθενή, η διαδικασία πραγματοποιείται ανώδυνα, ελαχιστοποιώντας τον χρόνο αποκατάστασης.',
       'svc.bonegraft.title': 'Οστικό Μόσχευμα & Ανάπλαση',
@@ -351,8 +353,8 @@
     'title.privacy': 'Privacy Policy | Paleo Faliro | Dr. Angelo Moshopoulos',
     'title.manage': 'Manage Appointment | Paleo Faliro | Dr. Angelo Moshopoulos',
     'title.faq': 'Dental Implant FAQ in Paleo Faliro',
-    'desc.home': 'Specialized dental implant clinic in Paleo Faliro. Restore your smile with modern techniques by Dr. Angelo Moshopoulos. Book your appointment online today!',
-    'desc.about': 'Meet Dr. Angelo Moshopoulos, an experienced dental surgeon in Paleo Faliro specializing in dental implants and cosmetic dentistry. Read his full biography.',
+    'desc.home': 'Specialized titanium dental implant clinic in Paleo Faliro. Restore your smile and achieve perfect osseointegration with modern techniques by Dr. Angelo Moshopoulos. Book your appointment online today!',
+    'desc.about': 'Meet Dr. Angelo Moshopoulos, an experienced dental surgeon in Paleo Faliro specializing in titanium dental implants, periodontitis management, and cosmetic dentistry. Read his full biography.',
     'desc.services': 'Comprehensive dental services in Paleo Faliro: Implants, cosmetic dentistry, and prevention. Learn about our advanced dental solutions. Book online today!',
     'desc.faq': 'Frequently asked questions about dental implants: cost, pain, duration, and warranty. Get expert answers from our clinic in Paleo Faliro.',
     'desc.contact': 'Contact Dentplant Clinic in Paleo Faliro. Visit us at Davari Square 2 or call 210 9312651 to schedule your dental appointment. We look forward to meeting you!',
@@ -368,28 +370,28 @@
 
       /* ── Hero / Standalone Header ──────────────── */
       'hero.name': 'Dr. Angelo Moshopoulos',
-      'hero.title': 'Specialized Dental Implant Clinic in Paleo Faliro',
+      'hero.title': 'Dental Implant Clinic',
 
       /* ── Shared booking button ────────────────── */
       'booking.btn': 'Online Appointment',
 
       /* ── index.html — article cards ──────────── */
-      'card1.title': 'Dental Implants in Paleo Faliro: Am I a candidate?',
+      'card1.title': 'Dental Implants: Am I a candidate?',
       'card1.excerpt': 'Most adults who are missing one or more teeth are good candidates for dental implants. Healthy gums and sufficient jawbone are key.',
-      'card2.title': 'Implant Process in Paleo Faliro: Step by Step',
+      'card2.title': 'Implant Process: Step by Step',
       'card2.excerpt': 'The implant process is straightforward but takes time. From consultation to final crown, the journey typically takes 3–6 months.',
-      'card3.title': 'Implants or Bridges in Paleo Faliro: What to choose?',
+      'card3.title': 'Implants or Bridges: What to choose?',
       'card3.excerpt': 'Dental implants stand alone. They replace the root as well as the tooth, preserve your jawbone, and require no damage to surrounding teeth, unlike bridges or dentures.',
-      'card4.title': 'Bone Grafting & Implants in Paleo Faliro',
+      'card4.title': 'Bone Grafting & Implants',
       'card4.excerpt': 'Insufficient bone is rarely the end of the story. Bone grafting is a routine procedure that can rebuild the foundation needed for your smile.',
-      'card5.title': 'Cost of Dental Implants in Paleo Faliro',
+      'card5.title': 'Cost of Dental Implants',
       'card5.excerpt': 'Implants have a higher upfront cost but last decades. They are almost always the most cost-effective solution for quality of life.',
-      'card6.title': 'Painless Implants with Sedation in Paleo Faliro',
+      'card6.title': 'Painless Implants with Sedation',
       'card6.excerpt': 'Dental anxiety is common, but modern sedation makes implant surgery far more comfortable than expected.',
 
       /* ── index.html — modal 2 (Candidate) ─────── */
       'modal2.title': 'Am I a Candidate for Dental Implants? What You Need to Know',
-      'modal2.p1': 'Most adults missing one or more teeth are excellent candidates for dental implants. Key factors include healthy gums (absence of active periodontitis) and sufficient jawbone density.',
+      'modal2.p1': 'Most adults missing one or more teeth are excellent candidates for titanium dental implants. Key factors include healthy gums (absence of active periodontitis) and sufficient jawbone density for optimal osseointegration.',
       'modal2.p2': 'Conditions like diabetes or a history of smoking don\'t necessarily rule you out — they simply require a more careful assessment by our team.',
       'modal2.p3': '<span class="font-bold text-gray-900">Lost too much bone?</span><br>If you\'ve been told you\'ve lost too much bone, don\'t worry. Bone grafting can often restore the foundation needed for a successful implant.',
       'modal2.p4': 'The best way to find out for sure is a simple diagnostic visit. Our team will evaluate your history, take a high-precision CBCT scan, and provide a clear, honest answer. Most patients are pleasantly surprised to learn they qualify.',
@@ -424,12 +426,12 @@
       'modal6.p3': 'Beyond money, consider quality of life: implants let you eat, speak, and smile with complete confidence, without worrying about attachments or movement.',
 
       /* ── index.html — modal 7 (Sedation) ─── */
-      'modal2.title': 'Am I a candidate for Dental Implants in Paleo Faliro?',
-      'modal3.title': 'Dental Implant Process in Paleo Faliro: From Diagnosis to Completion',
-      'modal4.title': 'Implants, Bridges, or Dentures in Paleo Faliro: Which is right for you?',
-      'modal5.title': 'Bone Grafting and Dental Implants in Paleo Faliro',
-      'modal6.title': 'What do Dental Implants cost in Paleo Faliro?',
-      'modal7.title': 'Dental Implants Under Sedation in Paleo Faliro: A Stress-Free Experience',
+      'modal2.title': 'Am I a candidate for Dental Implants?',
+      'modal3.title': 'Dental Implant Process: From Diagnosis to Completion',
+      'modal4.title': 'Implants, Bridges, or Dentures: Which is right for you?',
+      'modal5.title': 'Bone Grafting and Dental Implants',
+      'modal6.title': 'What do Dental Implants cost?',
+      'modal7.title': 'Dental Implants Under Sedation: A Stress-Free Experience',
       'article.back_to_home': 'Return to Homepage',
 
       /* ── Quotes ───────────────────────────────── */
@@ -448,11 +450,11 @@
       'about.p6': 'For over two decades, he has voluntarily overseen preventive dental care for the municipality’s children. His dedication to community service was honored in 2015 at a special ceremony by the Municipalities of Paleo Faliro and Piraeus.',
 
       /* ── services.html ────────────────────────── */
-      'services.p1': 'At our practice, we believe that exceptional dentistry is built on a foundation of trust and meticulous planning. Our core philosophy is simple: your long-term oral health is our primary metric of success. We eschew transient solutions in favor of comprehensive treatment protocols. This means every procedure is backed by thorough diagnostic planning, education regarding daily hygiene, and an unwavering commitment to preventive care. We don\'t just restore teeth; we protect your future health.',
-      'services.p2': 'A beautiful smile is only as strong as the structures supporting it. To ensure the highest success rates for restorative and cosmetic work, we follow a strictly phased approach to care. We prioritize the health of your supporting tissues, addressing periodontal (gum) health and early-stage decay before proceeding to advanced treatments. Once a healthy foundation is established, we move toward specialized interventions. From precision fillings to complex implant placement, our procedures are performed with a focus on structural durability and aesthetic harmony.',
+      'services.p1': 'At our practice, we believe that exceptional dentistry is built on a foundation of trust and meticulous planning. Our core philosophy is simple: your long-term oral health is our primary metric of success. We eschew transient solutions in favor of comprehensive treatment protocols. This means every procedure is backed by thorough diagnostic planning (including 3D CBCT scans), education regarding daily hygiene, and an unwavering commitment to preventive care. We don\'t just restore teeth; we protect your future health.',
+      'services.p2': 'A beautiful smile is only as strong as the structures supporting it. To ensure the highest success rates for restorative and cosmetic work, we follow a strictly phased approach to care. We prioritize the health of your supporting tissues, addressing periodontitis (gum disease) and early-stage decay before proceeding to advanced treatments. Once a healthy foundation is established, we move toward specialized interventions. From precision fillings to complex titanium implant placement, our procedures are performed with a focus on structural durability, osseointegration, and aesthetic harmony.',
       'services.p3': 'We understand that for many, a visit to the dentist can be a source of apprehension. We have intentionally designed our practice to redefine that experience, blending clinical professionalism with a welcoming, stress-free environment. Flexible appointment times and a compassionate team ensure your experience with us is calm, painless, and positive.',
-      'svc.implants.title': 'Dental Implants Paleo Faliro',
-      'svc.implants.desc': 'The most modern and permanent solution for replacing missing teeth. Dental implants preserve jawbone health and provide the feel and function of natural teeth, ensuring a stable smile for a lifetime.',
+      'svc.implants.title': 'Dental Implants',
+      'svc.implants.desc': 'The most modern and permanent solution for replacing missing teeth. Titanium dental implants preserve jawbone health through optimal osseointegration and provide the feel and function of natural teeth, ensuring a stable smile for a lifetime.',
       'svc.extractions.title': 'Surgical Extractions & Wisdom Teeth',
       'svc.extractions.desc': 'Specialized surgical extractions for impacted or problematic teeth. Using advanced techniques and absolute respect for the patient, the procedure is performed painlessly, minimizing recovery time.',
       'svc.bonegraft.title': 'Bone Grafting & Regeneration',

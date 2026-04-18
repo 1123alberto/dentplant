@@ -160,6 +160,35 @@
       "datePublished": "2026-04-18"
     }
     </script>
+  <style>
+    @media (min-width: 768px) {
+        .md\:flex { display: flex !important; }
+        .md\:hidden { display: none !important; }
+        #mobile-sidebar { display: none !important; }
+    }
+    #mobile-sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        z-index: 60 !important;
+        transition: transform 0.3s ease-in-out !important;
+    }
+    #mobile-sidebar.translate-x-full {
+        transform: translateX(100%) !important;
+    }
+    #mobile-sidebar:not(.translate-x-full) {
+        transform: translateX(0) !important;
+    }
+    .w-4\/5 { width: 80% !important; }
+    .right-0 { right: 0 !important; left: auto !important; }
+  .text-white { color: #ffffff !important; }
+  .border-white/50 { border-color: rgba(255, 255, 255, 0.5) !important; }
+    .bg-white/20 { background-color: rgba(255, 255, 255, 0.2) !important; }
+    .text-[10px] { font-size: 10px !important; }
+    .text-[11px] { font-size: 11px !important; }
+  </style>
 </head>
 <body class="bg-gradient-to-b from-brand-blue to-white overflow-x-hidden pt-20 min-h-screen flex flex-col">
   <nav
@@ -170,8 +199,8 @@
     </a>
     <div class="flex items-center gap-4">
       <div
-        class="flex items-center space-x-4 md:space-x-8 text-white text-[11px] leading-tight md:text-xs md:leading-normal font-medium uppercase font-noto">
-        <a class="text-yellow-300 transition-colors" href="index.html" data-i18n="nav.home">Αρχικη</a>
+        class="hidden md:flex items-center space-x-4 md:space-x-8 text-white text-[11px] leading-tight md:text-xs md:leading-normal font-medium uppercase font-noto">
+        <a class="hover:text-gray-200 transition-colors" href="index.html" data-i18n="nav.home">Αρχικη</a>
         <a class="hover:text-gray-200 transition-colors" href="about.html" data-i18n="nav.doctor">Ο Ιατρος</a>
         <a class="hover:text-gray-200 transition-colors" href="services.html" data-i18n="nav.services">Υπηρεσιες</a>
         <a class="hover:text-gray-200 transition-colors" href="faq.html" data-i18n="nav.faq">ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ</a>
@@ -179,8 +208,34 @@
       </div>
       <button onclick="i18n.toggleLanguage()"
         class="lang-toggle text-white border border-white/50 rounded px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase hover:bg-white/20 transition-all duration-300 flex-shrink-0">EN</button>
+      
+      <!-- Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none p-1">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </nav>
+
+  <!-- Mobile Sidebar -->
+  <div id="mobile-sidebar" class="fixed inset-0 z-[60] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+    <div id="mobile-menu-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    <div class="absolute right-0 top-0 h-full w-4/5 bg-brand-blue shadow-2xl flex flex-col p-8">
+      <button id="mobile-menu-close" class="self-end text-white mb-12">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <div class="flex flex-col gap-6 text-white text-lg font-noto uppercase tracking-wider">
+        <a href="index.html" data-i18n="nav.home" class="hover:text-yellow-300 transition-colors">Αρχικη</a>
+        <a href="about.html" data-i18n="nav.doctor" class="hover:text-yellow-300 transition-colors">Ο Ιατρος</a>
+        <a href="services.html" data-i18n="nav.services" class="hover:text-yellow-300 transition-colors">Υπηρεσιες</a>
+        <a href="faq.html" data-i18n="nav.faq" class="hover:text-yellow-300 transition-colors">ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ</a>
+        <a href="contact.html" data-i18n="nav.contact" class="hover:text-yellow-300 transition-colors">Επικοινωνια</a>
+      </div>
+    </div>
+  </div>
   <main class="flex-grow container mx-auto px-6 py-32 max-w-4xl">
     <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl my-12">
       
@@ -188,7 +243,7 @@
         <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-10">
           <img alt="Διαφανής κοστολόγηση και τιμές οδοντικών εμφυτευμάτων" data-i18n-alt="alt.cost" class="w-full h-56 object-cover rounded-lg mb-6" src="images/article_5.webp">
         </div>
-      <h1 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal6.title">Πόσο κοστίζουν τα Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο;</h1>
+      <h1 class="text-2xl font-bold text-center text-gray-800 mb-6 font-julius" data-i18n="modal6.title">Πόσο κοστίζουν τα Οδοντικά Εμφυτεύματα;</h1>
       <div class="text-gray-700 space-y-4 font-open text-base leading-relaxed">
         <p data-i18n="modal6.p1">Τα οδοντικά εμφυτεύματα έχουν ένα υψηλότερο αρχικό κόστος σε σύγκριση με άλλες επιλογές. Ωστόσο, στην πραγματικότητα, αποτελούν σχεδόν πάντα την πιο οικονομική λύση σε βάθος χρόνου.</p>
         <p data-i18n="modal6.p2">Οι τεχνητές οδοντοστοιχίες και οι γέφυρες συχνά χρειάζονται αντικατάσταση, επισκευή ή προσαρμογή με το πέρασμα των ετών. Τα εμφυτεύματα, με τη σωστή φροντίδα, διαρκούν για δεκαετίες — συχνά για μια ολόκληρη ζωή.</p>

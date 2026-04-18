@@ -93,6 +93,34 @@
     .btn-primary:hover {
         background: var(--clr-accent-blue) !important;
     }
+    @media (min-width: 768px) {
+        .md\:flex { display: flex !important; }
+        .md\:hidden { display: none !important; }
+        #mobile-sidebar { display: none !important; }
+    }
+    #mobile-sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        z-index: 60 !important;
+        transition: transform 0.3s ease-in-out !important;
+    }
+    #mobile-sidebar.translate-x-full {
+        transform: translateX(100%) !important;
+    }
+    #mobile-sidebar:not(.translate-x-full) {
+        transform: translateX(0) !important;
+    }
+    .w-4\/5 { width: 80% !important; }
+    .right-0 { right: 0 !important; left: auto !important; }
+    .text-white { color: #ffffff !important; }
+  .text-white { color: #ffffff !important; }
+  .border-white/50 { border-color: rgba(255, 255, 255, 0.5) !important; }
+    .bg-white/20 { background-color: rgba(255, 255, 255, 0.2) !important; }
+    .text-[10px] { font-size: 10px !important; }
+    .text-[11px] { font-size: 11px !important; }
   </style>
   <script type="application/ld+json">
     {
@@ -215,7 +243,7 @@
     </a>
     <div class="flex items-center gap-4">
       <div
-        class="flex items-center space-x-4 md:space-x-8 text-white text-[11px] leading-tight md:text-xs md:leading-normal font-medium uppercase font-noto">
+        class="hidden md:flex items-center space-x-4 md:space-x-8 text-white text-[11px] leading-tight md:text-xs md:leading-normal font-medium uppercase font-noto">
         <a class="text-yellow-300 transition-colors" href="index.html" data-i18n="nav.home">Αρχικη</a>
         <a class="hover:text-gray-200 transition-colors" href="about.html" data-i18n="nav.doctor">Ο Ιατρος</a>
         <a class="hover:text-gray-200 transition-colors" href="services.html" data-i18n="nav.services">Υπηρεσιες</a>
@@ -224,15 +252,41 @@
       </div>
       <button onclick="i18n.toggleLanguage()"
         class="lang-toggle text-white border border-white/50 rounded px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase hover:bg-white/20 transition-all duration-300 flex-shrink-0">EN</button>
+      
+      <!-- Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none p-1">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
   </nav>
+
+  <!-- Mobile Sidebar -->
+  <div id="mobile-sidebar" class="fixed inset-0 z-[60] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+    <div id="mobile-menu-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+    <div class="absolute right-0 top-0 h-full w-4/5 bg-brand-blue shadow-2xl flex flex-col p-8">
+      <button id="mobile-menu-close" class="self-end text-white mb-12">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <div class="flex flex-col gap-6 text-white text-lg font-noto uppercase tracking-wider">
+        <a href="index.html" data-i18n="nav.home" class="hover:text-yellow-300 transition-colors">Αρχικη</a>
+        <a href="about.html" data-i18n="nav.doctor" class="hover:text-yellow-300 transition-colors">Ο Ιατρος</a>
+        <a href="services.html" data-i18n="nav.services" class="hover:text-yellow-300 transition-colors">Υπηρεσιες</a>
+        <a href="faq.html" data-i18n="nav.faq" class="hover:text-yellow-300 transition-colors">ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ</a>
+        <a href="contact.html" data-i18n="nav.contact" class="hover:text-yellow-300 transition-colors">Επικοινωνια</a>
+      </div>
+    </div>
+  </div>
   <header
     class="min-h-screen bg-brand-blue bg-[url('../images/tools_wallpaper.jpg')] bg-cover bg-scroll md:bg-fixed bg-center bg-no-repeat flex flex-col justify-center items-center relative pt-20">
     <div class="text-center w-full px-4">
       <h1
         class="text-white text-center font-Julius Sans One font-thin text-3xl md:text-5xl max-w-4xl mx-auto leading-tight transition-transform delay-300">
-        <span class="text-4xl md:text-4xl font-medium" data-i18n="hero.name">Άγγελος Μοσχόπουλος</span>
-        <span class="text-2xl md:text-2xl block mb-4 font-normal" data-i18n="hero.title">Εξειδικευμένη Κλινική Οδοντικών Εμφυτευμάτων στο Παλαιό Φάληρο</span>
+        <span class="text-4xl md:text-4xl font-medium" data-i18n="hero.name">Dr. Angelo Moshopoulos</span>
+        <span class="text-2xl md:text-2xl block mb-4 font-normal" data-i18n="hero.title">Dental Implant Clinic</span>
       </h1>
       <div class="mt-12 text-center">
         <a href="booking.html"
@@ -263,7 +317,7 @@
         </div>
         <a href="article-candidate.html" class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none" aria-label="Διαβάστε περισσότερα">+</a>
         <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-          data-i18n="card1.title">Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο: Είμαι κατάλληλος υποψήφιος;</h4>
+          data-i18n="card1.title">Οδοντικά Εμφυτεύματα: Είμαι κατάλληλος υποψήφιος;</h4>
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card1.excerpt">Οι περισσότεροι ενήλικες που έχουν χάσει ένα ή περισσότερα δόντια είναι κατάλληλοι για εμφυτεύματα. Τα υγιή ούλα και η επαρκής οστική μάζα αποτελούν τους βασικούς παράγοντες επιτυχίας.</p>
       </div>
       <!-- Article 4 -->
@@ -274,7 +328,7 @@
         </div>
         <a href="article-bone-graft.html" class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none" aria-label="Διαβάστε περισσότερα">+</a>
         <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-          data-i18n="card4.title">Οστικό Μόσχευμα & Εμφυτεύματα στο Παλαιό Φάληρο</h4>
+          data-i18n="card4.title">Οστικό Μόσχευμα & Εμφυτεύματα</h4>
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card4.excerpt">Η έλλειψη οστικής μάζας σπάνια αποτελεί οριστικό πρόβλημα. Η τοποθέτηση οστικού μοσχεύματος είναι πλέον μια διαδικασία ρουτίνας που δημιουργεί το απαραίτητο θεμέλιο.</p>
       </div>
     </div>
@@ -288,7 +342,7 @@
         </div>
         <a href="article-timeline.html" class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none" aria-label="Διαβάστε περισσότερα">+</a>
         <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-          data-i18n="card2.title">Διαδικασία Εμφυτευμάτων στο Παλαιό Φάληρο: Βήμα προς Βήμα</h4>
+          data-i18n="card2.title">Διαδικασία Εμφυτευμάτων: Βήμα προς Βήμα</h4>
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card2.excerpt">Η διαδικασία τοποθέτησης εμφυτεύματος είναι ξεκάθαρη αλλά απαιτεί χρόνο. Από την αρχική ενημέρωση μέχρι την τοποθέτηση της στεφάνης, η διαδρομή διαρκεί συνήθως 3-6 μήνες.</p>
       </div>
       <!-- Article 5 -->
@@ -299,7 +353,7 @@
         </div>
         <a href="article-cost.html" class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none" aria-label="Διαβάστε περισσότερα">+</a>
         <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-          data-i18n="card5.title">Κόστος για Οδοντικά Εμφυτεύματα στο Παλαιό Φάληρο</h4>
+          data-i18n="card5.title">Κόστος για Οδοντικά Εμφυτεύματα</h4>
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card5.excerpt">Τα εμφυτεύματα έχουν μεγαλύτερο αρχικό κόστος, αλλά η αντοχή τους στον χρόνο τα καθιστά την πιο συμφέρουσα και ποιοτική λύση για το μέλλον.</p>
       </div>
     </div>
@@ -313,7 +367,7 @@
         </div>
         <a href="article-comparison.html" class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none" aria-label="Διαβάστε περισσότερα">+</a>
         <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-          data-i18n="card3.title">Εμφυτεύματα ή Γέφυρες στο Παλαιό Φάληρο: Τι να επιλέξετε;</h4>
+          data-i18n="card3.title">Εμφυτεύματα ή Γέφυρες: Τι να επιλέξετε;</h4>
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card3.excerpt">Τα οδοντικά εμφυτεύματα υπερτερούν σαφώς. Προστατεύουν το οστό της γνάθου και δεν απαιτούν τρόχισμα των διπλανών δοντιών, προσφέροντας την πιο φυσική λύση.</p>
       </div>
       <!-- Article 6 -->
@@ -324,7 +378,7 @@
         </div>
         <a href="article-sedation.html" class="absolute top-[230px] right-6 w-12 h-12 rounded-full bg-blue-600 shadow-strong text-white text-3xl flex items-center justify-center hover:bg-blue-700 transition-colors focus:outline-none" aria-label="Διαβάστε περισσότερα">+</a>
         <h4 class="text-gray-800 text-center font-bold text-xl font-open mb-4 h-16 flex items-center justify-center"
-          data-i18n="card6.title">Ανώδυνη Τοποθέτηση Εμφυτευμάτων με Μέθη στο Παλαιό Φάληρο</h4>
+          data-i18n="card6.title">Ανώδυνη Τοποθέτηση Εμφυτευμάτων με Μέθη</h4>
         <p class="text-gray-700 text-md px-2 leading-relaxed" data-i18n="card6.excerpt">Το οδοντιατρικό άγχος είναι φυσιολογικό, αλλά η σύγχρονη "μέθη" καθιστά τη διαδικασία των εμφυτευμάτων πολύ πιο άνετη και ανώδυνη από όσο φαντάζεστε.</p>
       </div>
     </div>
