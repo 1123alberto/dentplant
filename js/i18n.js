@@ -99,6 +99,7 @@
       'quote.about': '&quot; Η αφοσίωσή μας στην επιστήμη της οδοντιατρικής μεταφράζεται σε εξατομικευμένη και ουσιαστική φροντίδα για κάθε ασθενή. <br>Με οδηγό τη συνεχή εξέλιξη και το σεβασμό στις ανάγκες σας, χτίζουμε σχέσεις εμπιστοσύνης που διαρκούν. Αποτελεί τιμή μας να αναλαμβάνουμε τη φροντίδα του χαμόγελού σας. &quot;',
       'quote.services': '&quot; Προσφέρουμε ένα πλήρες φάσμα σύγχρονων οδοντιατρικών θεραπειών, καθεμία από τις οποίες είναι προσαρμοσμένη στις πραγματικές σας ανάγκες.<br>Με την υποστήριξη της τελευταίας λέξης της τεχνολογίας και πολυετή εμπειρία, στοχεύουμε σε αποτελέσματα που φαίνονται φυσικά και αντέχουν στον χρόνο. Κάθε μας απόφαση οδηγείται από τη δική σας στοματική υγεία. &quot;',
       'quote.faq': '&quot; Στόχος μας είναι η πλήρης ενημέρωση και η απόλυτη διαφάνειά σας σε κάθε βήμα. <br>Είμαστε εδώ για να απαντήσουμε σε κάθε σας απορία και να σας βοηθήσουμε να λάβετε την καλύτερη απόφαση για το χαμόγελό σας. Η εμπιστοσύνη σας είναι η μεγαλύτερη ανταμοιβή μας. &quot;',
+      'quote.contact': '&quot; Είμαστε πάντα στη διάθεσή σας για να ακούσουμε τις ανάγκες σας και να επιλύσουμε όποιες απορίες έχετε. <br>Επικοινωνήστε μαζί μας σήμερα για να προγραμματίσουμε την επόμενη επίσκεψή σας στο ιατρείο. Με μεγάλη χαρά αναμένουμε να σας εξυπηρετήσουμε από κοντά. &quot;',
       /* ── about.html — biography sections ──────── */
       'about.p1': 'Με βαθιά αφοσίωση στην επιστήμη και τον άνθρωπο, ο <strong class="text-gray-900">Άγγελος Μοσχόπουλος</strong> ξεκίνησε την ακαδημαϊκή του πορεία στο Πανεπιστήμιο McGill, ολοκληρώνοντας το 1992 τις σπουδές του στη Βιολογία, με εξειδίκευση στη Μικροβιολογία και την Ανοσολογία.',
       'about.p2': 'Η αγάπη του για την έρευνα τον οδήγησε στο Ελληνικό Ινστιτούτο Παστέρ, όπου εργάστηκε ως ερευνητής για δύο χρόνια, προτού αφοσιωθεί στην Οδοντιατρική, λαμβάνοντας το πτυχίο του από το Πανεπιστήμιο Semmelweis το 1999.',
@@ -435,6 +436,7 @@
       'quote.about': '&quot; Our dedication to the science of dentistry is rooted in providing personalized, meaningful care for every individual. By embracing continuous innovation and maintaining a deep respect for our patients\' needs, we build relationships of trust that last a lifetime. It is a true honor to be entrusted with your smile. &quot;',
       'quote.services': '&quot; We provide a full range of modern dental treatments, each one tailored to what you actually need.<br>Backed by the latest technology and years of hands-on expertise, we aim for results that look natural and last. Your oral health drives every decision we make. &quot;',
       'quote.faq': '&quot; Our goal is to provide full information and absolute transparency at every step. <br>We are here to answer all your questions and help you make the best decision for your smile. Your trust is our greatest reward. &quot;',
+      'quote.contact': '&quot; We are always at your disposal to listen to your needs and resolve any questions you may have. <br>Contact us today to schedule your next visit to the practice. It is our great pleasure to look forward to serving you in person. &quot;',
 
       /* ── about.html — biography sections ──────── */
       'about.p1': 'Combining a deep commitment to scientific progress with a patient-centered approach, <strong class="text-gray-900">Dr. Angelo Moshopoulos</strong> began his academic career at McGill University. He graduated in 1992 with a degree in Biology, specializing in Microbiology and Immunology.',
@@ -736,6 +738,7 @@
       'modal7.p3': 'Most patients are surprised by how little they feel and how quickly the procedure ends. The surgery itself is performed with local anesthesia, meaning there is no pain during the operation.',
       'modal7.p4': 'If fear is stopping you from getting the smile you deserve, let\'s talk. A stress-free experience starts with a simple conversation.',
       'article.back_to_home': 'Return to Homepage',
+      'quote.contact': '&quot; We are always at your disposal to listen to your needs and resolve any questions you may have. <br>Contact us today to schedule your next visit to the practice. It is our great pleasure to look forward to serving you in person. &quot;',
     }
   };
 
