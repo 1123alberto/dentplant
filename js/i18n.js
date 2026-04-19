@@ -107,7 +107,7 @@
       'about.p4': 'Η πολυετής κλινική του εμπειρία επικεντρώνεται στην <strong>προηγμένη εμφυτευματολογία και τη χειρουργική στόματος</strong>, όπου αφιερώνει το χρόνο του. Η συνεχής του κατάρτιση μέσω προηγμένων σεμιναρίων και εξειδικευμένων προγραμμάτων σε όλο το φάσμα της οδοντιατρικής —με έμφαση στην αισθητική αποκατάσταση και κυρίως στις τελευταίες εξελίξεις της εμφυτευματολογίας— διασφαλίζει την εφαρμογή των πλέον σύγχρονων μεθόδων. Με έμφαση στη χρήση τεχνολογιών αιχμής και την εξατομικευμένη διαχείριση, επιτυγχάνει την πλήρη αισθητική και λειτουργική αποκατάσταση του χαμόγελου, διασφαλίζοντας τη μακροβιότητα των θεραπειών.',
       'about.p5': 'Πέρα από την κλινική πράξη, ο κ. Μοσχόπουλος διαπνέεται από έντονο αίσθημα κοινωνικής ευθύνης. Το 2001 πρωτοστάτησε στην ίδρυση της Οδοντιατρικής Κλινικής των <strong>Δημοτικών Ιατρείων Παλαιού Φαλήρου</strong>, έναν θεσμό που στηρίζει μέχρι σήμερα.',
       'about.p6': 'Για περισσότερες από δύο δεκαετίες, προσφέρει εθελοντικά τις υπηρεσίες του στην <strong>προληπτική οδοντιατρική</strong> των παιδιών του δήμου. Η προσφορά του αυτή τιμήθηκε το 2015 από τους Δήμους Παλαιού Φαλήρου και Πειραιά, επιβεβαιώνοντας τη δέσμευσή του στην υπηρεσία του κοινωνικού συνόλου.',
-      'about.philosophy_title': 'Κοινωνική Προσφορά',
+      'about.social_title': 'Κοινωνική Προσφορά',
       'about.signature_label': 'Με εκτίμηση,',
 
       'services.p1': 'Η κλινική μας βασίζεται στις αρχές της κλινικής εμπιστοσύνης και του σχολαστικού διαγνωστικού σχεδιασμού. Θεωρούμε τη βιώσιμη στοματική υγεία ως τον απόλυτο δείκτη επιτυχίας, δίνοντας προτεραιότητα σε ολοκληρωμένες, τεκμηριωμένες θεραπείες. Με τη χρήση προηγμένης τρισδιάστατης απεικόνισης CBCT και τη συνεχή ενημέρωση των ασθενών μας, δεν αποκαθιστούμε απλώς τη λειτουργικότητα των δοντιών· θωρακίζουμε τη μελλοντική σας υγεία μέσω προληπτικών πρωτοκόλλων ακριβείας.',
@@ -450,7 +450,7 @@
       'about.p4': 'With decades of hands-on experience, he dedicates his time in <strong>advanced dental implantology and oral surgery</strong>. His commitment to clinical excellence is evidenced by his continuous participation in advanced seminars and specialized courses, ensuring he remains at the forefront of all dental developments—with a particular focus on cosmetic enhancements and the latest innovations in implant dentistry. By integrating this cutting-edge knowledge with meticulous surgical management, he achieves seamless aesthetic and functional smile restorations that stand the test of time.',
       'about.p5': 'Beyond his clinical achievements, Dr. Moshopoulos is deeply committed to social contribution. In 2001, he played a pivotal role in founding the Dental Clinic within the <strong>Paleo Faliro Municipal Health Centers</strong>, creating a vital resource for the local community.',
       'about.p6': 'For over twenty years, he has volunteered his time to oversee <strong>preventive dental care</strong> for the municipality\'s children. This enduring commitment to public service was officially honored in 2015 by the Municipalities of Paleo Faliro and Piraeus, reflecting his lifelong dedication to both his patients and the community.',
-      'about.philosophy_title': 'Social Contribution',
+      'about.social_title': 'Social Contribution',
       'about.signature_label': 'Sincerely,',
 
       /* ── services.html ────────────────────────── */

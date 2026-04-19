@@ -1,75 +1,126 @@
 <!DOCTYPE html>
 <html lang="el">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title data-i18n="title.about">Angelo Moshopoulos: Χειρουργός Οδοντίατρος στο Παλαιό Φάληρο</title>
-  <meta name="description" data-i18n-content="desc.about" content="Γνωρίστε τον Άγγελο Μοσχόπουλο, έμπειρο χειρουργό οδοντίατρο στο Παλαιό Φάληρο. Εξειδίκευση στα οδοντικά εμφυτεύματα τιτανίου, την αντιμετώπιση της περιοδοντίτιδας και την αισθητική οδοντιατρική. Δείτε το βιογραφικό.">
+  <meta name="description" data-i18n-content="desc.about"
+    content="Γνωρίστε τον Άγγελο Μοσχόπουλο, έμπειρο χειρουργό οδοντίατρο στο Παλαιό Φάληρο. Εξειδίκευση στα οδοντικά εμφυτεύματα τιτανίου, την αντιμετώπιση της περιοδοντίτιδας και την αισθητική οδοντιατρική. Δείτε το βιογραφικό.">
   <link rel="stylesheet" href="css/output.css?v=11">
   <link rel="icon" href="images/dental-implant-circle-256-torqued.webp" type="image/png">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Julius+Sans+One%7CNoto+Sans:400,b%7COpen+Sans:400,600,600i,b,i%7CAlex+Brush%7CNunito:300,400,700">
   <style>
-    .font-signature { font-family: 'Alex Brush', cursive; }
-    @media (min-width: 768px) {
-        .md\:flex { display: flex !important; }
-        .md\:hidden { display: none !important; }
-        #mobile-sidebar { display: none !important; }
+    .font-signature {
+      font-family: 'Alex Brush', cursive;
     }
+
+    @media (min-width: 768px) {
+      .md\:flex {
+        display: flex !important;
+      }
+
+      .md\:hidden {
+        display: none !important;
+      }
+
+      #mobile-sidebar {
+        display: none !important;
+      }
+    }
+
     #mobile-sidebar {
-        position: fixed !important;
-        top: 0 !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        z-index: 60 !important;
-        transition: transform 0.3s ease-in-out !important;
+      position: fixed !important;
+      top: 0 !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      z-index: 60 !important;
+      transition: transform 0.3s ease-in-out !important;
     }
+
     #mobile-sidebar.translate-x-full {
-        transform: translateX(100%) !important;
+      transform: translateX(100%) !important;
     }
+
     #mobile-sidebar:not(.translate-x-full) {
-        transform: translateX(0) !important;
+      transform: translateX(0) !important;
     }
-    .w-4\/5 { width: 80% !important; }
-    .right-0 { right: 0 !important; left: auto !important; }
-  .text-white { color: #ffffff !important; }
-  .border-white\/50 { border-color: rgba(255, 255, 255, 0.5) !important; }
-    .bg-white\/20 { background-color: rgba(255, 255, 255, 0.2) !important; }
-    .text-\[10px\] { font-size: 10px !important; }
-    .text-\[11px\] { font-size: 11px !important; }
-    .mb-10 { margin-bottom: 2.5rem !important; }
-    html[lang="el"] .philosophy-title { 
-        font-family: 'Nunito', sans-serif !important; 
-        font-weight: 300 !important; 
+
+    .w-4\/5 {
+      width: 80% !important;
     }
-    html[lang="el"] h1:not(.keep-style), html[lang="el"] h2:not(.keep-style), html[lang="el"] h3:not(.keep-style), html[lang="el"] h4:not(.keep-style), html[lang="el"] h5:not(.keep-style), html[lang="el"] h6:not(.keep-style) {
-        font-family: 'Nunito', sans-serif !important;
-        font-weight: 300 !important;
+
+    .right-0 {
+      right: 0 !important;
+      left: auto !important;
     }
+
+    .text-white {
+      color: #ffffff !important;
+    }
+
+    .border-white\/50 {
+      border-color: rgba(255, 255, 255, 0.5) !important;
+    }
+
+    .bg-white\/20 {
+      background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+
+    .text-\[10px\] {
+      font-size: 10px !important;
+    }
+
+    .text-\[11px\] {
+      font-size: 11px !important;
+    }
+
+    .mb-10 {
+      margin-bottom: 2.5rem !important;
+    }
+
+    html[lang="el"] .philosophy-title {
+      font-family: 'Nunito', sans-serif !important;
+      font-weight: 300 !important;
+    }
+
+    html[lang="el"] h1:not(.keep-style),
+    html[lang="el"] h2:not(.keep-style),
+    html[lang="el"] h3:not(.keep-style),
+    html[lang="el"] h4:not(.keep-style),
+    html[lang="el"] h5:not(.keep-style),
+    html[lang="el"] h6:not(.keep-style) {
+      font-family: 'Nunito', sans-serif !important;
+      font-weight: 300 !important;
+    }
+
     @media (min-width: 768px) {
-        .about-grid {
-            display: grid !important;
-            grid-template-columns: 1fr 1fr !important;
-            grid-template-areas: 
-                "portrait bio"
-                "philosophy bio" !important;
-            column-gap: 3rem !important;
-            row-gap: 0 !important;
-            align-items: start !important;
-        }
-        .area-portrait { grid-area: portrait !important; }
-        .area-bio { grid-area: bio !important; }
-        .area-philosophy { grid-area: philosophy !important; }
+      .about-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        column-gap: 4rem !important;
+        align-items: start !important;
+      }
+
+      /* Explicit vertical spacing between sections in columns */
+      .about-grid > div > * {
+        margin-bottom: 2.5rem !important;
+      }
+      .about-grid > div > *:last-child {
+        margin-bottom: 0 !important;
+      }
     }
   </style>
 </head>
+
 <body class="bg-white overflow-x-hidden pt-20 flex flex-col min-h-screen">
   <nav
     class="fixed top-0 w-full bg-brand-blue shadow-md z-50 px-6 py-3 flex items-center justify-between transition-transform duration-300">
     <a href="index.html" class="w-12 h-12 rounded-full shadow-strong overflow-hidden flex-shrink-0 bg-white">
-      <img alt="Λογότυπο Dentplant Clinic - Άγγελος Μοσχόπουλος Εμφυτεύματα Παλαιό Φάληρο" data-i18n-alt="alt.logo" class="w-full h-full object-contain" src="images/dental-implant-circle-256-torqued.webp"
-        loading="lazy">
+      <img alt="Λογότυπο Dentplant Clinic - Άγγελος Μοσχόπουλος Εμφυτεύματα Παλαιό Φάληρο" data-i18n-alt="alt.logo"
+        class="w-full h-full object-contain" src="images/dental-implant-circle-256-torqued.webp" loading="lazy">
     </a>
     <div class="flex items-center gap-4">
       <div
@@ -82,7 +133,7 @@
       </div>
       <button onclick="i18n.toggleLanguage()"
         class="lang-toggle text-white border border-white/50 rounded px-2 py-0.5 text-[10px] font-bold tracking-widest uppercase hover:bg-white/20 transition-all duration-300 flex-shrink-0">EN</button>
-      
+
       <!-- Hamburger Button -->
       <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none p-1">
         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +144,8 @@
   </nav>
 
   <!-- Mobile Sidebar -->
-  <div id="mobile-sidebar" class="fixed inset-0 z-[60] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+  <div id="mobile-sidebar"
+    class="fixed inset-0 z-[60] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
     <div id="mobile-menu-backdrop" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
     <div class="absolute right-0 top-0 h-full w-4/5 bg-brand-blue shadow-2xl flex flex-col p-8">
       <button id="mobile-menu-close" class="self-end text-white mb-12">
@@ -103,7 +155,8 @@
       </button>
       <div class="flex flex-col gap-6 text-white text-lg font-noto uppercase tracking-wider">
         <a href="index.html" data-i18n="nav.home" class="hover:text-yellow-300 transition-colors">Αρχικη</a>
-        <a href="about.html" data-i18n="nav.doctor" class="hover:text-yellow-300 transition-colors underline">Ο Ιατρος</a>
+        <a href="about.html" data-i18n="nav.doctor" class="hover:text-yellow-300 transition-colors underline">Ο
+          Ιατρος</a>
         <a href="services.html" data-i18n="nav.services" class="hover:text-yellow-300 transition-colors">Υπηρεσιες</a>
         <a href="faq.html" data-i18n="nav.faq" class="hover:text-yellow-300 transition-colors">ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ</a>
         <a href="contact.html" data-i18n="nav.contact" class="hover:text-yellow-300 transition-colors">Επικοινωνια</a>
@@ -111,35 +164,67 @@
     </div>
   </div>
 
-  <main class="flex-grow container mx-auto px-6 py-12 max-w-6xl">
+  <main class="flex-grow container mx-auto px-6 py-12 max-w-6xl text-gray-700 font-open text-lg leading-relaxed">
     <div class="about-grid mb-24 space-y-12 md:space-y-0">
-      <!-- Portrait -->
-      <div class="area-portrait">
-        <div class="w-full rounded-2xl overflow-hidden shadow-2xl transition-transform hover:-translate-y-2 mb-10">
-          <img alt="Οδοντίατρος Άγγελος Μοσχόπουλος στην κλινική του στο Παλαιό Φάληρο - Εξειδικευμένη Εμφυτευματολογία και Χειρουργική Στόματος" data-i18n-alt="alt.doctor_portrait" class="w-full h-auto object-cover" src="images/dentist-dr-angelo-moshopoulos.webp">
+      
+      <!-- Left Column -->
+      <div>
+        <!-- Portrait -->
+        <div class="w-full rounded-2xl overflow-hidden shadow-2xl transition-transform hover:-translate-y-2">
+          <img
+            alt="Οδοντίατρος Άγγελος Μοσχόπουλος στην κλινική του στο Παλαιό Φάληρο - Εξειδικευμένη Εμφυτευματολογία και Χειρουργική Στόματος"
+            data-i18n-alt="alt.doctor_portrait" class="w-full h-auto object-cover"
+            src="images/dentist-dr-angelo-moshopoulos.webp">
         </div>
-      </div>
-
-      <!-- Bio Paragraphs -->
-      <div class="text-gray-700 font-open text-lg leading-relaxed space-y-6 area-bio">
-        <p data-i18n-html="about.p1">Συνδυάζοντας την επιστημονική αρτιότητα με την ανθρωποκεντρική προσέγγιση, ο Άγγελος Μοσχόπουλος διαθέτει μια πολυδιάστατη ακαδημαϊκή και κλινική διαδρομή. Ξεκίνησε τις σπουδές του στο <strong>Πανεπιστήμιο McGill</strong> του Καναδά, από όπου αποφοίτησε με τον τιμητικό τίτλο <strong>Bachelor of Science with Honours</strong>. Το 1992 ολοκλήρωσε τον κύκλο της Βιολογίας με εξειδίκευση στη Μικροβιολογία και την Ανοσολογία, θέτοντας τις βάσεις για τη βαθιά κατανόηση της βιολογικής απόκρισης των ιστών.</p>
-        <p data-i18n-html="about.p2">Η αφοσίωσή του στην έρευνα συνεχίστηκε στο <strong>Ελληνικό Ινστιτούτο Παστέρ</strong>, όπου προσέφερε το έργο του ως ερευνητής επί διετία, συμβάλλοντας ως συν-συγγραφέας σε δημοσιευμένη επιστημονική μελέτη σχετικά με τη νευροβιολογία (<a href="https://pubmed.ncbi.nlm.nih.gov/9026475/" target="_blank" class="underline decoration-brand-blue/30 hover:text-brand-blue transition-colors">PubMed: 9026475</a>). Στη συνέχεια, το πάθος του για την κλινική πράξη τον οδήγησε στην Οδοντιατρική, λαμβάνοντας το πτυχίο του από το <strong>Πανεπιστήμιο Semmelweis</strong> το 1999. Κατά τη διάρκεια των σπουδών του, διακρίθηκε με την <strong>1η θέση στον τομέα της Παθολογίας</strong> στον καταξιωμένο διαγωνισμό <strong>Rector's Award</strong> (Rektori Pályamunka), μια διάκριση που αναδεικνύει την αριστεία στην επιστημονική έρευνα.</p>
-        <p data-i18n-html="about.p3">Από το 2002, υπηρετεί με συνέπεια τη στοματική υγεία στα νότια προάστια, καλωσορίζοντας τους ασθενείς του στην <strong>προσωπική του κλινική στο Παλαιό Φάληρο</strong>. Παράλληλα, η επιστημονική του συγκρότηση αναγνωρίστηκε το 2003 με τον διορισμό του ως Οδοντιατρικός Σύμβουλος στο Τμήμα Στοματικής και Γναθοπροσωπικής Χειρουργικής του <strong>Νοσοκομείου Metropolitan στο Νέο Φάληρο</strong>.</p>
-        <p data-i18n-html="about.p4">Η πολυετής κλινική του εμπειρία επικεντρώνεται στην <strong>προηγμένη εμφυτευματολογία και τη χειρουργική στόματος</strong>, όπου αφιερώνει το χρόνο του. Η συνεχής του κατάρτιση μέσω προηγμένων σεμιναρίων και εξειδικευμένων προγραμμάτων σε όλο το φάσμα της οδοντιατρικής —με έμφαση στην αισθητική αποκατάσταση και κυρίως στις τελευταίες εξελίξεις της εμφυτευματολογίας— διασφαλίζει την εφαρμογή των πλέον σύγχρονων μεθόδων. Με έμφαση στη χρήση τεχνολογιών αιχμής και την εξατομικευμένη διαχείριση, επιτυγχάνει την πλήρη αισθητική και λειτουργική αποκατάσταση του χαμόγελου, διασφαλίζοντας τη μακροβιότητα των θεραπειών.</p>
-      </div>
-
-      <!-- Social & Philosophy Section -->
-      <div class="area-philosophy">
-        <div class="bg-gray-50 p-8 rounded-3xl shadow-inner border border-gray-100">
-          <h3 class="text-3xl text-brand-blue mb-6 text-center philosophy-title" data-i18n="about.philosophy_title">Κοινωνική Προσφορά</h3>
-          <div class="space-y-4 text-gray-700 leading-relaxed italic text-base">
-            <p data-i18n-html="about.p5">Πέρα από την κλινική πράξη, ο κ. Μοσχόπουλος διαπνέεται από έντονο αίσθημα κοινωνικής ευθύνης. Το 2001 πρωτοστάτησε στην ίδρυση της Οδοντιατρικής Κλινικής των <strong>Δημοτικών Ιατρείων Παλαιού Φαλήρου</strong>, έναν θεσμό που στηρίζει μέχρι σήμερα.</p>
-            <p data-i18n-html="about.p6">Για περισσότερες από δύο δεκαετίες, προσφέρει εθελοντικά τις υπηρεσίες του στην <strong>προληπτική οδοντιατρική</strong> των παιδιών του δήμου. Η προσφορά του αυτή τιμήθηκε το 2015 από τους Δήμους Παλαιού Φαλήρου και Πειραιά, επιβεβαιώνοντας τη δέσμευσή του στην υπηρεσία του κοινωνικού συνόλου.</p>
-          </div>
+        
+        <p data-i18n-html="about.p3">Από το 2002, υπηρετεί με συνέπεια τη στοματική υγεία στα νότια προάστια,
+          καλωσορίζοντας τους ασθενείς του στην <strong>προσωπική του κλινική στο Παλαιό Φάληρο</strong>. Παράλληλα, η
+          επιστημονική του συγκρότηση αναγνωρίστηκε το 2003 με τον διορισμό του ως Οδοντιατρικός Σύμβουλος στο Τμήμα
+          Στοματικής και Γναθοπροσωπικής Χειρουργικής του <strong>Νοσοκομείου Metropolitan στο Νέο Φάληρο</strong>.</p>
           
-          <!-- Signature -->
-          <div class="mt-10 flex flex-col items-center">
+        <p data-i18n-html="about.p4">Η πολυετής κλινική του εμπειρία επικεντρώνεται στην <strong>προηγμένη
+            εμφυτευματολογία και τη χειρουργική στόματος</strong>, όπου αφιερώνει το χρόνο του. Η συνεχής του κατάρτιση
+          μέσω προηγμένων σεμιναρίων και εξειδικευμένων προγραμμάτων σε όλο το φάσμα της οδοντιατρικής —με έμφαση στην
+          αισθητική αποκατάσταση και κυρίως στις τελευταίες εξελίξεις της εμφυτευματολογίας— διασφαλίζει την εφαρμογή
+          των πλέον σύγχρονων μεθόδων. Με έμφαση στη χρήση τεχνολογιών αιχμής και την εξατομικευμένη διαχείριση,
+          επιτυγχάνει την πλήρη αισθητική και λειτουργική αποκατάσταση του χαμόγελου, διασφαλίζοντας τη μακροβιότητα των
+          θεραπειών.</p>
+      </div>
 
+      <!-- Right Column -->
+      <div>
+        <p data-i18n-html="about.p1">Συνδυάζοντας την επιστημονική αρτιότητα με την ανθρωποκεντρική προσέγγιση, ο
+          Άγγελος Μοσχόπουλος διαθέτει μια πολυδιάστατη ακαδημαϊκή και κλινική διαδρομή. Ξεκίνησε τις σπουδές του στο
+          <strong>Πανεπιστήμιο McGill</strong> του Καναδά, από όπου αποφοίτησε με τον τιμητικό τίλλο <strong>Bachelor of
+            Science with Honours</strong>. Το 1992 ολοκλήρωσε τον κύκλο της Βιολογίας με εξειδίκευση στη Μικροβιολογία
+          και την Ανοσολογία, θέτοντας τις βάσεις για τη βαθιά κατανόηση της βιολογικής απόκρισης των ιστών.</p>
+          
+        <p data-i18n-html="about.p2">Η αφοσίωσή του στην έρευνα συνεχίστηκε στο <strong>Ελληνικό Ινστιτούτο
+            Παστέρ</strong>, όπου προσέφερε το έργο του ως ερευνητής επί διετία, συμβάλλοντας ως συν-συγγραφέας σε
+          δημοσιευμένη επιστημονική μελέτη σχετικά με τη νευροβιολογία (<a
+            href="https://pubmed.ncbi.nlm.nih.gov/9026475/" target="_blank"
+            class="underline decoration-brand-blue/30 hover:text-brand-blue transition-colors">PubMed: 9026475</a>). Στη
+          συνέχεια, το πάθος του για την κλινική πράξη τον οδήγησε στην Οδοντιατρική, λαμβάνοντας το πτυχίο του από το
+          <strong>Πανεπιστήμιο Semmelweis</strong> το 1999. Κατά τη διάρκεια των σπουδών του, διακρίθηκε με την
+          <strong>1η θέση στον τομέα της Παθολογίας</strong> στον καταξιωμένο διαγωνισμό <strong>Rector's Award</strong>
+          (Rektori Pályamunka), μια διάκριση που αναδεικνύει την αριστεία στην επιστημονική έρευνα.</p>
+
+        <!-- Social Section -->
+        <div class="area-social bg-gray-50 p-8 rounded-3xl shadow-inner border border-gray-100 space-y-6">
+          <h3 class="text-3xl text-brand-blue philosophy-title text-center md:text-left" data-i18n="about.social_title">
+            Κοινωνική Προσφορά</h3>
+          <div class="space-y-4 italic text-base">
+            <p data-i18n-html="about.p5">Πέρα από την κλινική πράξη, ο κ. Μοσχόπουλος διαπνέεται από έντονο αίσθημα
+              κοινωνικής ευθύνης. Το 2001 πρωτοστάτησε στην ίδρυση της Οδοντιατρικής Κλινικής των <strong>Δημοτικών
+                Ιατρείων Παλαιού Φαλήρου</strong>, έναν θεσμό που στηρίζει μέχρι σήμερα.</p>
+            <p data-i18n-html="about.p6">Για περισσότερες από δύο δεκαετίες, προσφέρει εθελοντικά τις υπηρεσίες του στην
+              <strong>προληπτική οδοντιατρική</strong> των παιδιών του δήμου. Η προσφορά του αυτή τιμήθηκε το 2015 από
+              τους Δήμους Παλαιού Φαλήρου και Πειραιά, επιβεβαιώνοντας τη δέσμευσή του στην υπηρεσία του κοινωνικού
+              συνόλου.</p>
+          </div>
+
+          <!-- Signature -->
+          <div class="mt-8 flex flex-col items-center md:items-start">
             <p class="font-signature text-5xl text-brand-blue opacity-90 transform -rotate-2">Angelo Moshopoulos</p>
           </div>
         </div>
@@ -152,20 +237,28 @@
     <div
       class="w-11/12 md:w-3/4 mx-auto bg-brand-light text-brand-blue text-center rounded-lg p-8 italic tracking-wide text-lg font-open my-12 fade-in shadow-inner"
       data-i18n-html="quote.about">
-      &quot; Η αφοσίωσή μας στην επιστήμη της οδοντιατρικής μεταφράζεται σε εξατομικευμένη και ουσιαστική φροντίδα για κάθε ασθενή. <br>Με οδηγό τη συνεχή εξέλιξη και το σεβασμό στις ανάγκες σας, χτίζουμε σχέσεις εμπιστοσύνης που διαρκούν. Αποτελεί τιμή μας να αναλαμβάνουμε τη φροντίδα του χαμόγελού σας. &quot;
+      &quot; Η αφοσίωσή μας στην επιστήμη της οδοντιατρικής μεταφράζεται σε εξατομικευμένη και ουσιαστική φροντίδα για
+      κάθε ασθενή. <br>Με οδηγό τη συνεχή εξέλιξη και το σεβασμό στις ανάγκες σας, χτίζουμε σχέσεις εμπιστοσύνης που
+      διαρκούν. Αποτελεί τιμή μας να αναλαμβάνουμε τη φροντίδα του χαμόγελού σας. &quot;
     </div>
     <hr class="w-4/5 mx-auto border-gray-200">
   </section>
 
   <div class="text-center mt-8 mb-12 fade-in flex justify-center space-x-6">
-    <a href="https://www.facebook.com/dentplant/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
-      <img class="w-10 h-10" src="socialicons/webicon-facebook.png" alt="Επισκεφθείτε την Dentplant Clinic στο Facebook" data-i18n-alt="alt.fb">
+    <a href="https://www.facebook.com/dentplant/" target="_blank"
+      class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-facebook.png" alt="Επισκεφθείτε την Dentplant Clinic στο Facebook"
+        data-i18n-alt="alt.fb">
     </a>
-    <a href="https://www.instagram.com/dentplant.gr/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
-      <img class="w-10 h-10" src="socialicons/webicon-instagram.png" alt="Ακολουθήστε τον Άγγελο Μοσχόπουλο στο Instagram" data-i18n-alt="alt.ig">
+    <a href="https://www.instagram.com/dentplant.gr/" target="_blank"
+      class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-instagram.png"
+        alt="Ακολουθήστε τον Άγγελο Μοσχόπουλο στο Instagram" data-i18n-alt="alt.ig">
     </a>
-    <a href="https://www.linkedin.com/in/angelo-moshopoulos-a93476403/" target="_blank" class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
-      <img class="w-10 h-10" src="socialicons/webicon-linkedin.png" alt="Επαγγελματικό προφίλ του Άγγελου Μοσχόπουλου στο LinkedIn" data-i18n-alt="alt.li">
+    <a href="https://www.linkedin.com/in/angelo-moshopoulos-a93476403/" target="_blank"
+      class="bg-brand-blue rounded-full p-2 hover:opacity-75 transition-opacity">
+      <img class="w-10 h-10" src="socialicons/webicon-linkedin.png"
+        alt="Επαγγελματικό προφίλ του Άγγελου Μοσχόπουλου στο LinkedIn" data-i18n-alt="alt.li">
     </a>
   </div>
 
@@ -176,18 +269,23 @@
           Πλατεία Ντάβαρη 2, Παλαιό Φάληρο<br>τηλ. 210 931 2651
         </p>
         <div class="pt-2">
-          <a href="https://g.page/r/CY1vTXIAWJxCEBM/review" target="_blank" class="text-yellow-400 font-bold hover:text-yellow-300 text-sm flex items-center justify-center gap-2 group transition-all underline decoration-yellow-400/30 underline-offset-4">
+          <a href="https://g.page/r/CY1vTXIAWJxCEBM/review" target="_blank"
+            class="text-yellow-400 font-bold hover:text-yellow-300 text-sm flex items-center justify-center gap-2 group transition-all underline decoration-yellow-400/30 underline-offset-4">
             <span data-i18n="contact.review_cta">Γράψτε μια Αξιολόγηση</span>
             <span class="group-hover:translate-x-1 transition-transform">→</span>
           </a>
         </div>
         <div class="max-w-2xl text-white/60 text-xs leading-relaxed font-open space-y-2">
-          <p data-i18n-html="footer.disclaimer">Η ενημέρωση σε αυτόν τον ιστότοπο παρέχεται αποκλειστικά για εκπαιδευτικούς σκοπούς και δεν υποκαθιστά την επαγγελματική ιατρική συμβουλή.</p>
-          <p class="font-bold text-white/80 py-1" data-i18n-html="footer.membership">Μέλος του Οδοντιατρικού Συλλόγου Πειραιά</p>
-          <p class="italic" data-i18n="footer.medical_review">Ελέγχθηκε ιατρικά από τον Άγγελο Μοσχόπουλο, DMD | Ενημέρωση: Απρίλιος 2026</p>
+          <p data-i18n-html="footer.disclaimer">Η ενημέρωση σε αυτόν τον ιστότοπο παρέχεται αποκλειστικά για
+            εκπαιδευτικούς σκοπούς και δεν υποκαθιστά την επαγγελματική ιατρική συμβουλή.</p>
+          <p class="font-bold text-white/80 py-1" data-i18n-html="footer.membership">Μέλος του Οδοντιατρικού Συλλόγου
+            Πειραιά</p>
+          <p class="italic" data-i18n="footer.medical_review">Ελέγχθηκε ιατρικά από τον Άγγελο Μοσχόπουλο, DMD |
+            Ενημέρωση: Απρίλιος 2026</p>
         </div>
         <div class="flex flex-wrap justify-center gap-6 text-white/70 text-sm font-medium uppercase tracking-widest">
-          <a href="privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">Πολιτική Απορρήτου</a>
+          <a href="privacy.html" class="hover:text-white transition-colors" data-i18n="footer.privacy">Πολιτική
+            Απορρήτου</a>
         </div>
         <p class="text-white/40 font-noto text-[10px] uppercase tracking-tighter" data-i18n-html="footer.copyright">
           Copyright 2026. Dentplant Clinic. <br>All Rights Reserved.
@@ -199,4 +297,5 @@
   <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
