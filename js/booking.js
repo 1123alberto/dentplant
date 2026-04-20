@@ -12,13 +12,11 @@ const BLOCKED_CONFIG = {
 
 let selectedDate = null;
 let selectedTime = null;
-let currentWeekStart = new Date();
+let currentViewDate = new Date();
 
-// Initialize week to today
-currentWeekStart.setHours(0, 0, 0, 0);
-const day = currentWeekStart.getDay();
-const diff = currentWeekStart.getDate() - day + (day === 0 ? -6 : 1);
-currentWeekStart.setDate(diff);
+// Initialize to the 1st of the current month
+currentViewDate.setDate(1);
+currentViewDate.setHours(0, 0, 0, 0);
 
 function goToStep(stepNumber) {
     document.querySelectorAll('.booking-step').forEach(el => el.classList.remove('active'));
@@ -59,39 +57,75 @@ function renderCalendar() {
 
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-    let monthName = "";
 
-    // Generate 35 days (5 weeks)
-    for (let i = 0; i < 35; i++) {
-        const date = new Date(currentWeekStart);
+    // Calculate Grid Start (Monday of the first week)
+    const gridStart = new Date(currentViewDate);
+    const dayOfWeek = gridStart.getDay(); // 0 (Sun) to 6 (Sat)
+    const padding = dayOfWeek === 0 ? 6 : dayOfWeek - 1; // 0 for Mon, 6 for Sun
+    gridStart.setDate(gridStart.getDate() - padding);
+
+    // Month Label
+    const locale = window.i18n ? window.i18n.t('js.locale') : 'el-GR';
+    monthLabel.textContent = currentViewDate.toLocaleString(locale, { month: 'long', year: 'numeric' });
+
+    // Generate 42 days (6 weeks)
+    for (let i = 0; i < 42; i++) {
+        const date = new Date(gridStart);
         date.setDate(date.getDate() + i);
-
-        if (i === 0 || i === 7) {
-            const locale = window.i18n ? window.i18n.t('js.locale') : 'el-GR';
-            const m = date.toLocaleString(locale, { month: 'long', year: 'numeric' });
-            if (!monthName.includes(m)) monthName += (monthName ? " - " : "") + m;
-        }
 
         const btn = document.createElement('button');
         btn.className = 'date-btn p-1 rounded-lg w-9 h-9 mx-auto flex items-center justify-center font-semibold text-sm transition-all text-[#1a365d] hover:bg-gray-100 hover:text-[#0284c7]';
         btn.textContent = date.getDate();
 
-        // Disable past dates, Sundays (0), and blocked dates
         const dateStr = formatDateAPI(date);
-        if (date < today || date.getDay() === 0 || BLOCKED_CONFIG.dates.includes(dateStr)) {
+        const isPast = date < today;
+        const isCurrentMonth = date.getMonth() === currentViewDate.getMonth();
+        const isSunday = date.getDay() === 0;
+        const isBlocked = BLOCKED_CONFIG.dates.includes(dateStr);
+
+        // Disable if: past, Sunday, blocked, OR not in the current month view
+        if (isPast || isSunday || isBlocked || !isCurrentMonth) {
             btn.className = 'date-btn disabled p-1 w-9 h-9 mx-auto flex items-center justify-center font-normal text-sm text-gray-300 cursor-not-allowed';
             btn.disabled = true;
+            
+            // If it's a padding day (not in month), make it even more subtle but still visible as requested
+            if (!isCurrentMonth) {
+                btn.style.opacity = "0.4";
+            }
         } else {
             btn.onclick = () => selectDate(date);
         }
 
-        if (selectedDate && date.getTime() === selectedDate.getTime()) {
+        const isSelected = selectedDate && date.getTime() === selectedDate.getTime();
+        const isToday = date.getTime() === today.getTime();
+
+        if (isSelected) {
             btn.className = 'date-btn bg-[#0284c7] text-white rounded-lg w-9 h-9 mx-auto flex items-center justify-center font-bold text-sm shadow-sm';
+            btn.style.opacity = "1";
+        } else if (isToday && isCurrentMonth) {
+            // Apply today indicator only if it's the actual current month view
+            btn.classList.add('today-date');
         }
 
         grid.appendChild(btn);
     }
-    monthLabel.textContent = monthName;
+
+    // Handle Navigation limits
+    const prevBtn = document.getElementById('prev-week');
+    const nextBtn = document.getElementById('next-week');
+
+    // Disable Prev if we are in the current month
+    const currentMonthFirst = new Date(today);
+    currentMonthFirst.setDate(1);
+    currentMonthFirst.setHours(0, 0, 0, 0);
+    prevBtn.disabled = currentViewDate <= currentMonthFirst;
+    prevBtn.style.opacity = prevBtn.disabled ? "0.3" : "1";
+
+    // Disable Next if we are already seeing the next month
+    const nextMonthLimit = new Date(currentMonthFirst);
+    nextMonthLimit.setMonth(nextMonthLimit.getMonth() + 1);
+    nextBtn.disabled = currentViewDate >= nextMonthLimit;
+    nextBtn.style.opacity = nextBtn.disabled ? "0.3" : "1";
 }
 
 
@@ -185,30 +219,13 @@ function selectTime(time) {
 
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('prev-week').onclick = () => {
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        const day = today.getDay();
-        const diff = today.getDate() - day + (day === 0 ? -6 : 1);
-        const currentWeekStartForToday = new Date(today);
-        currentWeekStartForToday.setDate(diff);
-
-        const newStart = new Date(currentWeekStart);
-        newStart.setDate(newStart.getDate() - 28);
-        currentWeekStart = newStart < currentWeekStartForToday ? currentWeekStartForToday : newStart;
+        currentViewDate.setMonth(currentViewDate.getMonth() - 1);
         renderCalendar();
     };
 
     document.getElementById('next-week').onclick = () => {
-        const today = new Date();
-        const maxFutureDate = new Date(today);
-        maxFutureDate.setDate(today.getDate() + 35);
-
-        const newStart = new Date(currentWeekStart);
-        newStart.setDate(newStart.getDate() + 28);
-        if (newStart < maxFutureDate) {
-            currentWeekStart = newStart;
-            renderCalendar();
-        }
+        currentViewDate.setMonth(currentViewDate.getMonth() + 1);
+        renderCalendar();
     };
 
     renderCalendar();
