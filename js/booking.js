@@ -15,10 +15,39 @@ let selectedTime = null;
 let currentViewDate = new Date();
 let monthlyBusyData = {}; // Cache for { 'YYYY-MM': [dates] }
 let isFetchingBusyDays = false;
+let prefetchPromise = null; // Tracks the eager prefetch
 
 // Initialize to the 1st of the current month
 currentViewDate.setDate(1);
 currentViewDate.setHours(0, 0, 0, 0);
+
+// ── Eager Prefetch ──
+// Fire the API call immediately (before DOMContentLoaded) so data is
+// likely cached by the time the calendar first renders. This eliminates
+// the 1-3 second cold-start spinner on page load.
+(function prefetchCurrentMonth() {
+    if (GOOGLE_SCRIPT_URL.includes('YOUR_GOOGLE_APPS_SCRIPT_URL')) return;
+    const year = currentViewDate.getFullYear();
+    const month = currentViewDate.getMonth() + 1;
+    const key = `${year}-${month}`;
+    isFetchingBusyDays = true;
+    prefetchPromise = fetch(`${GOOGLE_SCRIPT_URL}?action=getBusyDays&year=${year}&month=${month}`)
+        .then(r => r.json())
+        .then(data => {
+            monthlyBusyData[key] = data.busyDays || [];
+        })
+        .catch(e => {
+            console.error('Prefetch failed', e);
+            monthlyBusyData[key] = [];
+        })
+        .finally(() => {
+            isFetchingBusyDays = false;
+            prefetchPromise = null;
+            // Re-render calendar if DOM is ready so busy-day highlights appear
+            const grid = document.getElementById('calendar-grid');
+            if (grid) renderCalendar();
+        });
+})();
 
 function goToStep(stepNumber) {
     document.querySelectorAll('.booking-step').forEach(el => el.classList.remove('active'));
@@ -44,13 +73,20 @@ function goToStep(stepNumber) {
 window.goToStep = goToStep;
 
 async function fetchMonthlyBusyDays(year, month) {
-    if (isFetchingBusyDays || GOOGLE_SCRIPT_URL.includes("YOUR_GOOGLE_APPS_SCRIPT_URL")) return;
-    
-    isFetchingBusyDays = true;
-    const key = `${year}-${month}`;
-    const loader = document.getElementById('calendar-loader');
-    if (loader) loader.style.display = 'flex';
+    if (GOOGLE_SCRIPT_URL.includes("YOUR_GOOGLE_APPS_SCRIPT_URL")) return;
 
+    const key = `${year}-${month}`;
+
+    // If a prefetch for this month is already in-flight, just await it
+    if (prefetchPromise && !monthlyBusyData.hasOwnProperty(key)) {
+        await prefetchPromise;
+        return;
+    }
+
+    if (isFetchingBusyDays) return;
+    isFetchingBusyDays = true;
+
+    // No loader spinner — calendar stays interactive while we fetch in the background
     try {
         const response = await fetch(`${GOOGLE_SCRIPT_URL}?action=getBusyDays&year=${year}&month=${month}`);
         const data = await response.json();
@@ -61,7 +97,6 @@ async function fetchMonthlyBusyDays(year, month) {
         monthlyBusyData[key] = []; // Fallback to empty on error
     } finally {
         isFetchingBusyDays = false;
-        if (loader) loader.style.display = 'none';
     }
 }
 
@@ -228,7 +263,7 @@ async function fetchAndShowSlots(date) {
         }
 
         if (availableSlots.length === 0) {
-            const noSlotsMsg = window.i18n ? window.i18n.t('js.noslots') : 'Δεν υπάρχουν διαθέσιμες ώρες για αυτή την ημερομηνία.';
+            const noSlotsMsg = window.i18n ? window.i18n.t('js.noslots') : 'Δεν υπάρχουν διαθέσιμες ώρες για αυτή την ημερομηνία. Για επείγοντα περιστατικά παρακαλούμε καλέστε στο <a href="tel:2109312651" class="font-bold underline">210 931 2651</a>.';
             slotsGrid.innerHTML = `<p style="grid-column: 1/-1; text-align: center;" class="text-red-500 font-medium my-4 text-sm">${noSlotsMsg}</p>`;
         } else {
             availableSlots.forEach(time => {
